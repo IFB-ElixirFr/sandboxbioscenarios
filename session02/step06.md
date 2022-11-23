@@ -24,9 +24,6 @@ cd
 mkdir /shared/projects/facts/my_dir2
 tree /shared/projects/facts
 ```
-<script>
-import Quiz from "components/Quiz.svelte";
-</script>
 
 ## Copying files and directories
 
