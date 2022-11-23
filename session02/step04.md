@@ -11,7 +11,7 @@ cd ../homo_sapiens
 ls 
 ```
 
-<Quiz id="q1" choices={[
+<Quiz id="step04_q1" choices={[
     { valid: false, value: "/shared/bank/"},
     { valid: false, value: "/shared/homo_sapiens"},
     { valid: false, value: "../bank/nr"},
@@ -34,7 +34,7 @@ The <kbd>Tab</kbd> key is perhaps the most used key in Unix!
 
 Use the <kbd>TAB</kbd> key and `cd` to go into the `/shared/bank/bos_taurus/UMD3.1/star-2.7.2b/` directory.
 
-<Quiz id="q2" choices={[
+<Quiz id="step04_q2" choices={[
     { valid: false, value: "2"},
     { valid: false, value: "3"},
     { valid: false, value: "4"},
