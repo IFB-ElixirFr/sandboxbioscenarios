@@ -60,7 +60,9 @@ ls /tmp
 -->
 
 
-<Quiz id="q1" choices={[ { valid: false, value: "/"}, { valid: false, value: "/shared"}, { valid: true, value: "/shared/bank"}, ]}> If your current working directory is `/shared/bank/homo_sapiens`, to which absolute path refers the path `..` ?
+<Quiz id="q1" choices={[ { valid: false, value: "/"}, 
+                         { valid: false, value: "/shared"}, 
+                         { valid: true, value: "/shared/bank"}, ]}> If your current working directory is `/shared/bank/homo_sapiens`, to which absolute path refers the path `..` ?
 
 <!---
 # Old katacoda 
@@ -69,8 +71,12 @@ ls /tmp
 (*) relative
 -->
 
-<Quiz id="q1" choices={[ { valid: false, value: "absolute"}, { valid: true, value: "relative"}, ]}> Wich type of path is `shared/bank`?
-
+<Quiz id="q2" choices={[ { valid: false, value: "absolute"}, 
+                         { valid: true, value: "relative"}, ]}> 
+                         	<span slot="prompt">
+                         	Wich type of path is `shared/bank`?
+                         	<\span>
+</Quiz>
 <!---
 # Old katacoda
 >>If your current working directory is `/shared/bank/bos_taurus` what is the relative path to `/shared/bank/homo_sapiens/hg19/fasta`<<
@@ -79,5 +85,10 @@ ls /tmp
 (*) ../homo_sapiens/hg19/fasta
 -->
 
-<Quiz id="q1" choices={[ { valid: false, value: "homo_sapiens/hg19/fasta"}, { valid: false, value: "../../hg19/fasta"}, { valid: true, value: "../homo_sapiens/hg19/fasta"}, ]}> If your current working directory is `/shared/bank/bos_taurus` what is the relative path to `/shared/bank/homo_sapiens/hg19/fasta`?
-
+<Quiz id="q3" choices={[ { valid: false, value: "homo_sapiens/hg19/fasta"}, 
+                         { valid: false, value: "../../hg19/fasta"}, 
+                         { valid: true, value: "../homo_sapiens/hg19/fasta"}, ]}> 
+     <span slot="prompt">
+     If your current working directory is `/shared/bank/bos_taurus` what is the relative path to `/shared/bank/homo_sapiens/hg19/fasta`?
+     <\span>
+</Quiz>
