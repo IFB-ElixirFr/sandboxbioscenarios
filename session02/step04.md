@@ -42,4 +42,5 @@ Use the <kbd>TAB</kbd> key and `cd` to go into the `/shared/bank/bos_taurus/UMD3
 ]}>
 	<span slot="prompt">
 		How many files are in the `/shared/bank/bos_taurus/UMD3.1/star-2.7.2b/` directory?
+    </span>
 </Quiz>
