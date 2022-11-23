@@ -3,5 +3,5 @@ import Alert from "components/Alert.svelte";
 </script>
 
 <Alert>
-    You've completed the **Basics of the Unix command line interface** scenario. Congratulation!
+    Congratulation! You've completed the **Basics of the Unix command line interface** scenario.
 </Alert>
