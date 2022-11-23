@@ -1,5 +1,4 @@
 <script>
-import Alert from "components/Alert.svelte";
 import Quiz from "components/Quiz.svelte";
 </script>
 
@@ -56,7 +55,7 @@ ls --help
 
 ### Ask Internet
 
-Some usefull ressources:
+You will also usefull ressources on the Internet:
 
 - [explain shell command](https://explainshell.com) : https://explainshell.com
 - [a shell forum](https://stackoverflow.com) : https://stackoverflow.com

@@ -6,11 +6,11 @@ import Quiz from "components/Quiz.svelte";
 The Bash shell provides you with a working space including files and directories.
 
 A very useful command is `ls`, that **l**i**s**ts the content of a directory.
-On your Unix terminal on the right, type `ls` and then press <kbd>enter</kbd>.
+In your Unix terminal on the right, type `ls` and then press <kbd>Enter</kbd>.
 
 The Bash shell should display `Data` that is a directory named `Data`.
 
-Now, type the following command in your terminal (and press <kbd>enter</kbd>) :
+Now, type the following command in your terminal (and press <kbd>Enter</kbd>) :
 
 ```bash
 ls Data
@@ -18,9 +18,10 @@ ls Data
 
 The Bash shell should display the 8 files included in the `Data` directory.
 
-Remarks : 
-* pay attention to the space character between `ls` and `Data`
-* don't forget to press <kbd>enter</kbd> to run commands
+Remarks:
+
+* Pay attention to the space character between `ls` and `Data`
+* Don't forget to press <kbd>Enter</kbd> to run commands
 * `ls` is the command **name**
 * `Data` is a directory name and an **argument** of the `ls` command
 
@@ -40,7 +41,7 @@ Now, the 8 files are displayed with their respective sizes (in blocks).
 
 You can use a short form for this option by replacing `--size` (long form) by `-s` (short form).
 
-Usually we use `-h` option to display sizes in more **h**uman readable formats (_e.g._ 1K, 234M, 2G). 
+Usually we also use the `-h` option to display sizes in more **h**uman readable formats (_e.g._ 1K, 234M, 2G). 
 
 You can use several options in the same command.
 
@@ -71,11 +72,11 @@ ls -sh Data
 ### Summary
 
 Here we learn that:
-- we can execute a command by typing its name (options and/or arguments) and pressing <kbd>enter</kbd>
-- we can add options to modify the command behavior
-- options start with a dash `-` (short form) or a double dash `--` (long form)
-- several options of the short form can be combined (without space and after a single dash)
-- command name can be followed (or not) by an argument
+- We can execute a command by typing its name (options and/or arguments) and pressing <kbd>Enter</kbd>.
+- We can add options to modify the command behavior.
+- Options start with a dash `-` (short form) or a double dash `--` (long form).
+- Several options of the short form can be combined (without space and after a single dash).
+- Command name can be followed (or not) by an argument.
 </Alert>
 
 
