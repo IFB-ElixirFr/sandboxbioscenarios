@@ -33,6 +33,6 @@ This `ls` command lists the content of the specified directory (also named **arg
 [ ] hg37
 [*] hg38
 
-<Quiz id="q1" choices={[ { valid: false, value: "hg18"}, { valid: true, value: "hg19"}, { valid: true, value: "hg37"}, { valid: true, value: "hg38"}, ]}> What does the command `ls /shared/bank/homo_sapiens` return? 
+<Quiz id="q1" choices={[ { valid: false, value: "hg18"}, { valid: true, value: "hg19"}, { valid: false, value: "hg37"}, { valid: true, value: "hg38"}, ]}> What does the command `ls /shared/bank/homo_sapiens` return? 
 
 Remark: Usually `hg` stands for **h**uman **g**enome and the number denotes the sequence version.
