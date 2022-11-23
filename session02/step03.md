@@ -80,3 +80,4 @@ ls /tmp
 -->
 
 <Quiz id="q1" choices={[ { valid: false, value: "homo_sapiens/hg19/fasta"}, { valid: false, value: "../../hg19/fasta"}, { valid: true, value: "../homo_sapiens/hg19/fasta"}, ]}> If your current working directory is `/shared/bank/bos_taurus` what is the relative path to `/shared/bank/homo_sapiens/hg19/fasta`?
+
