@@ -1,5 +1,6 @@
 <script>
 import Quiz from "components/Quiz.svelte";
+import Link from "components/Link.svelte";
 </script>
 
 ### The man command
@@ -56,8 +57,9 @@ ls --help
 ### Ask Internet
 
 You will also usefull ressources on the Internet:
-
+<!-- format md -->
 - [explain shell command](https://explainshell.com) : https://explainshell.com
 - [a shell forum](https://stackoverflow.com) : https://stackoverflow.com
-
-
+<!-- format svelte -->
+- <Link href="https://explainshell.com">explain shell command</Link> https://explainshell.com
+- <Link href="https://stackoverflow.com">a shell forum</Link> https://stackoverflow.com
