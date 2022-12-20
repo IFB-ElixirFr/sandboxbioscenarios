@@ -1,6 +1,7 @@
 <script>
 import Alert from "components/Alert.svelte";
 import Quiz from "components/Quiz.svelte";
+import Execute from "components/Execute.svelte";
 </script>
 
 The Bash shell provides you with a working space including files and directories.
@@ -12,9 +13,7 @@ The Bash shell should display `Data` that is a directory named `Data`.
 
 Now, type the following command in your terminal (and press <kbd>Enter</kbd>) :
 
-```bash
-ls Data
-```
+<Execute command="ls Data" />
 
 The Bash shell should display the 8 files included in the `Data` directory.
 
@@ -33,9 +32,7 @@ In Bash, shell options start with a simple or double dash (`-` or `--`).
 For example, we can display the size of the files using the `--size` option of the `ls` command. 
 Lets try and type: 
 
-```bash
-ls --size Data
-```
+<Execute command="ls --size Data" />
 
 Now, the 8 files are displayed with their respective sizes (in blocks). 
 
@@ -48,9 +45,7 @@ You can use several options in the same command.
 You can merge short form options using a single dash as prefix.
 Example: type the following command in your terminal:
 
-```bash
-ls -sh Data
-```
+<Execute command="ls -sh Data" />
 
 <Quiz id="q1" choices={[
 	{ valid: true, value: "ls -s -h Data"},
@@ -78,7 +73,3 @@ Here we learn that:
 - Several options of the short form can be combined (without space and after a single dash).
 - Command name can be followed (or not) by an argument.
 </Alert>
-
-
-
-

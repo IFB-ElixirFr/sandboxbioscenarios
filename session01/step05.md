@@ -1,6 +1,7 @@
 <script>
 import Quiz from "components/Quiz.svelte";
 import Link from "components/Link.svelte";
+import Execute from "components/Execute.svelte";
 </script>
 
 ### The man command
@@ -50,17 +51,10 @@ And the DESCRIPTION section explains all the possible options of the command.
 An other way of getting help is to use the `--help` option after a command name (or, sometimes, `-h` or `-help` or `help`) .
 Example, type the following command:
 
-```bash
-ls --help
-```
+<Execute command="ls --help" />
 
 ### Ask Internet
 
 You will also usefull ressources on the Internet:
-<!-- format md -->
-- [explain shell command](https://explainshell.com) : https://explainshell.com
-- [a shell forum](https://stackoverflow.com) : https://stackoverflow.com
-<!-- format svelte
-- <Link href="https://explainshell.com">explain shell command: </Link> https://explainshell.com
-- <Link href="https://stackoverflow.com">a shell forum: </Link> https://stackoverflow.com
- -->
+- <Link href="https://explainshell.com">Explain shell command</Link>
+- <Link href="https://stackoverflow.com">A shell forum</Link>

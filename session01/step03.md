@@ -1,5 +1,6 @@
 <script>
 import Quiz from "components/Quiz.svelte";
+import Execute from "components/Execute.svelte";
 </script>
 
 Using a Bash shell, you will be able to write and execute Unix commands. 
@@ -12,9 +13,8 @@ Be very careful while writing your Unix commands: lowercases and uppercases are 
 Unix commands are usually in lowercase.
 
 Now, type the following command in your terminal and then press <kbd>Enter</kbd> key:
-```bash
-date
-```
+
+<Execute command="date" />
 
 <Quiz id="q1" choices={[
 	{ valid: true, value: "yes"},
