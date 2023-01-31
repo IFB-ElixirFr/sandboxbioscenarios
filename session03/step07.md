@@ -1,3 +1,7 @@
+<script>
+import Quiz from "components/Quiz.svelte";
+</script>
+
 ### *cut*
 
 The `cut` command cuts out the sections from each line of files and writes the result to standard output. 
