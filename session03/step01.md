@@ -1,25 +1,59 @@
+<script>
+import Quiz from "components/Quiz.svelte";
+</script>
 
-The commands of the previous chapter allowed you to move around in the Unix file system and to access files. 
-This chapter will show you how to work with the data into those files. 
-The tools we’ll use are fairly simple, but are solid building blocks.
 
-## Step1:  How to look at the content of files ?
+In the previous chapters, you learnt how to move around in the Unix filesystem and access files. 
+This chapter will show you how to explore the data in those files. 
+The commands we’ll use are fairly simple, but are solid building blocks of more sophisticated traitement pipelines.
 
-###  *cat*
+First, go to the `data` directory with the `cd` command:
 
-A first command allowing to view the content of a file is `cat`:
+``` bash
+cd data
+```
 
-`cat gnagnagna.fasta`
+Check you are in the expected directory with `pwd`:
+
+```bash
+pwd
+```
+
+The result should be `/root/data`. This directory should contain 5 files you could find with the command `ls`.
+
+## Displaying file contents
+
+### *cat*
+
+A first command to display file contents is `cat`:
+
+```bash
+cat gnagnagna.fasta
+```
 
 This command will print the whole content of the _gnagnagna.fasta_ file to the screen.
 
 
 Print the content of the _belebele.fasta_ file. 
 
->> What are the last three nucleotides of the file ? <<
-(*) ici
-( ) ele
-( ) atc
-( ) bel
+
+<!-- 
+>> What are the last three nucleotides of the belebele.fasta file ? <<
+(*) CAG
+( ) TTT
+( ) ATC
+( ) GGG
+-->
+
+<Quiz id="qbelebele" choices={[
+	{ valid: true, value: "ATT"},
+	{ valid: false, value: "TTT"},
+	{ valid: false, value: "ATC"},
+	{ valid: false, value: "GGG"},
+]}>
+	<span slot="prompt">
+		What are the last three nucleotides of the belebele.fasta file ?
+	</span>
+</Quiz>
 
 
