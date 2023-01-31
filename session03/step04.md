@@ -1,15 +1,24 @@
+<script> import Quiz from "components/Quiz.svelte"; 
+  import Execute from "components/Execute.svelte";
+</script>
+
 ### *tail*
 
-If you just want to check the end of a file, you may use the command `tail`:
+If you just want to check the end of a file, you may use the `tail` command:
 
-`tail beautifulFriend.bed`
+
+<Execute command="tail belebele.bed" />
 
 _-n_ is used the same way as with `head` to modulate the number of lines shown.
 
 
->> Print the last line of the _bidule.fasta_ file. Choose the right answer: <<
-( ) aaa
-( ) aaa
-( ) aaa
-(*) ici
-
+<Quiz id="qstep04session03" choices={[
+	{ valid: false, value: "cds-YP_498677.1 ."},
+	{ valid: false, value: "cds-YP_498678.1 ."},
+	{ valid: false, value: "cds-YP_498679.1 ."},
+	{ valid: true, value: "cds-YP_498680.1 ."},
+]}>
+	<span slot="prompt">
+		Print the last line of the belebele.bed file. What is the name of the last CDS ? Choose the right answer:
+	</span>
+</Quiz>
