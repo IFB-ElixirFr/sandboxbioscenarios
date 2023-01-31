@@ -25,12 +25,22 @@ You can change delimiter between fields with the option _-d_ of the `cut` comman
 Look at the begining of the `*.csv` file (try `head *.csv`). 
 It contains XXth columns, separated by a comma.
 
->> Choose the rigth command(s) to extract the 3rd, 6th, and 7th columns of the *.csv file with the `cut` command: <<
+<!-- katacoda format of quizz
+ >> Choose the rigth command(s) to extract the 3rd, 6th, and 7th columns of the *.csv file with the `cut` command: <<
 [ ] cut -f 3,6,7 *.csv
 [ ] cut -f 3,6-7 *.csv
 [*] cut -f 3,6,7 -t "," *.csv
 [*] cut -f 3,6-7 -t "," *.csv
-
-
+-->
+<Quiz id="q1" choices={[ 
+      { valid: false, value: "cut -f 3,6,7 *.csv"}, 
+      { valid: false, value: "cut -f 3,6-7 *.csv"}, 
+      { valid: true, value: "cut -f 3,6,7 -t "," *.csv"}, 
+      { valid: true, value: "cut -f 3,6-7 -t "," *.csv"}, 
+]}> 
+	<span slot="prompt">
+    Choose the rigth command(s) to extract the 3rd, 6th, and 7th columns of the *.csv file with the `cut` command: 
+	</span>
+</Quiz>  
 
 
