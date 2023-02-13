@@ -1,3 +1,7 @@
+<script>
+import Quiz from "components/Quiz.svelte";
+</script>
+
 ### Browse a file interactively
 
 Very often the files you want to read are too large for your screen.
@@ -25,8 +29,13 @@ To search backwards, you need to use <kbd>?</kbd> instead of <kbd>/</kbd> and th
 
 Use <kbd>Q</kbd> to quit the `less` command.
 
->> How many GGT motifs can you find in the file gnagnagna.fasta? <<
-( ) 0
-( ) 1
-( ) 2
-(*) 3
+<Quiz id="q1" choices={[
+	{ valid: false, value: "0"},
+	{ valid: false, value: "1"},
+  { valid: false, value: "2"},
+	{ valid: true, value: "3"},
+]}>
+	<span slot="prompt">
+		How many GGT motifs can you find in the file gnagnagna.fasta?
+	</span>
+</Quiz>
