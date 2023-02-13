@@ -6,11 +6,10 @@
 
 If you just want to check the end of a file, you may use the `tail` command:
 
-
-<Execute command="tail belebele.bed" />
+<Execute command=tail belebele.bed />
+```
 
 _-n_ is used the same way as with `head` to modulate the number of lines shown.
-
 
 <Quiz id="qstep04session03" choices={[
 	{ valid: false, value: "cds-YP_498677.1 ."},

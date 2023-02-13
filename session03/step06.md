@@ -13,10 +13,9 @@ For instance:
 ```bash
 grep gene-SAOUHSC_00079 belebele.bed
 ```
-
-<Quiz id="qgrep" choices={[
-	{ valid: false, value: "74750"},
-	{ valid: false, value: "94950"},
+<Quiz id="q1" choices={[
+  { valid: false, value: "74750"},
+  { valid: false, value: "94950"},
   { valid: true, value: "1561"},
   { valid: false, value: "750"},
 ]}>
@@ -39,9 +38,9 @@ To count the number of lines containing the _gene_ word, just add the `-c` optio
 grep -c gene belebele.bed
 ```
 
-<Quiz id="qgrep" choices={[
-	{ valid: false, value: "70"},
-	{ valid: false, value: "71"},
+<Quiz id="q2" choices={[
+  { valid: false, value: "70"},
+  { valid: false, value: "71"},
   { valid: true, value: "72"},
   { valid: false, value: "73"},
 ]}>
@@ -50,9 +49,12 @@ grep -c gene belebele.bed
 	</span>
 </Quiz>
 
+
+
 Here are other useful `grep` options :
 - `-i`: searches the pattern in a case **i**nsensitive way
 - `-n`: adds the line **n**umber at the beginning of the output line
 - `-v`: prints the lines not containing the pattern (re**v**erse selection)
 
 There are many others: try `man grep`
+
