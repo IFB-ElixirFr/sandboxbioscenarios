@@ -1,3 +1,6 @@
+<script> import Quiz from "components/Quiz.svelte" </script>
+
+
 The `cd` command (**c**hange **d**irectory) can be used to visit another directory in the file tree. 
 The target directory must be specified using an absolute or a relative path. 
 
