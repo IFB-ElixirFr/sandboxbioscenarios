@@ -2,7 +2,6 @@
 import Quiz from "components/Quiz.svelte";
 </script>
 
-
 In the previous chapters, you learnt how to move around in the Unix filesystem and access files. 
 This chapter will show you how to explore the data in those files. 
 The commands we’ll use are fairly simple, but are solid building blocks of more sophisticated traitement pipelines.
@@ -36,24 +35,21 @@ This command will print the whole content of the _gnagnagna.fasta_ file to the s
 
 Print the content of the _belebele.fasta_ file. 
 
-
-<!-- 
+<!--
 >> What are the last three nucleotides of the belebele.fasta file ? <<
 (*) CAG
-( ) TTT
+( ) ELE
 ( ) ATC
-( ) GGG
+( ) BEL
 -->
 
 <Quiz id="qbelebele" choices={[
 	{ valid: true, value: "ATT"},
 	{ valid: false, value: "TTT"},
 	{ valid: false, value: "ATC"},
-	{ valid: false, value: "GGG"},
+	{ valid: false, value: "GGG"}
 ]}>
 	<span slot="prompt">
 		What are the last three nucleotides of the belebele.fasta file ?
 	</span>
 </Quiz>
-
-

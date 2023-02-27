@@ -1,7 +1,8 @@
 Welcome!
 
-During this courses, we will learn how to manipulate file and folder.
+During this course, you will learn how to manipulate files and directories.
 
-The left panel will contain the explanations and guides to run command lines. Use the right panel to type the command examples, and try as many experiments as you want.
+The left panel contains explanations and guides to run Unix commands. Use the right panel to type command examples and experiment as you wish.
 
-During the course, some bash language commands will be explained. They will be written like `this` and must be copied identically in the right window. Their text or value can be modified if you wish, but you will have to remember the changes afterwards. We therefore advise you to keep the text or value proposed in the example.
+During the course, some instructions will be explained. They will appear in the left panel on a grey background (<code class="lang-bash" style="background: #f6f8fa; font-size: 90%; padding: 2px 5px;">like this example</code>) and must be typed in the right panel. You could modify them, but in order to answer questions or quizzes, we advise you to type the proposed instructions exactly as they are.
+
