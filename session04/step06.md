@@ -1,3 +1,7 @@
+<script>
+import Quiz from "components/Quiz.svelte";
+</script>
+
 ## More practice
 
 sur gff : col9, ID gene, tri, unique

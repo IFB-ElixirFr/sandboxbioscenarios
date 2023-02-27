@@ -1,3 +1,7 @@
+<script>
+import Quiz from "components/Quiz.svelte";
+</script>
+
 ## Error stream and its redirection
 
 Icone Vocabulary : we previously introduced standard input and standard output. 

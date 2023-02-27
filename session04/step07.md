@@ -1,3 +1,7 @@
+<script>
+import Quiz from "components/Quiz.svelte";
+</script>
+
 # Summary
 
 In this session you have discovered the 3 data streams of an unix command: the input stream (`stdin`), the output stream (`strout`) and the error stream (`stderr`):
