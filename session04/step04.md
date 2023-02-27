@@ -1,7 +1,3 @@
-<script>
-import Quiz from "components/Quiz.svelte";
-</script>
-
 ## Sort and Uniq commands
 
 Expliquer la redirection de sortie avec plusieurs étapes successives : tri, uniq, head pour lesquels on crée un fichier intermédiaire résultats avec le > qui devient une entrée de la commande suivante avec <
