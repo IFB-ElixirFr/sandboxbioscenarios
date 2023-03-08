@@ -1,5 +1,6 @@
-<script> import Quiz from "components/Quiz.svelte" </script>
-
+<script>
+import Quiz from "components/Quiz.svelte";
+</script>
 
 The `cd` command (**c**hange **d**irectory) can be used to visit another directory in the file tree. 
 The target directory must be specified using an absolute or a relative path. 
@@ -15,10 +16,10 @@ ls
 ```
 
 <Quiz id="step04_q1" choices={[
-    { valid: false, value: "/shared/bank/"},
-    { valid: false, value: "/shared/homo_sapiens"},
-    { valid: false, value: "../bank/nr"},
-    { valid: false, value: "/shared/nr/homo_sapiens"},
+	{ valid: false, value: "/shared/bank/"},
+	{ valid: false, value: "/shared/homo_sapiens"},
+	{ valid: false, value: "../bank/nr"},
+	{ valid: false, value: "/shared/nr/homo_sapiens"},
 	{ valid: true, value: "/shared/bank/homo_sapiens"},
 ]}>
 	<span slot="prompt">
@@ -38,12 +39,12 @@ The <kbd>Tab</kbd> key is perhaps the most used key in Unix!
 Use the <kbd>TAB</kbd> key and `cd` to go into the `/shared/bank/bos_taurus/UMD3.1/star-2.7.2b/` directory.
 
 <Quiz id="step04_q2" choices={[
-    { valid: false, value: "2"},
-    { valid: false, value: "3"},
-    { valid: false, value: "4"},
+	{ valid: false, value: "2"},
+	{ valid: false, value: "3"},
+	{ valid: false, value: "4"},
 	{ valid: true, value: "5"},
 ]}>
 	<span slot="prompt">
 		How many files are in the `/shared/bank/bos_taurus/UMD3.1/star-2.7.2b/` directory?
-    </span>
+	</span>
 </Quiz>
