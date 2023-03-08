@@ -1,1 +1,1 @@
-You've completed the **Manipulating files and directories** scenario. Congratulation!
+You've completed the **Manipulating files and directories** scenario. Congratulations!

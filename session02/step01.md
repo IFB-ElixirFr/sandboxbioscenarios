@@ -1,4 +1,3 @@
-
 <script>
 import Quiz from "components/Quiz.svelte";
 </script>
@@ -11,7 +10,7 @@ The root of the tree structure is also represented by the first `/` in the path.
 
 There are 2 ways to describe paths: **absolute** and **relative**. 
 
-![absolute and relative paths](absolute_and_relative_paths.png)
+<img src="/data/ifb-2/absolute_and_relative_paths.png" style="max-width:60%" alt="Absolute and relative paths">
 
 # Absolute path
 
@@ -27,12 +26,6 @@ The path of the current working directory can be obtained using the `pwd` comman
 
 Now, type the `pwd` command in the right panel and press <kbd>Enter</kbd>.
 
-<!-- >What does the `pwd` command return?<<
-(*) an absolute path
-( ) a relative path
-
--->
-
 <Quiz id="qpwd" choices={[
 	{ valid: true, value: "An absolute path"},
 	{ valid: false, value: "A relative path"},
@@ -43,6 +36,3 @@ Now, type the `pwd` command in the right panel and press <kbd>Enter</kbd>.
 </Quiz>
 
 Look! It begins by a `/`
-
-
-
