@@ -3,7 +3,7 @@ import Alert from "components/Alert.svelte";
 import Quiz from "components/Quiz.svelte";
 import Execute from "components/Execute.svelte";
 </script>
-
+# A simple basic command: ls
 The Bash shell provides you with a working space including files and directories.
 
 A very useful command is `ls`, that **l**i**s**ts the content of a directory.
@@ -24,7 +24,7 @@ Remarks:
 * `ls` is the command **name**
 * `Data` is a directory name and an **argument** of the `ls` command
 
-### Options
+## Options
 
 Options modify the way in which a command works.
 In Bash, shell options start with a simple or double dash (`-` or `--`).
@@ -64,7 +64,7 @@ Example: type the following command in your terminal:
 </Quiz>
 
 <Alert>
-### Summary
+## Summary
 
 Here we learn that:
 - We can execute a command by typing its name (options and/or arguments) and pressing <kbd>Enter</kbd>.
