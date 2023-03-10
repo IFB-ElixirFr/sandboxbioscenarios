@@ -1,7 +1,7 @@
 <script>
 import Quiz from "components/Quiz.svelte";
 </script>
-## The Shell
+## The terminal
 We have already mentioned that the Shell lived in a dedicated interface: **the terminal**.
 
 The terminal generally appears as a simple windowed application. Look at the terminal on the right panel. 
