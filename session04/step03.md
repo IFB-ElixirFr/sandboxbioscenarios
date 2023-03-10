@@ -1,4 +1,4 @@
-## Error stream and its redirection
+# Error stream and its redirection
 
 Icone Vocabulary : we previously introduced standard input and standard output. 
 Input and Output of an Unix command are also named streams. Changing their default values (keyboard and screen) is called **redirection**.
