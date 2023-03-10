@@ -1,7 +1,7 @@
 <script>
 import Quiz from "components/Quiz.svelte";
 </script>
-
+# Change directory
 The `cd` command (**c**hange **d**irectory) can be used to visit another directory in the file tree. 
 The target directory must be specified using an absolute or a relative path. 
 
@@ -29,7 +29,7 @@ ls
 
 Verify the answer with `pwd`.
 
-### Automatic completion
+## Automatic completion
 
 To go from your current working directory to a target directory, you must specify names of all intermediate directories. This can be time-consuming if the target directory is far away from your current directory. 
 The key <kbd>Tab</kbd> triggers auto-completion. It means you just need to type the first letters of a directory, then <kbd>Tab</kbd>, to get its full name. If there is more than one file or directory starting with the same letter, auto-completion will complete the name as far as it can. If you type a second time <kbd>Tab</kbd>, auto-completion will show you the available options.
