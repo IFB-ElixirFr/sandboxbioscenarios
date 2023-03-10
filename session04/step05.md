@@ -1,9 +1,7 @@
 <script>
 import Quiz from "components/Quiz.svelte";
 </script>
-
-## Pipe
-
+# Associate with pipe
 
 ligne avec les commandes de la step précédente séparées par les ; mais ceci n’est pas un pipe
 
