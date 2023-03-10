@@ -2,7 +2,7 @@
 import Quiz from "components/Quiz.svelte";
 </script>
 
-## More practice
+# More practice?
 
 sur gff : col9, ID gene, tri, unique
 compter le nombre de gènes par chr
