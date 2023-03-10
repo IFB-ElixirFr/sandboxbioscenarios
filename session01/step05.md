@@ -3,8 +3,8 @@ import Quiz from "components/Quiz.svelte";
 import Link from "components/Link.svelte";
 import Execute from "components/Execute.svelte";
 </script>
-
-### The man command
+# Getting help
+## The man command
 The `man` command is used to get the manual for any command of the Bash shell.
 
 It takes a command name as an argument and opens the manual on the terminal. 
@@ -44,13 +44,13 @@ And the DESCRIPTION section explains all the possible options of the command.
 </Quiz>
 
 
-### The help option
+## The help option
 An other way of getting help is to use the `--help` option after a command name (or, sometimes, `-h` or `-help` or `help`) .
 Example, type the following command:
 
 <Execute command="ls --help" />
 
-### Ask Internet
+## Ask Internet
 
 You will also usefull ressources on the Internet:
 - <Link href="https://explainshell.com">Explain shell command</Link>
