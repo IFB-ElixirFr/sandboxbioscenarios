@@ -6,7 +6,7 @@
   "details": {
     "assets": {
        "host01": [
-           {"file": "gnagnagna.bed", "target": "data", "chmod": "+r"},
+           {"file": "NC_009089.bed", "target": "data", "chmod": "+r"},
            {"file": "belebele.bed", "target": "data", "chmod": "+r"},
            {"file": "stream_out.png", "target": ".img", "chmod": "+r"},
            {"file": "stream_outfile.png", "target": ".img", "chmod": "+r"},
