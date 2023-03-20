@@ -1,4 +1,4 @@
-step03.md
+
 ## Error stream and its redirection
 
 We previously introduced standard input and standard output. 
