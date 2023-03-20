@@ -8,7 +8,7 @@ You might sometimes want to check just the beginning of a file.
 That is what the `head` command does:
 
 ```bash
-head belebele.bed
+head SAOUHSC.bed
 ```
 
 By default, this command will show you the first 10 lines of a file. 
@@ -16,7 +16,7 @@ By default, this command will show you the first 10 lines of a file.
 You can modulate the number of lines shown with the option _-n_:
 
 ```
-head -n 15 belebele.bed
+head -n 15 SAOUHSC.bed
 ``` 
 
 will show you the first 15 lines.
@@ -29,6 +29,6 @@ will show you the first 15 lines.
 	{ valid: false, value: "10456"},
 ]}>
 	<span slot="prompt">
-		Print the first line of the belebele.bed file. What is the fisrt value of the third column ? Choose the right answer: 
+		Print the first line of the SAOUHSC.bed file. What is the fisrt value of the third column ? Choose the right answer: 
 	</span>
 </Quiz>

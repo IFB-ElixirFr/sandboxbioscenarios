@@ -10,18 +10,18 @@ It can be used to cut parts of a line by byte position, character and field (or 
 Basically the `cut` command slices the lines to extract some text.
 The main use of this command concerns the extraction of columns indicated by their number (first column is number 1).
 
-Here is an example on how to extract the 3rd column of the _belebele.bed_ file:
+Here is an example on how to extract the 3rd column of the _SAOUHSC.bed_ file:
 
 ```bash
-cut -f 3 belebele.bed
+cut -f 3 SAOUHSC.bed
 ```
 
 Multiple columns can be extracted using a coma between two column numbers or a '-' for a range of successive columns.
 
-Try the extraction of the 3 first columns and the 5th one from the _belebele.bed_ file:
+Try the extraction of the 3 first columns and the 5th one from the _SAOUHSC.bed_ file:
 
 ```bash
-cut -f 1-3,5 belebele.bed
+cut -f 1-3,5 SAOUHSC.bed
 ```
 
 You can change the delimiter between fields with option _-d_. 

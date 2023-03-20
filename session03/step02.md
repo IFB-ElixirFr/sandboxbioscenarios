@@ -5,12 +5,12 @@ import Quiz from "components/Quiz.svelte";
 ## Browse a file interactively
 
 Very often the files you want to read are too large for your screen.
-For instance, you have previously displayed the content of the file _belebele.fasta_ with the `cat` command.
+For instance, you have previously displayed the content of the file _SAOUHSC.fasta_ with the `cat` command.
 
 In contrast to `cat`, the `less` command opens a file and and let you browse its content interactively (line by line or page by page): 
 
 ```bash
-less belebele.fasta
+less SAOUHSC.fasta
 ```
 
 Once inside the `less` program, you can use the following keys to navigate through the file:

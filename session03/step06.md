@@ -11,7 +11,7 @@ A pattern can be a simple word or a more general expression, often termed **regu
 For instance:
 
 ```bash
-grep gene-SAOUHSC_00079 belebele.bed
+grep gene-SAOUHSC_00079 SAOUHSC.bed
 ```
 <Quiz id="q1" choices={[
   { valid: false, value: "74750"},
@@ -24,10 +24,10 @@ grep gene-SAOUHSC_00079 belebele.bed
 	</span>
 </Quiz>
 
-If you do it now for gene ABC in the belebele.bed file:
+If you do it now for gene ABC in the SAOUHSC.bed file:
 
 ```bash
-grep ABC belebele.bed
+grep ABC SAOUHSC.bed
 ```
 
 You get no line containing the ABC gene name.
@@ -35,7 +35,7 @@ You get no line containing the ABC gene name.
 To count the number of lines containing the _gene_ word, just add the `-c` option to the `grep` command:
 
 ```bash
-grep -c gene belebele.bed
+grep -c gene SAOUHSC.bed
 ```
 
 <Quiz id="q2" choices={[
@@ -45,7 +45,7 @@ grep -c gene belebele.bed
   { valid: false, value: "73"},
 ]}>
 	<span slot="prompt">
-		Count the number of lines containing the <i>cds</i> word in belebele.bed
+		Count the number of lines containing the <i>cds</i> word in SAOUHSC.bed
 	</span>
 </Quiz>
 

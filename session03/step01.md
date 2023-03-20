@@ -33,10 +33,10 @@ cat NC_009089.fasta
 This command will print the whole content of the _NC_009089.fasta_ file to the screen.
 
 
-Print the content of the _belebele.fasta_ file. 
+Print the content of the _SAOUHSC.fasta_ file. 
 
 <!--
->> What are the last three nucleotides of the belebele.fasta file ? <<
+>> What are the last three nucleotides of the SAOUHSC.fasta file ? <<
 (*) CAG
 ( ) ELE
 ( ) ATC
@@ -50,6 +50,6 @@ Print the content of the _belebele.fasta_ file.
 	{ valid: false, value: "GGG"}
 ]}>
 	<span slot="prompt">
-		What are the last three nucleotides of the belebele.fasta file ?
+		What are the last three nucleotides of the SAOUHSC.fasta file ?
 	</span>
 </Quiz>

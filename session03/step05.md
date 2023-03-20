@@ -23,7 +23,7 @@ To output only the number of lines, run `wc` with option _-l_:
 	{ valid: true, value: "150"},
 ]}>
 	<span slot="prompt">
-		How many lines has the belebele.bed file?
+		How many lines has the SAOUHSC.bed file?
 	</span>
 </Quiz>
 

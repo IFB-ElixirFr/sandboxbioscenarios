@@ -6,7 +6,7 @@
 
 If you just want to check the end of a file, you may use the `tail` command:
 
-<Execute command=tail belebele.bed />
+<Execute command=tail SAOUHSC.bed />
 ```
 
 _-n_ is used the same way as with `head` to modulate the number of lines shown.
@@ -18,6 +18,6 @@ _-n_ is used the same way as with `head` to modulate the number of lines shown.
 	{ valid: true, value: "cds-YP_498680.1 ."},
 ]}>
 	<span slot="prompt">
-		Print the last line of the belebele.bed file. What is the name of the last CDS ? Choose the right answer:
+		Print the last line of the SAOUHSC.bed file. What is the name of the last CDS ? Choose the right answer:
 	</span>
 </Quiz>
