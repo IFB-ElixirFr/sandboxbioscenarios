@@ -1,8 +1,8 @@
 <script>
 import Quiz from "components/Quiz.svelte";
 </script>
-
-### *head*
+# The beginning of a file
+## *head*
 
 You might sometimes want to check just the beginning of a file.
 That is what the `head` command does:

@@ -1,8 +1,8 @@
 <script> import Quiz from "components/Quiz.svelte"; 
   import Execute from "components/Execute.svelte";
 </script>
-
-### *tail*
+# The end of a file
+## *tail*
 
 If you just want to check the end of a file, you may use the `tail` command:
 

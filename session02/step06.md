@@ -1,8 +1,7 @@
 <script>
 import Quiz from "components/Quiz.svelte";
 </script>
-
-
+# Create or copy
 ## Create directory
 
 The `mkdir` command (**m**a**k**e **dir**ectory) creates a new directory whose name is given as argument.
@@ -51,19 +50,12 @@ cp -r ~/test /shared/projects/facts/my_test
 tree /shared/projects/facts
 ```
 
-<!-- >Create a new repository named `new_dir` into the directory `/shared/projects/facts`. In this directory `new_dir`, copy the file `~/test/first_file.txt` and rename it `1st_file.txt`. How many files are listed with the command `tree /shared/projects/facts/new_dir` ?<<
-( ) 0
-(*) 1
-( ) 2
-( ) 3
--->
-
 <Quiz id="qndir" choices={[
 	{ valid: false, value: "0"},
 	{ valid: true, value: "1"},
-  { valid: false, value: "2"},
-  { valid: false, value: "3"},
-      ]}>
+	{ valid: false, value: "2"},
+	{ valid: false, value: "3"},
+]}>
 	<span slot="prompt">
 		Create a new repository named `new_dir` into the directory `/shared/projects/facts`. In this directory `new_dir`, copy the file `~/test/first_file.txt` and rename it `1st_file.txt`. How many files are listed with the command `tree /shared/projects/facts/new_dir` ?
 	</span>

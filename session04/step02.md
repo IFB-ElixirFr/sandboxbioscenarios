@@ -2,7 +2,7 @@
 import Quiz from "components/Quiz.svelte";
 </script>
 
-## Input of a Unix command
+# Input of a Unix command
 
 Icone “Vocabulary” : the standard input of a command is named **stdin**
 

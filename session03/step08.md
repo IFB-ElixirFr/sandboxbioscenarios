@@ -1,4 +1,4 @@
-## Some useful commands and tips
+# Some useful commands and tips
 
 - `history` shows all the commands you used so far. An incrementing number is attributed to each of them.
 

@@ -1,8 +1,8 @@
 <script>
 import Quiz from "components/Quiz.svelte";
 </script>
-
-### *cut*
+# Extracting columns
+## *cut*
 
 The `cut` command cuts out sections from each line of a file and writes the result to standard output. 
 It can be used to cut parts of a line by byte position, character and field (or columns). 

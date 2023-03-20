@@ -1,7 +1,7 @@
 <script> 
-  import Quiz from "components/Quiz.svelte"; 
+import Quiz from "components/Quiz.svelte"; 
 </script> 
-
+# Absolute paths
 The `tree` command displays the tree-like organization of files and sub-directories contained in a particular directory.
 
 In the example below, the `tree` command displays the content of the `/shared` directory limited only to directories (option `-d`) and with only two levels of sub-directories (option `-L 2`):
@@ -28,13 +28,6 @@ ls /shared/bank/homo_sapiens
 
 This `ls` command lists the content of the specified directory (also named **argument** of the ls command).
 
-<!-- katacoda format of quizz
->>What does the command `ls /shared/bank/homo_sapiens` return?<<
-[ ] hg18
-[*] hg19
-[ ] hg37
-[*] hg38
--->
 <Quiz id="q1" choices={[ 
       { valid: false, value: "hg18"}, 
       { valid: true, value: "hg19"}, 

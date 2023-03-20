@@ -2,8 +2,8 @@
 import Quiz from "components/Quiz.svelte";
 import Execute from "components/Execute.svelte";
 </script>
-
-### *wc*
+# Counting words or lines in a file
+## *wc*
 
 `wc` is the **w**ord **c**ount command. 
 It counts the number of lines, words, and characters in files:

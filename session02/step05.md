@@ -1,4 +1,7 @@
-<script> import Quiz from "components/Quiz.svelte"; </script>
+<script>
+import Quiz from "components/Quiz.svelte";
+</script>
+# The HOME directory
 When used without argument, the `cd` command will set the current working directory to your HOME directory. 
 This HOME directory is the place where a user may store their files. 
 
@@ -31,22 +34,13 @@ cd
 ```
 
 <Quiz id="q1" choices={[ { valid: false, value: "/shared/bank/nr"}, 
-                         { valid: false, value: "test"}, 
-                         { valid: false, true: "your HOME directory"}, 
-                         { valid: false, value: "/shared/bank"}, 
-                         { valid: true, value: "nr"},
-                         { valid: false, true: "/root/test"},
-                         { valid: false, value: "/shared/bank"}, ]}> 
-    <span slot="prompt">
-    ...and select the right current working directory:
-    <\span>
-<\Quiz>                        	
-
->>and select the right current working directory:<<
-[ ] /shared/bank/nr
-[ ] test
-[*] your HOME directory
-[ ] /shared/bank
-[ ] nr
-[*] /root
-[ ] /root/test
+						 { valid: false, value: "test"}, 
+						 { valid: false, value: "your HOME directory"}, 
+						 { valid: false, value: "/shared/bank"}, 
+						 { valid: true, value: "nr"},
+						 { valid: false, value: "/root/test"},
+						 { valid: false, value: "/shared/bank"}, ]}> 
+	<span slot="prompt">
+		...and select the right current working directory:
+	</span>
+</Quiz>

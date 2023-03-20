@@ -1,4 +1,5 @@
 <script> import Quiz from "components/Quiz.svelte"; </script>
+# Relative paths
 Run the `pwd` command in the right panel.
 
 The output is the absolute path `/root` and means that you are currently located in `/root`. 
@@ -51,44 +52,25 @@ The same result would be obtained with the absolute path:
 ls /tmp
 ```
 
-<!---
-# Old katacoda 
->>If your current working directory is `/shared/bank/homo_sapiens`, to which absolute path refers the path `..` ?<<
-( ) /
-( ) /shared
-(*) /shared/bank
--->
-
-
 <Quiz id="q1" choices={[ { valid: false, value: "/"}, 
-                         { valid: false, value: "/shared"}, 
-                         { valid: true, value: "/shared/bank"}, ]}> If your current working directory is `/shared/bank/homo_sapiens`, to which absolute path refers the path `..` ?
-
-<!---
-# Old katacoda 
->>Wich type of path is `shared/bank`?<<
-( ) absolute
-(*) relative
--->
+						 { valid: false, value: "/shared"}, 
+						 { valid: true, value: "/shared/bank"}, ]}>
+	<span slot="prompt">
+		If your current working directory is `/shared/bank/homo_sapiens`, to which absolute path refers the path `..` ?
+	</span>
+</Quiz>
 
 <Quiz id="q2" choices={[ { valid: false, value: "absolute"}, 
-                         { valid: true, value: "relative"}, ]}> 
-                         	<span slot="prompt">
-                         	Wich type of path is `shared/bank`?
-                         	<\span>
+						 { valid: true, value: "relative"}, ]}> 
+	<span slot="prompt">
+		Wich type of path is `shared/bank`?
+	</span>
 </Quiz>
-<!---
-# Old katacoda
->>If your current working directory is `/shared/bank/bos_taurus` what is the relative path to `/shared/bank/homo_sapiens/hg19/fasta`<<
-( ) homo_sapiens/hg19/fasta
-( ) ../../hg19/fasta
-(*) ../homo_sapiens/hg19/fasta
--->
 
 <Quiz id="q3" choices={[ { valid: false, value: "homo_sapiens/hg19/fasta"}, 
-                         { valid: false, value: "../../hg19/fasta"}, 
-                         { valid: true, value: "../homo_sapiens/hg19/fasta"}, ]}> 
-     <span slot="prompt">
-     If your current working directory is `/shared/bank/bos_taurus` what is the relative path to `/shared/bank/homo_sapiens/hg19/fasta`?
-     <\span>
+						 { valid: false, value: "../../hg19/fasta"}, 
+						 { valid: true, value: "../homo_sapiens/hg19/fasta"}, ]}> 
+	<span slot="prompt">
+		If your current working directory is `/shared/bank/bos_taurus` what is the relative path to `/shared/bank/homo_sapiens/hg19/fasta`?
+	</span>
 </Quiz>

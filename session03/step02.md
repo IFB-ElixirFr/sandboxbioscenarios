@@ -1,8 +1,8 @@
 <script>
 import Quiz from "components/Quiz.svelte";
 </script>
-
-### Browse a file interactively
+# Digging through a large file
+## Browse a file interactively
 
 Very often the files you want to read are too large for your screen.
 For instance, you have previously displayed the content of the file _belebele.fasta_ with the `cat` command.

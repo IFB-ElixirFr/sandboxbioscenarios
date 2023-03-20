@@ -1,8 +1,7 @@
 <script>
 import Quiz from "components/Quiz.svelte";
 </script>
-
-## Output of a Unix command
+# Output of a Unix command
 
 By default, as you have seen so far, the result of a Unix command is printed on screen.
 
