@@ -1,6 +1,6 @@
 # Example input and output
 
-As we have seen so far, a file may be redirected to the **stdin** of a command using the '<' operator while the stdout of a fcommand can be redirect to a file using the '>' operator (or '>>' to append lines).
+As we have seen so far, a file may be redirected to the **stdin** of a command using the '<' operator while the stdout of a command can be redirect to a file using the '>' operator (or '>>' to append lines).
 
 We would like to count the non-redundant list of entries in the 4th column of the SAOUHSC.bed file. 
 
