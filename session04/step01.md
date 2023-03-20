@@ -26,7 +26,7 @@ The following diagram illustrates the output stream of a command:
 By default, **stdout** is set to the screen.
 
 You can change this behavior and print **stdout** to a file.
-To do so, you must use the `1>` that can be shorten as `>`:
+To do so, you must use the `1>` that can be shortened as `>`:
 
 ```bash
 grep gene-SAOUHSC_00079 SAOUHSC.bed > gene.bed
@@ -38,7 +38,7 @@ Look, you have created a new file named `gene.bed`
 ls
 ```
 
-You can see its content using the `cat` command:
+You can look at its content using the `cat` command:
 
 ```bash
 cat gene.bed
