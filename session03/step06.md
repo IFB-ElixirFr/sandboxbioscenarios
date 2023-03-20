@@ -20,7 +20,7 @@ grep gene-SAOUHSC_00079 belebele.bed
   { valid: false, value: "750"},
 ]}>
 	<span slot="prompt">
-		Print the line that contains the gene-CD630_RS00010 gene name in the gnagnagna.bed file. What is the starting position (given in the 2nd column) ?
+		Print the line that contains the gene-CD630_RS00010 gene name in the NC_009089.bed file. What is the starting position (given in the 2nd column) ?
 	</span>
 </Quiz>
 

@@ -36,6 +36,6 @@ Use <kbd>Q</kbd> to quit the `less` command.
 	{ valid: true, value: "3"},
 ]}>
 	<span slot="prompt">
-		How many GGT motifs can you find in the file gnagnagna.fasta?
+		How many GGT motifs can you find in the file NC_009089.fasta?
 	</span>
 </Quiz>

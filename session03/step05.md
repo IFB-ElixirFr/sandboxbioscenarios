@@ -8,13 +8,13 @@ import Execute from "components/Execute.svelte";
 `wc` is the **w**ord **c**ount command. 
 It counts the number of lines, words, and characters in files:
 
-<Execute command="wc gnagnagna.bed" />
+<Execute command="wc NC_009089.bed" />
 
-The _gnagnagna.bed_ has from left to right: 8 lines, 48 words and 364 characters.
+The _NC_009089.bed_ has from left to right: 8 lines, 48 words and 364 characters.
 
 To output only the number of lines, run `wc` with option _-l_:
 
-<Execute command="wc -l gnagnagna.bed" />
+<Execute command="wc -l NC_009089.bed" />
 
 <Quiz id="q1" choices={[
 	{ valid: false, value: "5"},

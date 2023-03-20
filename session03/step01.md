@@ -27,10 +27,10 @@ The result should be `/root/data`. This directory should contain 5 files you cou
 A first command to display file contents is `cat`:
 
 ```bash
-cat gnagnagna.fasta
+cat NC_009089.fasta
 ```
 
-This command will print the whole content of the _gnagnagna.fasta_ file to the screen.
+This command will print the whole content of the _NC_009089.fasta_ file to the screen.
 
 
 Print the content of the _belebele.fasta_ file. 
