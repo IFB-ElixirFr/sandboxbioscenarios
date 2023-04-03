@@ -1,5 +1,7 @@
-<script> import Quiz from "components/Quiz.svelte"; </script>
-# Relative paths
+<script>
+import Quiz from "components/Quiz.svelte";
+</script>
+
 Run the `pwd` command in the right panel.
 
 The output is the absolute path `/root` and means that you are currently located in `/root`. 

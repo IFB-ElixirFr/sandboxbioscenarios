@@ -2,7 +2,7 @@
 import Quiz from "components/Quiz.svelte";
 import Execute from "components/Execute.svelte";
 </script>
-# Unix command
+
 Using a Bash shell, you will be able to write and execute Unix commands. 
 A Unix command is made of distinct parts: a **command name** and, if needed, **options** and **arguments**.
 

@@ -1,7 +1,7 @@
 <script> 
 import Quiz from "components/Quiz.svelte"; 
 </script> 
-# Absolute paths
+
 The `tree` command displays the tree-like organization of files and sub-directories contained in a particular directory.
 
 In the example below, the `tree` command displays the content of the `/shared` directory limited only to directories (option `-d`) and with only two levels of sub-directories (option `-L 2`):

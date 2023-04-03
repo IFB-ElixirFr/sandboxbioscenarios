@@ -3,7 +3,7 @@ import Quiz from "components/Quiz.svelte";
 import Link from "components/Link.svelte";
 import Execute from "components/Execute.svelte";
 </script>
-# Getting help
+
 ## The man command
 The `man` command is used to get the manual for any command of the Bash shell.
 

@@ -1,7 +1,7 @@
 <script>
 import Quiz from "components/Quiz.svelte";
 </script>
-# The HOME directory
+
 When used without argument, the `cd` command will set the current working directory to your HOME directory. 
 This HOME directory is the place where a user may store their files. 
 

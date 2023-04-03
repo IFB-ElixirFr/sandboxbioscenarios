@@ -3,7 +3,7 @@ import Alert from "components/Alert.svelte";
 import Quiz from "components/Quiz.svelte";
 import Execute from "components/Execute.svelte";
 </script>
-# A simple basic command: ls
+
 The Bash shell provides you with a working space including files and directories.
 
 A very useful command is `ls`, that **l**i**s**ts the content of a directory.
