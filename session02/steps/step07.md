@@ -1,7 +1,7 @@
 <script>
 import Quiz from "components/Quiz.svelte";
 </script>
-# Move or remove
+
 ## Move (or rename) files and directories
 
 The `mv` (**m**o**v**e) command takes 2 paths as arguments:

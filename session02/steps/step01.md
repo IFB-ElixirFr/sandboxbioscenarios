@@ -1,7 +1,7 @@
 <script>
 import Quiz from "components/Quiz.svelte";
 </script>
-# Tree, path & files
+
 In a Unix operating system, files are arranged in a tree-like structure. In this structure, directories can be seen as branches and files (or empty directories) as leaves. Each file has a unique *path* in the tree-like structure when starting from the *root*.
 
 Files and directories are accessed through their paths.  

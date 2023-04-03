@@ -1,7 +1,7 @@
 <script>
 import Quiz from "components/Quiz.svelte";
 </script>
-# Create or copy
+
 ## Create directory
 
 The `mkdir` command (**m**a**k**e **dir**ectory) creates a new directory whose name is given as argument.
