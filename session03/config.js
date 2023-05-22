@@ -8,14 +8,16 @@ import Step5 from "./steps/step05.md";
 import Step6 from "./steps/step06.md";
 import Step7 from "./steps/step07.md";
 import Step8 from "./steps/step08.md";
+import Step9 from "./steps/step09.md";
+
 
 export const config = {
-	id: "ifb-2",
-	pwd: "ifb-2",
+	id: "ifb-3",
+	pwd: "ifb-3",
 	listed: false,
 	name: "Manipulating files and directories",
 	subtitle: `by <a href="https://www.france-bioinformatique.fr/en/home/" target="_blank">French Institute of Bioinformatics</a>`,
-	description: "IFB Scenario 2",
+	description: "IFB Scenario 3",
 	tags: ["unix", "shell", "terminal"],
 	tools: ["ls", "date"],
 	difficulty: ["beginner"],
@@ -29,6 +31,7 @@ export const config = {
 		{ name: "Create or copy", component: Step6 },
 		{ name: "Move or remove", component: Step7 },
 		{ name: "Congratulations", component: Step8 },
+		{ name: "Congratulations", component: Step9 },
 	],
 	// For now, don't use `cd` in init, need to debug why it breaks the initialization script
 	init: `
