@@ -15,13 +15,13 @@ mkdir my_dir
 tree
 ```
 
-Still from your HOME directory, create another directory nammed `my_dir2` into the directory `/shared/projects/facts/`. 
-Use the command `tree` to display the file and directory organisation from the directory `/shared/project/facts`. Reminder: be lazy and use the <kbd>Tab</kbd> key to speed up your writing of the path.
+Still from your HOME directory, create another directory nammed `my_dir2` into the directory `/shared/data/tutorials/ifb-2/projects/facts/`. 
+Use the command `tree` to display the file and directory organisation from the directory `/shared/data/tutorials/ifb-2/project/facts`. Reminder: be lazy and use the <kbd>Tab</kbd> key to speed up your writing of the path.
 
 ```bash
 cd
-mkdir /shared/projects/facts/my_dir2
-tree /shared/projects/facts
+mkdir /shared/data/tutorials/ifb-2/projects/facts/my_dir2
+tree /shared/data/tutorials/ifb-2/projects/facts
 ```
 
 ## Copying files and directories
@@ -42,12 +42,12 @@ ls
 
 With the option `-r` (**r**ecursive), the `cp` command copies all files of the source directory to the destination directory.
 
-Try to copy the `~/test` repository and its content to a new directory named `my_test` in the directory `/shared/projects/facts/`:
+Try to copy the `~/test` repository and its content to a new directory named `my_test` in the directory `/shared/data/tutorials/ifb-2/projects/facts/`:
 
 ```bash
 tree /shared/projects/facts
-cp -r ~/test /shared/projects/facts/my_test
-tree /shared/projects/facts
+cp -r ~/test /shared/data/tutorials/ifb-2/projects/facts/my_test
+tree /shared/data/tutorials/ifb-2/projects/facts
 ```
 
 <Quiz id="qndir" choices={[
@@ -57,7 +57,7 @@ tree /shared/projects/facts
 	{ valid: false, value: "3"},
 ]}>
 	<span slot="prompt">
-		Create a new repository named `new_dir` into the directory `/shared/projects/facts`. In this directory `new_dir`, copy the file `~/test/first_file.txt` and rename it `1st_file.txt`. How many files are listed with the command `tree /shared/projects/facts/new_dir` ?
+		Create a new repository named `new_dir` into the directory `/shared/data/tutorials/ifb-2/projects/facts`. In this directory `new_dir`, copy the file `~/test/first_file.txt` and rename it `1st_file.txt`. How many files are listed with the command `tree /shared/data/tutorials/ifb-2/projects/facts/new_dir` ?
 	</span>
 </Quiz>
 
