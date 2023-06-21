@@ -58,14 +58,14 @@ ls /tmp
 						 { valid: false, value: "/shared"}, 
 						 { valid: true, value: "/shared/bank"}, ]}>
 	<span slot="prompt">
-		If your current working directory is `/shared/data/tutorials/ifb-2/bank/homo_sapiens`, to which absolute path refers the path `..` ?
+		If your current working directory is `/shared/data/homo_sapiens`, to which absolute path refers the path `..` ?
 	</span>
 </Quiz>
 
 <Quiz id="q2" choices={[ { valid: false, value: "absolute"}, 
 						 { valid: true, value: "relative"}, ]}> 
 	<span slot="prompt">
-		Wich type of path is `shared/data/tutorials/ifb-2/bank`?
+		Wich type of path is `/shared/data`?
 	</span>
 </Quiz>
 
@@ -73,6 +73,6 @@ ls /tmp
 						 { valid: false, value: "../../hg19/fasta"}, 
 						 { valid: true, value: "../homo_sapiens/hg19/fasta"}, ]}> 
 	<span slot="prompt">
-		If your current working directory is `/shared/data/tutorials/ifb-2/bank/bos_taurus` what is the relative path to `/shared/data/tutorials/ifb-2/bank/homo_sapiens/hg19/fasta`?
+		If your current working directory is `/shared/data/bos_taurus` what is the relative path to `/shared/data/tutorials/ifb-2/bank/homo_sapiens/hg19/fasta`?
 	</span>
 </Quiz>
