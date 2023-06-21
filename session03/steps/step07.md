@@ -29,19 +29,19 @@ cut -f 1-3,5 SAOUHSC.bed
 
 You can change the delimiter between fields with the _-d_ option. 
 
-Look at the beginning of the _NC_009089.csv_ file (try `head NC_009089.csv`). 
+Look at the beginning of the _MACS2.csv_ file (try `head MACS2.csv`). 
 It contains 6 columns, separated by a comma.
 
 <Quiz id="q1" choices={[    
-      { valid: false, value: "cut -f 2,3,6 NC_009089.csv"},
-      { valid: false, value: "cut -f 2,3-6 NC_009089.csv"},
-      { valid: true, value: "cut -f 2,3,6 -d "," NC_009089.csv"},
-      { valid: false, value: "cut -f 2,3-6 -d "," NC_009089.csv"},
-      { valid: true, value: "cut -f 2-3,6 -d "," NC_009089.csv"},
-      { valid: false, value: "cut -f 2,3,6 -d "\t" NC_009089.csv"},
-      { valid: false, value: "cut -f 2-3,6 -d "\t" NC_009089.csv"}
+      { valid: false, value: "cut -f 2,3,6 MACS2.csv"},
+      { valid: false, value: "cut -f 2,3-6 MACS2.csv"},
+      { valid: true, value: "cut -f 2,3,6 -d "," MACS2.csv"},
+      { valid: false, value: "cut -f 2,3-6 -d "," MACS2.csv"},
+      { valid: true, value: "cut -f 2-3,6 -d "," MACS2.csv"},
+      { valid: false, value: "cut -f 2,3,6 -d "\t" MACS2.csv"},
+      { valid: false, value: "cut -f 2-3,6 -d "\t" MACS2.csv"}
 ]}> 
 	<span slot="prompt">
-    Choose the correct command(s) to extract the 2nd, 3rd, and 6th columns of the `NC_009089.csv` file:
+    Choose the correct command(s) to extract the 2nd, 3rd, and 6th columns of the `MACS2.csv` file:
 	</span>
 </Quiz>  
