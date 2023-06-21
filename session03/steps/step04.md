@@ -4,7 +4,7 @@
 # The end of a file
 ## *tail*
 
-If you just want to check the end of a file, you may use the `tail` command:
+The `tail` command can be used to check the end of a file:
 
 <Execute command=tail SAOUHSC.bed />
 ```
