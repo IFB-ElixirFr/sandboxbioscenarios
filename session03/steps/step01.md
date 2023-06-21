@@ -4,7 +4,7 @@ import Quiz from "components/Quiz.svelte";
 # Manipulating data
 In the previous chapters, you learnt how to move around in the Unix filesystem and access files. 
 This chapter will show you how to explore the data in those files. 
-The commands we’ll use are fairly simple, but are solid building blocks of more sophisticated traitement pipelines.
+The commands we’ll use are fairly simple, but are solid building blocks of more sophisticated treatment pipelines.
 
 First, go to the `data` directory with the `cd` command:
 
@@ -18,7 +18,7 @@ Check you are in the expected directory with `pwd`:
 pwd
 ```
 
-The result should be `/root/data`. This directory should contain 5 files you could find with the command `ls`.
+The result should be `/root/data`. This directory should contain 5 files when calling `ls`.
 
 ## Displaying file contents
 
