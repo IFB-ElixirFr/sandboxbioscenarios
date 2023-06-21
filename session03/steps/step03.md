@@ -13,7 +13,7 @@ head SAOUHSC.bed
 
 By default, this command will show you the first 10 lines of a file. 
 
-You can modulate the number of lines shown with the option _-n_:
+You can modify the number of lines to display using the _-n_ option:
 
 ```
 head -n 15 SAOUHSC.bed
