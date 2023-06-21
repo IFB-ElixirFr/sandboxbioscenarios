@@ -28,18 +28,18 @@ Ask your administrator!
 To answer the next question, please type the 3 following commands:
 
 ```bash
-cd /shared/data/tutorials/ifb-2/bank/nr
+cd /shared/data/nr
 cd ~/test
 cd
 ```
 
-<Quiz id="q1" choices={[ { valid: false, value: "/shared/data/tutorials/ifb-2/bank/nr"}, 
+<Quiz id="q1" choices={[ { valid: false, value: "/shared/data/nr"}, 
 						 { valid: false, value: "test"}, 
 						 { valid: false, value: "your HOME directory"}, 
-						 { valid: false, value: "/shared/data/tutorials/ifb-2/bank"}, 
+						 { valid: false, value: "/shared/data"}, 
 						 { valid: true, value: "nr"},
 						 { valid: false, value: "/root/test"},
-						 { valid: false, value: "/shared/data/tutorials/ifb-2/bank"}, ]}> 
+						 { valid: false, value: "/shared/data/"}, ]}> 
 	<span slot="prompt">
 		...and select the right current working directory:
 	</span>
