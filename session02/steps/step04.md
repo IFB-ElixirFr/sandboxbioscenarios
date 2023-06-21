@@ -9,18 +9,18 @@ To experiment with the `cd` command, run the following commands:
 
 ```bash
 ls
-cd /shared/data/tutorials/ifb-2/bank/nr
+cd /shared/data/nr
 ls
 cd ../homo_sapiens
 ls 
 ```
 
 <Quiz id="step04_q1" choices={[
-	{ valid: false, value: "/shared/data/tutorials/ifb-2/bank/"},
-	{ valid: false, value: "/shared/data/tutorials/ifb-2/homo_sapiens"},
-	{ valid: false, value: "../bank/nr"},
-	{ valid: false, value: "/shared/data/tutorials/ifb-2/nr/homo_sapiens"},
-	{ valid: true, value: "/shared/data/tutorials/ifb-2/bank/homo_sapiens"},
+	{ valid: false, value: "/shared/data/"},
+	{ valid: false, value: "/shared/data/homo_sapiens"},
+	{ valid: false, value: "../data/nr"},
+	{ valid: false, value: "/shared/data/nr/homo_sapiens"},
+	{ valid: true, value: "/shared/data/homo_sapiens"},
 ]}>
 	<span slot="prompt">
 		Could you guess the absolute path of your current working directory?
@@ -36,7 +36,7 @@ The key <kbd>Tab</kbd> triggers auto-completion. It means you just need to type 
 
 The <kbd>Tab</kbd> key is perhaps the most used key in Unix!
 
-Use the <kbd>TAB</kbd> key and `cd` to go into the `/shared/data/tutorials/ifb-2/bank/bos_taurus/UMD3.1/star-2.7.2b/` directory.
+Use the <kbd>TAB</kbd> key and `cd` to go into the `/shared/data/bos_taurus/UMD3.1/star-2.7.2b/` directory.
 
 <Quiz id="step04_q2" choices={[
 	{ valid: false, value: "2"},
@@ -45,6 +45,6 @@ Use the <kbd>TAB</kbd> key and `cd` to go into the `/shared/data/tutorials/ifb-2
 	{ valid: true, value: "5"},
 ]}>
 	<span slot="prompt">
-		How many files are in the `/shared/data/tutorials/ifb-2/bank/bos_taurus/UMD3.1/star-2.7.2b/` directory?
+		How many files are in the `/shared/data/bos_taurus/UMD3.1/star-2.7.2b/` directory?
 	</span>
 </Quiz>
