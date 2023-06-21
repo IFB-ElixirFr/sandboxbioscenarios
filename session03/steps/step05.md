@@ -12,7 +12,7 @@ It counts the number of lines, words, and characters in files:
 
 The _NC_009089.bed_ has from left to right: 8 lines, 48 words and 364 characters.
 
-To output only the number of lines, run `wc` with option _-l_:
+To output only the number of lines, run `wc` with the _-l_ option :
 
 <Execute command="wc -l NC_009089.bed" />
 
