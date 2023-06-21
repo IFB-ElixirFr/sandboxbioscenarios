@@ -73,6 +73,6 @@ ls /tmp
 						 { valid: false, value: "../../hg19/fasta"}, 
 						 { valid: true, value: "../homo_sapiens/hg19/fasta"}, ]}> 
 	<span slot="prompt">
-		If your current working directory is `/shared/data/bos_taurus` what is the relative path to `/shared/data/tutorials/ifb-2/bank/homo_sapiens/hg19/fasta`?
+		If your current working directory is `/shared/data/bos_taurus` what is the relative path to `/shared/data/homo_sapiens/hg19/fasta`?
 	</span>
 </Quiz>
