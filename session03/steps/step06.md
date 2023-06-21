@@ -24,14 +24,6 @@ grep gene-SAOUHSC_00079 SAOUHSC.bed
 	</span>
 </Quiz>
 
-If you do it now for gene ABC in the SAOUHSC.bed file:
-
-```bash
-grep ABC SAOUHSC.bed
-```
-
-You get no line containing the ABC gene name.
-
 To count the number of lines containing the _gene_ word, just add the `-c` option to the `grep` command:
 
 ```bash
