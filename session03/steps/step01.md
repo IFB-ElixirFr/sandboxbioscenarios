@@ -53,3 +53,34 @@ Print the content of the _SAOUHSC.fasta_ file.
 		What are the last three nucleotides of the SAOUHSC.fasta file ?
 	</span>
 </Quiz>
+
+### Note about the tabulation and newline characters
+
+You may look at the content of the SAOUHSC.bed file. 
+
+```bash
+cat SAOUHSC.bed
+```
+
+You will notice that it contains several lines and columns. 
+This `.bed` file is a classical tabulated file. It means that each
+column is separated by a `\t` character. This character looks like 
+a large space character although it is different. We can display 
+any character string using the `echo` command. 
+
+```bash
+echo -e "A string with spaces separators"
+```
+
+```bash
+echo -e "A\tstring\twith\ttabulation\tseparators"
+```
+
+Another important character is the `\n` character. 
+It is present in almost all files and is displayed
+as a **n**ewline.
+
+```bash
+echo -e "A\nstring\nsplitted\non\nseveral\nlines"
+```
+
