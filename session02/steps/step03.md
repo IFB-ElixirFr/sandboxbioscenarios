@@ -56,9 +56,9 @@ ls /tmp
 
 <Quiz id="q1" choices={[ { valid: false, value: "/"}, 
 						 { valid: false, value: "/shared"}, 
-						 { valid: true, value: "/shared/bank"}, ]}>
+						 { valid: true, value: "/shared/data/bank"}, ]}>
 	<span slot="prompt">
-		If your current working directory is `/shared/data/homo_sapiens`, to which absolute path refers the path `..` ?
+		If your current working directory is `/shared/data/bank/homo_sapiens`, to which absolute path refers the path `..` ?
 	</span>
 </Quiz>
 
