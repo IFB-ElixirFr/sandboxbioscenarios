@@ -21,8 +21,11 @@ In the same way we can also send the result of the **sort** command to the **wc*
 <Execute command="cut -f 4 SAOUHSC.bed | sort -u | wc -l" />
 
 <Quiz id="question1" choices={[
-	{ valid: true, value: "head -n 6 SAOUHSC.bed | "},
-	{ valid: false, value: "no"},
+	{ valid: false, value: "head -n 6 SAOUHSC.bed | tail -n 1 SAOUHSC.bed "},
+	{ valid: false, value: "head -n 1 SAOUHSC.bed | tail -n 6 SAOUHSC.bed"},
+	{ valid: true, value: "head -n 6 SAOUHSC.bed | tail -n 1"},
+	{ valid: false, value: "head -n 1 | tail -n 6 SAOUHSC.bed"},
+	{ valid: false, value: "head -n 6 | tail -n 1 SAOUHSC.bed"},
 ]}>
 	<span slot="prompt">
 		Let say we want to extract the 6th line of the SAOUHSC.bed file. What would be the correct syntax to do this ?
