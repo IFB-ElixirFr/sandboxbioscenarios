@@ -13,3 +13,7 @@ You have also seen that these streams use the terminal display by default but th
 And more importantly, you know that with pipes, you can "skip" intermediate files and build a "complex" command that combines the succession of several unit commands:
 
 <img src="/data/ifb-4/stream_pipe.png" style="max-width:100%" alt="a complex command">
+
+You also compose and apply "complex" commands on an annotation file with a bed or gff format like:
+*  compute the number of non-redundant genes of a bed file
+*  extract the ith line of a bed file
