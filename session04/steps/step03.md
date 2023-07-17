@@ -2,21 +2,21 @@
 import Execute from "components/Execute.svelte";
 </script>
 
-We previously introduced standard input and standard output. 
+We previously introduced standard input and standard output and pointed out that the input and output of a Unix command are also called streams. 
 
-The input and output of a Unix command are also called streams. Changing their default values (keyboard and screen) is called **redirection**.
+Changing their default values (keyboard and screen) is called **redirection**.
 
 In addition to standard input (**stdin**) and standard output (**stdout**), there is a third stream called standard error (**stderr**).
 
 <img src="/data/ifb-4/stream_in_out_err.png" style="max-width:100%" alt="error stream of a command">
 
-By default, **stderr** is also displayed on the screen. It may contain errors, but also warnings and logs, depending on the command and its parameters.
+By default, **stderr** is also displayed on the terminal. It may contain errors, but also warnings and logs, depending on the command and its parameters.
 
 The following command generates an error (searching for a word in a file is correct, but not in a directory):
 
 <Execute command="grep foo /shared/data/bank/homo_sapiens" />
 
-The error message will be directed to the **stderr** stream, which is printed on the screen by default.
+The error message will be directed to the **stderr** stream, which is printed on the terminal by default.
 
 The **stderr** stream may be empty if the Unix command runs without error.
 
