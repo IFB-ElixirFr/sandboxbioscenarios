@@ -14,7 +14,7 @@ First, go to the `data` directory with the `cd` command:
 cd data
 ```
 
-Check you are in the expected directory with `pwd`:
+Check that you are in the expected directory with `pwd`:
 
 ```bash
 pwd
@@ -26,7 +26,7 @@ The result should be `/root/data`. This directory should contain 5 files when ca
 
 ### *cat*
 
-A first command to display file contents is `cat`:
+A first command to display the content of a file is `cat`:
 
 ```bash
 cat NC_009089.fasta
