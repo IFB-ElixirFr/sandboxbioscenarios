@@ -1,10 +1,12 @@
 <script>
 import Quiz from "components/Quiz.svelte";
 </script>
+
 # Manipulating data
+
 In the previous chapters, you learnt how to move around in the Unix filesystem and access files. 
-This chapter will show you how to explore the data in those files. 
-The commands we’ll use are fairly simple, but are solid building blocks of more sophisticated treatment pipelines.
+This chapter will show you how to explore the data in contained in these files. 
+The commands we’ll be using are fairly simple, but are solid building blocks of more sophisticated treatment pipelines.
 
 First, go to the `data` directory with the `cd` command:
 
