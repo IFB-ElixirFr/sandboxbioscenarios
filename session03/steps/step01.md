@@ -64,9 +64,12 @@ cat SAOUHSC.bed
 
 You will notice that it contains several lines and columns. 
 This `.bed` file is a classical tabulated file. It means that each
-column is separated by a `\t` character. This character looks like 
-a large space character although it is different. We can display 
+column is separated by a `\t` character. This character is displayed as 
+a large space character although it's different. We can print 
 any character string using the `echo` command. 
+
+Print the twi following intructions (one with spaces and one ith tabulations). You will
+see that they are different.
 
 ```bash
 echo -e "A string with spaces separators"
@@ -78,7 +81,7 @@ echo -e "A\tstring\twith\ttabulation\tseparators"
 
 Another important character is the `\n` character. 
 It is present in almost all files and is displayed
-as a **n**ewline.
+as a line break (**n**ewline).
 
 ```bash
 echo -e "A\nstring\nsplitted\non\nseveral\nlines"
