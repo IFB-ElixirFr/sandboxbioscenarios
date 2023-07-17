@@ -2,10 +2,11 @@
 import Quiz from "components/Quiz.svelte";
 import Execute from "components/Execute.svelte";
 </script>
-By default, as you have seen so far, the result of a Unix command is printed on screen.
 
-As an example, we will extract the genomic location of the *gene-SAOUHSC_00079* entry from the `SAOUHSC.bed` file with the `grep` command :
-First, check you have access to the `SAOUHSC.bed` file using the `ls` command and next, extract the location with the following instructions:
+By default, as you've seen so far, the result of a Unix command is printed on the screen.
+
+As an example, we will extract genomic locations related to *gene-SAOUHSC_00079* entry from the `SAOUHSC.bed` file with the `grep` command:
+First, check that you have access to the `SAOUHSC.bed` file using the `ls` command, and then extract the location with the following instructions:
 
 <Execute command="ls" />
 
@@ -15,7 +16,7 @@ First, check you have access to the `SAOUHSC.bed` file using the `ls` command an
 
 <Execute command="grep SAOUHSC_00079 SAOUHSC.bed" />
 
-The result of the `grep` command is printed on the terminal.
+The result of the `grep` command is is displayed on the terminal.
 
 📕 The **st**andar**d** **out**put of a command is named **stdout**.
 
@@ -25,36 +26,36 @@ The following diagram illustrates the output stream of a command:
 
 By default, **stdout** is set to the screen.
 
-You can change this behavior and print **stdout** to a file.
-To do so, you must use the `1>` that can be shortened as `>`:
+You can modify this behavior and print **stdout** to a file.
+To do so, you need to use the `1>` that can be abbreviated to `>`:
 
 <Execute command="grep gene-SAOUHSC_00079 SAOUHSC.bed > gene.bed" />
 
-Look, you have created a new file named `gene.bed`
+Look, you've created a new file named `gene.bed`
 
 <Execute command="ls" />
 
-You can look at its content using the `cat` command:
+You can view its contents using the `cat` command:
 
 <Execute command="cat gene.bed" />
 
-The content of this new file is just the same as the result of the `grep` command.
+The content of this new file is identical to the result of the `grep` command.
 
 The `>` symbol is one of the **redirection** operators.
 
-The next figure illustrates the **stdout** redirection to a file:
+The following figure illustrates the **stdout** redirection to a file:
 
 <img src="/data/ifb-4/stream_outfile.png" style="max-width:100%" alt="stream_outfile">
 
-⚠️ if the file already exists, it’s content will be replaced by the output of your command.
+⚠️ if the file already exists, it’s contents will be replaced by the output of your instruction.
 
-If you run the same `grep` instruction as before but searching for a different gene, the output file will be overwritten:
+If you execute the same `grep` instruction as before but search for a different gene, the output file will be overwritten:
 
 <Execute command="grep gene-SAOUHSC_00078 SAOUHSC.bed > gene.bed" />
 
 <Execute command="cat gene.bed" />
 
-If you want to store the two gene locations in a single file, you may use the `>>` operator which appends the output of your command to the end of an existing file.
+If you want to store both gene locations in a single file, you may use the `>>` operator, which appends the output of your command to the end of an existing file.
 
 <Execute command="grep gene-SAOUHSC_00079 SAOUHSC.bed > gene.bed" />
 
