@@ -21,7 +21,8 @@ First, check that you have access to the `SAOUHSC.bed` file using the `ls` comma
 The result of the `grep` command is is displayed on the terminal.
 
 Here are some vocabulary definitions:
-The result of a command is also nammed **output** and
+
+The result of a command is also called **output** and
 
 📕 the **st**andar**d** **out**put of a command is named **stdout**.
 
