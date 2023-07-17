@@ -14,7 +14,7 @@ By default, **stderr** is also set to the screen. It can contain errors but also
 
 The following command generates an error (the search for a word in a file is correct but not in a directory):
 
-<Execute command="grep toto /shared/bank/homo_sapiens" />
+<Execute command="grep toto /shared/data/bank/homo_sapiens" />
 
 The error message will go in the **stderr** stream, that is printed on the screen by default.
 
@@ -24,14 +24,14 @@ As previously mentioned for **stdin** and **stdout**, it is also possible to red
 
 <img src="/data/ifb-4/stream_in_outfile_errfile.png" style="max-width:100%" alt="error stream of a command redirected on a file">
 
-<Execute command="grep toto /shared/bank/homo_sapiens 2> toto.log" />
+<Execute command="grep toto /shared/data/bank/homo_sapiens 2> toto.log" />
 
 Here, the error message is redirected to the file `toto.log` instead of being printed on the screen.
 
 In case you want to redirect **stdout** and **stderr** in separate files, you can use both operators `1>` and `2>`
 
-<Execute command="grep toto /shared/bank/homo_sapiens 1> toto_out 2> toto.log" />
+<Execute command="grep toto /shared/data/bank/homo_sapiens 1> toto_out 2> toto.log" />
 
 And if you want to redirect both **stdout** and **stderr** in a common file you can use “&>”.
 
-<Execute command="grep toto /shared/bank/homo_sapiens &> toto.log" />
+<Execute command="grep toto /shared/data/bank/homo_sapiens &> toto.log" />
