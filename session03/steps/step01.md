@@ -1,3 +1,5 @@
+
+
 <script>
 import Quiz from "components/Quiz.svelte";
 </script>
@@ -70,6 +72,9 @@ column is separated by a `\t` character. This character looks like
 a large space, although it's different. We can display 
 any string using the `echo` command. 
 
+Print the two following intructions (one with spaces and one ith tabulations). You will
+see that they are different.
+
 ```bash
 echo -e "A string with spaces separators"
 ```
@@ -80,7 +85,7 @@ echo -e "A\tstring\twith\ttabulation\tseparators"
 
 Another important character is the `\n` character. 
 It is present in almost all files and is displayed
-as a **n**ewline.
+as a line break (**n**ewline).
 
 ```bash
 echo -e "A\nstring\nsplitted\non\nseveral\nlines"
