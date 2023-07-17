@@ -10,7 +10,7 @@ Use the **cut** command to extract the 4th column from the bed file SAOUHSC.bed 
 
 <Execute command="cut -f 4 SAOUHSC.bed > SAOUHSC_c4.bed" />
 
-We can search for the non-redundant list of entries in column 4 using the sort command (which by default performs an alphanumeric sort) combined with the `-u` (or --unique in its long form).
+We can search for the list of entries in column 4 using the sort command (which by default performs an alphanumeric sort) combined with the `-u` (or --unique in its long form) to ensure that the list is not redundant.
 
 <Execute command="sort -u SAOUHSC_c4.bed > SAOUHSC_c4_uniq.bed" />
 
