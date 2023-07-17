@@ -2,11 +2,29 @@
 import Quiz from "components/Quiz.svelte";
 </script>
 
-ligne avec les commandes de la step précédente séparées par les ; mais ceci n’est pas un pipe
+We have previously **cut** the fourth column from the SAOUHSC.bed file and **sorted** the subsequent stream. We could have written the two intructions on the same line using the ";" operator:
 
-puis expliquer que ces fichiers intermédiaires peuvent être évités avec le pipe
+<Execute command="cut -f 4 SAOUHSC.bed > SAOUHSC_c4.bed; sort -u SAOUHSC_c4.bed > SAOUHSC_c4_uniq.bed"" />
+
+However this solution still requires to create an **intermediate file** (SAOUHSC_c4.bed) to perform both operations.  
+
+This is where another extremely important redirection operator comes into play: **the "|"** pipe. This operator can be used to transmit the text stream from one command to another, avoiding the creation of intermediate files. By default, the pipe pass the **stdout of one command to the stdin** of the following one.
 
 <img src="/data/ifb-4/stream_pipe.png" style="max-width:100%" alt="pipe organisation">
 
-afficher la 10ème ligne (head fichier | tail -n1)
-compter le nombre de gène unique dans un fichier avec redondance
+So we may rewrite the previous set of instructions into the following which indicates that sort no more reads **stdin** from a file but from the result/stream of the cut command.
+
+<Execute command="cut -f 4 SAOUHSC.bed | sort -u > SAOUHSC_c4_uniq.bed" />
+
+In the same way we can also send the result of the **sort** command to the **wc** to get the expected result onto the screen whithout any need to create two intermediate files.
+
+<Execute command="cut -f 4 SAOUHSC.bed | sort -u | wc -l" />
+
+<Quiz id="question1" choices={[
+	{ valid: true, value: "head -n 6 SAOUHSC.bed | "},
+	{ valid: false, value: "no"},
+]}>
+	<span slot="prompt">
+		Let say we want to extract the 6th line of the SAOUHSC.bed file. What would be the correct syntax to do this ?
+	</span>
+</Quiz>
