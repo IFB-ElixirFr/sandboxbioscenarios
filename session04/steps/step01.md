@@ -3,6 +3,8 @@ import Quiz from "components/Quiz.svelte";
 import Execute from "components/Execute.svelte";
 </script>
 
+## the standard output strem
+
 By default, as you've seen so far, the result of a Unix command is printed on the screen.
 
 As an example, we will extract genomic locations related to *gene-SAOUHSC_00079* entry from the `SAOUHSC.bed` file with the `grep` command:
@@ -18,13 +20,18 @@ First, check that you have access to the `SAOUHSC.bed` file using the `ls` comma
 
 The result of the `grep` command is is displayed on the terminal.
 
-📕 The **st**andar**d** **out**put of a command is named **stdout**.
+Here are some vocabulary definitions:
+The result of a command is also nammed **output** and
+
+📕 the **st**andar**d** **out**put of a command is named **stdout**.
 
 The following diagram illustrates the output stream of a command:
 
 <img src="/data/ifb-4/stream_out.png" style="max-width:100%" alt="stream_out">
 
 By default, **stdout** is set to the screen.
+
+## changing the standard output stream
 
 You can modify this behavior and print **stdout** to a file.
 To do so, you need to use the `1>` that can be abbreviated to `>`:
