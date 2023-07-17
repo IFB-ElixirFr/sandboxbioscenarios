@@ -26,13 +26,13 @@ The result should be `/root/data`. This directory should contain 5 files when ca
 
 ### *cat*
 
-A first command to display the content of a file is `cat`:
+A first command to display the contents of a file is `cat`:
 
 ```bash
 cat NC_009089.fasta
 ```
 
-This command will print the whole content of the _NC_009089.fasta_ file to the screen.
+This command will print the whole contents of the _NC_009089.fasta_ file to the screen.
 
 
 Print the content of the _SAOUHSC.fasta_ file. 
