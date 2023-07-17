@@ -35,7 +35,7 @@ cat NC_009089.fasta
 This command will print the whole contents of the _NC_009089.fasta_ file to the screen.
 
 
-Print the content of the _SAOUHSC.fasta_ file. 
+Print the contents of the _SAOUHSC.fasta_ file. 
 
 <!--
 >> What are the last three nucleotides of the SAOUHSC.fasta file ? <<
@@ -58,17 +58,17 @@ Print the content of the _SAOUHSC.fasta_ file.
 
 ### Note about the tabulation and newline characters
 
-You may look at the content of the SAOUHSC.bed file. 
+You may look at the contents of the SAOUHSC.bed file. 
 
 ```bash
 cat SAOUHSC.bed
 ```
 
-You will notice that it contains several lines and columns. 
-This `.bed` file is a classical tabulated file. It means that each
+You'll notice that it contains several rows and columns. 
+This `.bed` file is a classic **tabulated file**. This means that each
 column is separated by a `\t` character. This character looks like 
-a large space character although it is different. We can display 
-any character string using the `echo` command. 
+a large space, although it's different. We can display 
+any string using the `echo` command. 
 
 ```bash
 echo -e "A string with spaces separators"
