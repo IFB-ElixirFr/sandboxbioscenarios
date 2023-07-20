@@ -9,8 +9,7 @@
 ## Citation
 If you use SandboxBioScenarios, please cite us :
 
-IFB-ElixirFr, SandboxBioScenarios, (2023), GitHub repository, [https://gitlab.com/ifb-elixirfr/covid19/EMERGEN-DB](https://github.com/IFB-ElixirFr/sandboxbioscenarios)
-
+IFB-ElixirFr, SandboxBioScenarios, (2023), GitHub repository, https://github.com/IFB-ElixirFr/sandboxbioscenarios
 ## License 
 
 SandboxBioScenarios is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/legalcode).
