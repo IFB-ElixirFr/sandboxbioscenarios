@@ -1,5 +1,6 @@
 <script>
 import Quiz from "components/Quiz.svelte";
+import Execute from "components/Execute.svelte";
 </script>
 
 We have previously **cut** the fourth column from the SAOUHSC.bed file and **sorted** the subsequent stream. We could have written the two intructions on the same line using the ";" operator:
