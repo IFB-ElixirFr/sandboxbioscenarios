@@ -5,7 +5,7 @@ import Execute from "components/Execute.svelte";
 
 The standard command input is named **stdin**.
 
-<img src="/data/ifb-4/stream_in_out.png" style="max-width:100%" alt="input stream of a command">
+<img src="/data/linux_basics_session04/stream_in_out.png" style="max-width:100%" alt="input stream of a command">
 
 By default, **stdin** is set to the keyboard. But you can change this behavior and read **stdin** from a file. To do this, you need to use the `<` operator.
 

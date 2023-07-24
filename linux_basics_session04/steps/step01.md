@@ -28,7 +28,7 @@ The result of a command is also called **output** and
 
 The following diagram illustrates the output stream of a command:
 
-<img src="/data/ifb-4/stream_out.png" style="max-width:100%" alt="stream_out">
+<img src="/data/linux_basics_session04/stream_out.png" style="max-width:100%" alt="stream_out">
 
 By default, **stdout** is set to the screen.
 
@@ -53,7 +53,7 @@ The `>` symbol is one of the **redirection** operators.
 
 The following figure illustrates the **stdout** redirection to a file:
 
-<img src="/data/ifb-4/stream_outfile.png" style="max-width:100%" alt="stream_outfile">
+<img src="/data/linux_basics_session04/stream_outfile.png" style="max-width:100%" alt="stream_outfile">
 
 ⚠️ if the file already exists, it’s contents will be replaced by the output of your instruction.
 

@@ -11,7 +11,7 @@ However this solution still requires to create an **intermediate file** (SAOUHSC
 
 This is where another extremely important redirection operator comes into play: **the "|"** pipe. This operator can be used to transmit the text stream from one command to another, avoiding the creation of intermediate files. By default, the pipe pass the **stdout of one command to the stdin** of the following one.
 
-<img src="/data/ifb-4/stream_pipe.png" style="max-width:100%" alt="pipe organisation">
+<img src="/data/linux_basics_session04/stream_pipe.png" style="max-width:100%" alt="pipe organisation">
 
 So we may rewrite the previous set of instructions into the following which indicates that sort no more reads **stdin** from a file but from the result/stream of the cut command.
 
