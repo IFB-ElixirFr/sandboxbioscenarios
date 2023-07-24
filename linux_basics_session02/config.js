@@ -10,9 +10,9 @@ import Step7 from "./steps/step07.md";
 import Step8 from "./steps/step08.md";
 
 export const config = {
-	id: "ifb-2",
-	pwd: "ifb-2",
-	listed: false,
+	id: "linux_basics_session02",
+	pwd: "linux_basics_session02",
+	listed: true,
 	name: "Manipulating files and directories",
 	subtitle: `by <a href="https://www.france-bioinformatique.fr/en/home/" target="_blank">French Institute of Bioinformatics</a>`,
 	description: "IFB Scenario 2",
