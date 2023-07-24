@@ -11,8 +11,9 @@ import Step8 from "./steps/step08.md";
 
 
 export const config = {
-	id: "ifb-4",
-	pwd: "ifb-4",
+	id: "linux_basics_session04",
+	pwd: "linux_basics_session04",
+	listed: true,
 	name: "Combine some bash commands",
 	subtitle: `by <a href="https://www.france-bioinformatique.fr/en/home/" target="_blank">French Institute of Bioinformatics</a>`,
 	description: "IFB Scenario 4",
@@ -51,9 +52,9 @@ export const config = {
 			echo "second test" > $HOME/test/second_file.txt;
 	`,*/
 	files: [
-		"data/ifb-4/Data/NC_009089.bed",
-		"data/ifb-4/Data/NC_009089.fasta",
-		"data/ifb-4/Data/SAOUHSC.fasta",
-		"data/ifb-4/Data/SAOUHSC.bed",
+		"data/linux_basics_session04/Data/NC_009089.bed",
+		"data/linux_basics_session04/Data/NC_009089.fasta",
+		"data/linux_basics_session04/Data/SAOUHSC.fasta",
+		"data/linux_basics_session04/Data/SAOUHSC.bed",
 	],
 };
