@@ -15,4 +15,4 @@ The `tr` command translates (or deletes) characters from a text supplied as inpu
 
 Remark: `cat toto` is equivalent to `cat < toto` but `cat < toto` is seldom used.
 
-![input stream of a command](/images/stream_infile_out.png)
+<img src="/data/linux_basics_session04/stream_infile_out.png" style="max-width:100%" alt="input stream of a command">
