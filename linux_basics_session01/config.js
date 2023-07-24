@@ -9,9 +9,9 @@ import Step6 from "./steps/step06.md";
 import Step7 from "./steps/step07.md";
 
 export const config = {
-	id: "ifb-1",
-	pwd: "ifb-1",
-	listed: false,
+	id: "linux_basics_session01",
+	pwd: "linux_basics_session01",
+	listed: true,
 	name: "Basics of the Unix command line interface",
 	subtitle: `by <a href="https://www.france-bioinformatique.fr/en/home/" target="_blank">French Institute of Bioinformatics</a>`,
 	description: "IFB Scenario 1",
@@ -29,13 +29,13 @@ export const config = {
 		{ name: "Congratulations", component: Step7 },
 	],
 	files: [
-		"data/ifb-1/Data/O.tauri_annotation.gff",
-		"data/ifb-1/Data/O.tauri_genome.fna",
-		"data/ifb-1/Data/SRR3099585_chr18.fastq",
-		"data/ifb-1/Data/SRR3099586_chr18.fastq",
-		"data/ifb-1/Data/SRR3099587_chr18.fastq",
-		"data/ifb-1/Data/SRR3105697_chr18.fastq",
-		"data/ifb-1/Data/SRR3105698_chr18.fastq",
-		"data/ifb-1/Data/SRR3105699_chr18.fastq",
+		"data/linux_basics_session01/Data/O.tauri_annotation.gff",
+		"data/linux_basics_session01/Data/O.tauri_genome.fna",
+		"data/linux_basics_session01/Data/SRR3099585_chr18.fastq",
+		"data/linux_basics_session01/Data/SRR3099586_chr18.fastq",
+		"data/linux_basics_session01/Data/SRR3099587_chr18.fastq",
+		"data/linux_basics_session01/Data/SRR3105697_chr18.fastq",
+		"data/linux_basics_session01/Data/SRR3105698_chr18.fastq",
+		"data/linux_basics_session01/Data/SRR3105699_chr18.fastq",
 	],
 };
