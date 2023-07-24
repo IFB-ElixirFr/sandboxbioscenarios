@@ -4,7 +4,7 @@ import Quiz from "components/Quiz.svelte";
 
 We have previously **cut** the fourth column from the SAOUHSC.bed file and **sorted** the subsequent stream. We could have written the two intructions on the same line using the ";" operator:
 
-<Execute command="cut -f 4 SAOUHSC.bed > SAOUHSC_c4.bed; sort -u SAOUHSC_c4.bed > SAOUHSC_c4_uniq.bed"" />
+<Execute command="cut -f 4 SAOUHSC.bed > SAOUHSC_c4.bed; sort -u SAOUHSC_c4.bed > SAOUHSC_c4_uniq.bed" />
 
 However this solution still requires to create an **intermediate file** (SAOUHSC_c4.bed) to perform both operations.  
 
