@@ -12,9 +12,9 @@ import Step9 from "./steps/step09.md";
 
 
 export const config = {
-	id: "ifb-3",
-	pwd: "ifb-3",
-	listed: false,
+	id: "linux_basics_session03",
+	pwd: "linux_basics_session03",
+	listed: true,
 	name: "Manipulating files and directories",
 	subtitle: `by <a href="https://www.france-bioinformatique.fr/en/home/" target="_blank">French Institute of Bioinformatics</a>`,
 	description: "IFB Scenario 3",
@@ -53,10 +53,10 @@ export const config = {
 			echo "second test" > $HOME/test/second_file.txt;
 	`,
 	files: [
-		"data/ifb-3/MACS2.csv",
-		"data/ifb-3/NC_009089.bed",
-		"data/ifb-3/NC_009089.fasta",
-		"data/ifb-3/SAOUHSC.fasta",
-		"data/ifb-3/SAOUHSC.bed",
+		"data/linux_basics_session03/MACS2.csv",
+		"data/linux_basics_session03/NC_009089.bed",
+		"data/linux_basics_session03/NC_009089.fasta",
+		"data/linux_basics_session03/SAOUHSC.fasta",
+		"data/linux_basics_session03/SAOUHSC.bed",
 	],
 };
