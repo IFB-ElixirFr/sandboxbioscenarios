@@ -68,14 +68,12 @@ Print the two following intructions (one with spaces and one with tabulations). 
 see that they are different.
 
 
-<Execute command="echo -e ""A string with spaces separators"" />
+<Execute command="echo -e 'A string with spaces separators'" />
 
-<Execute command="echo -e ""A\tstring\twith\ttabulation\tseparators"" />
+<Execute command="echo -e 'A\tstring\twith\ttabulation\tseparators'" />
 
 Another important character is the `\n` character. 
 It is present in almost all files and is displayed
 as a line break (**n**ewline).
 
- <Execute command="echo -e ""A\nstring\nsplitted\non\nseveral\nlines"" />
-
-
+<Execute command="echo -e 'A\nstring\nsplitted\non\nseveral\nlines'" />
