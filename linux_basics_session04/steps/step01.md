@@ -18,7 +18,7 @@ First, check that you have access to the `SAOUHSC.bed` file using the `ls` comma
 
 <Execute command="grep SAOUHSC_00079 SAOUHSC.bed" />
 
-The result of the `grep` command is is displayed on the terminal.
+The result of the `grep` command is displayed on the terminal.
 
 Here are some vocabulary definitions:
 
