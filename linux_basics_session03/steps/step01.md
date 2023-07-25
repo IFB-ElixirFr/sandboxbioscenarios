@@ -39,19 +39,11 @@ This command will print the whole contents of the _NC_009089.fasta_ file to the 
 
 Print the contents of the _SAOUHSC.fasta_ file. 
 
-<!--
->> What are the last three nucleotides of the SAOUHSC.fasta file ? <<
-(*) CAG
-( ) ELE
-( ) ATC
-( ) BEL
--->
-
 <Quiz id="qbelebele" choices={[
-	{ valid: true, value: "ATT"},
+	{ valid: true, value: "CAG"},
 	{ valid: false, value: "TTT"},
 	{ valid: false, value: "ATC"},
-	{ valid: false, value: "GGG"}
+	{ valid: false, value: "GAG"}
 ]}>
 	<span slot="prompt">
 		What are the last three nucleotides of the SAOUHSC.fasta file ?
