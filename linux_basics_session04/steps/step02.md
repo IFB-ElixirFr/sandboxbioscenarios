@@ -9,9 +9,9 @@ The standard command input is named **stdin**.
 
 By default, **stdin** is set to the keyboard. But you can change this behavior and read **stdin** from a file. To do this, you need to use the `<` operator.
 
-The `tr` command translates (or deletes) characters from a text supplied as input. If the `seq1` file contains a DNA sequence that we want to convert into an RNA sequence (replacing T with U) and switch from upper to lower case, we can use the following command:
+The `tr` command translates (or deletes) characters from a text supplied as input. If we want to convert the `NC_009089.fasta` file that contains a DNA sequence into an RNA sequence (replacing T with U) and switch from upper to lower cases, we can use the following command:
 
-<Execute command="tr [AGCT] [agcu] < seq1 " />
+<Execute command="tr AGCT agcu < NC_009089.fasta " />
 
 Remark: `cat toto` is equivalent to `cat < toto` but `cat < toto` is seldom used.
 
