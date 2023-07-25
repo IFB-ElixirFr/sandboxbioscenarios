@@ -17,7 +17,7 @@ export const config = {
 	description: "IFB Scenario 1",
 	tags: ["unix", "shell", "terminal"],
 	tools: ["ls", "date"],
-	difficulty: ["beginner"],
+	difficulty: ["ceinture jaune"],
 	steps: [
 		{ name: "Basics of the Unix command line interface", component: Step0 },
 		{ name: "Unix & Command lines", component: Step1 },
