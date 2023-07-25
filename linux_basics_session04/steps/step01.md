@@ -22,7 +22,7 @@ The result of the `grep` command is displayed on the terminal.
 
 Here are some vocabulary definitions:
 
-The result of a command is also called **output** and
+📕 the result of a command is also called **output** 
 
 📕 the **st**andar**d** **out**put of a command is named **stdout**.
 
