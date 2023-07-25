@@ -32,6 +32,6 @@ If you want to redirect **stdout** and **stderr** in separate files, you can use
 
 <Execute command="grep foo /shared/data/bank/homo_sapiens 1> sdt_out.txt 2> error.log" />
 
-And if you want to redirect both **stdout** and **stderr** in a common file you can use “&>”.
+And if you want to redirect both **stdout** and **stderr** in a common file you can use “2>&1”.
 
-<Execute command="grep foo /shared/data/bank/homo_sapiens &> sdt_out_and_log.txt" />
+<Execute command="grep foo /shared/data/bank/homo_sapiens 2>&1 sdt_out_and_log.txt" />
