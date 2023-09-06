@@ -62,8 +62,8 @@ ls /tmp
 	</span>
 </Quiz>
 
-<Quiz id="q2" choices={[ { valid: false, value: "absolute"}, 
-						 { valid: true, value: "relative"}, ]}> 
+<Quiz id="q2" choices={[ { valid: true, value: "absolute"}, 
+						 { valid: false, value: "relative"}, ]}> 
 	<span slot="prompt">
 		Which type of path is `/shared/data`?
 	</span>
