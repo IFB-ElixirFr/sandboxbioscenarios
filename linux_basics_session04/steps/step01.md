@@ -55,7 +55,7 @@ The following figure illustrates the **stdout** redirection to a file:
 
 <img src="/data/linux_basics_session04/stream_outfile.png" style="max-width:100%" alt="stream_outfile">
 
-⚠️ if the file already exists, it’s contents will be replaced by the output of your instruction.
+⚠️ if the `ofile` file already exists, it’s contents will be replaced by the output of your instruction.
 
 If you execute the same `grep` instruction as before but search for a different gene, the output file will be overwritten:
 
