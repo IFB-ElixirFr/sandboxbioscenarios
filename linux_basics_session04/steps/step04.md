@@ -2,13 +2,22 @@
 import Execute from "components/Execute.svelte";
 </script>
 
-As we've seen so far, a file can be redirected to the **stdin** of a command using the `<` operator, while the stdout of a command can be redirected to a file using the `>` operator (or `>>` to add lines).
+As we've seen so far, a file can be redirected to the **stdin** of a command using the `<` operator, while the **stdout** of a command can be redirected to a file using the `>` operator (or `>>` to add lines).
 
-We want to count the non-redundant list of entries in the fourth column of the SAOUHSC.bed file. 
+With this in mind, we're going to use the contents of some files to answer a few more specific questions, such as counting the number of genes contained in a file, extracting a list of genes, ...
 
-Use the **cut** command to extract the 4th column from the bed file SAOUHSC.bed and create a file named `SAOUHSC_c4.bed`. The column to be cut must be specified using `-f 4` or `--fields 4` if using the long form of the argument. Note that the file is supposed to be tabulated by default (columns must be separated by a '\t'). This behavior can be modified using the `-d/--delimiter` argument.  
+For example we want to count the non-redundant list of entries in the fourth column of the SAOUHSC.bed file. 
+
+Use the **cut** command to extract the 4th column from the bed file SAOUHSC.bed and create a file named `SAOUHSC_c4.bed`. The column to be cut must be specified using `-f 4` (or `--fields 4` if using the long form of the argument).  
 
 <Execute command="cut -f 4 SAOUHSC.bed > SAOUHSC_c4.bed" />
+
+Note that the file is supposed to be tabulated by default (columns must be separated by a '\t'). This behavior of the `cut` command can be modified using the `-d/--delimiter` argument. It is the case for instance if you operate on a `*.csv` file, where the delimiter is a comma `,`.
+
+Look at the file newly created : it contains all the features initialy present in the fourth column :
+
+<Execute command="cat SAOUHSC_c4.bed" />
+
 
 We can search for the list of entries in column 4 using the sort command (which by default performs an alphanumeric sort) combined with the `-u` (or --unique in its long form) to ensure that the list is not redundant.
 
