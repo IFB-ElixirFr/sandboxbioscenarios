@@ -26,6 +26,8 @@ As previously mentioned for **stdin** and **stdout**, it is also possible to red
 
 <Execute command="grep foo /shared/data/bank/homo_sapiens 2> error.log" />
 
+⚠️ today, in this course, the `2>`, the `1>`, and the `2>&1` operators are not yet supported. We will change this as soon as possible but in the meantime the following commands do not work.
+
 Here, the error message is redirected to the `error.log` file instead of being displayed on screen.
 
 If you want to redirect **stdout** and **stderr** in separate files, you can use both the `1>` and `2>` operators.
