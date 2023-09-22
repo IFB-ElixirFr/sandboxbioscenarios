@@ -8,6 +8,7 @@ import Execute from "components/Execute.svelte";
 By default, as you've seen so far, the result of a Unix command is printed on the screen.
 
 As an example, we will extract genomic locations related to *gene-SAOUHSC_00079* entry from the `SAOUHSC.bed` file with the `grep` command:
+
 First, check that you have access to the `SAOUHSC.bed` file using the `ls` command, and then extract the location with the following instructions:
 
 <Execute command="ls" />
