@@ -6,7 +6,9 @@ As we've seen so far, a file can be redirected to the **stdin** of a command usi
 
 With this in mind, we're going to use the contents of some files to answer a few more specific questions, such as counting the number of genes contained in a file, extracting a list of genes, ...
 
-For example we want to count the non-redundant list of entries in the fourth column of the SAOUHSC.bed file. 
+
+
+For example we want to count the non-redundant list of entries in the fourth column of the `SAOUHSC.bed` file. 
 
 Use the **cut** command to extract the 4th column from the bed file SAOUHSC.bed and create a file named `SAOUHSC_c4.bed`. The column to be cut must be specified using `-f 4` (or `--fields 4` if using the long form of the argument).  
 
@@ -18,7 +20,9 @@ Look at the file newly created : it contains all the features initialy present i
 
 <Execute command="cat SAOUHSC_c4.bed" />
 
+Now we want get the chromosomal start and end positions of these features. Start and end positions are respectively in the 2nd and 3rd columns.
 
+We use again the `cut` command
 We can search for the list of entries in column 4 using the sort command (which by default performs an alphanumeric sort) combined with the `-u` (or --unique in its long form) to ensure that the list is not redundant.
 
 
