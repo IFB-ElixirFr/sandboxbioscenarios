@@ -11,13 +11,21 @@ As an example, we will extract genomic locations related to *gene-SAOUHSC_00079*
 
 First, check that you have access to the `SAOUHSC.bed` file using the `ls` command, and then extract the location with the following instructions:
 
-<Execute command="ls" />
+```
+ls
+```
 
-<Execute command="ls Data" />
+```
+ls Data
+```
 
-<Execute command="cd Data" />
+```
+cd Data
+```
 
-<Execute command="grep SAOUHSC_00079 SAOUHSC.bed" />
+```
+grep SAOUHSC_00079 SAOUHSC.bed
+```
 
 The result of the `grep` command is displayed on the terminal.
 
@@ -38,15 +46,21 @@ By default, **stdout** is set to the screen.
 You can modify this behavior and print **stdout** to a file.
 To do so, you need to use the `1>` that can be abbreviated to `>`:
 
-<Execute command="grep gene-SAOUHSC_00079 SAOUHSC.bed > gene.bed" />
+```
+grep gene-SAOUHSC_00079 SAOUHSC.bed > gene.bed
+```
 
 Look, you've created a new file named `gene.bed`
 
-<Execute command="ls" />
+```
+ls
+```
 
 You can view its contents using the `cat` command:
 
-<Execute command="cat gene.bed" />
+```
+cat gene.bed
+```
 
 The content of this new file is identical to the result of the `grep` command.
 
@@ -60,17 +74,27 @@ The following figure illustrates the **stdout** redirection to a file:
 
 If you execute the same `grep` instruction as before but search for a different gene, the output file will be overwritten:
 
-<Execute command="grep gene-SAOUHSC_00078 SAOUHSC.bed > gene.bed" />
+```
+grep gene-SAOUHSC_00078 SAOUHSC.bed > gene.bed
+```
 
-<Execute command="cat gene.bed" />
+```
+cat gene.bed
+```
 
 If you want to store both gene locations in a single file, you may use the `>>` operator, which appends the output of your command to the end of an existing file.
 
-<Execute command="grep gene-SAOUHSC_00079 SAOUHSC.bed > gene.bed" />
+```
+grep gene-SAOUHSC_00079 SAOUHSC.bed > gene.bed
+```
 
-<Execute command="grep gene-SAOUHSC_00078 SAOUHSC.bed >> gene.bed" />
+```
+grep gene-SAOUHSC_00078 SAOUHSC.bed >> gene.bed
+```
 
-<Execute command="cat gene.bed" />
+```
+cat gene.bed
+```
 
 <Quiz id="q1" choices={[
          { valid: false, value: "grep foo file01 > file02"},
