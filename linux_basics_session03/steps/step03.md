@@ -32,3 +32,16 @@ will show you the first 15 lines.
 		Print the first line of the SAOUHSC.bed file. What is the first value of the third column? Choose the right answer: 
 	</span>
 </Quiz>
+
+Much used in bioinformatics, the `bed` format is a text file format used to store genomic regions as coordinates and associated annotations.
+It contains one annotation by line.
+
+Look at the `SAOUHSC.bed`:
+
+This `*.bed` contains 6 columns: 
+ 1. the identifier of the genomic region related to the annoation
+ 2. the start position (in nucleotides) of the annotation
+ 3. the end position (in nucleotides) of the annotation
+ 4. the name of the annotation
+ 5. if existing, a score (by default a point or a 0 value)
+ 6. the strand of the annotation
