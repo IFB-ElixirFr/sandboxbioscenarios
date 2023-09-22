@@ -13,7 +13,9 @@ By default, **stdin** is set to the keyboard. But you can change this behavior a
 
 The `tr` command translates (or deletes) characters from a text supplied as input. If we want to convert the `NC_009089.fasta` file that contains a DNA sequence into an RNA sequence (replacing T with U) and switch from upper to lower cases, we can use the following command:
 
-<Execute command="tr AGCT agcu < NC_009089.fasta " />
+```
+tr AGCT agcu < NC_009089.fasta
+```
 
 Remark: `cat toto` is equivalent to `cat < toto` but `cat < toto` is seldom used.
 
