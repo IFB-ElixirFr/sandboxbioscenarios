@@ -56,5 +56,6 @@ By default, the `wc` command counts the number of lines, words and bytes in a fi
 wc -l SAOUHSC_c2_uniq.bed
 ```
 
+The number of lines of the SAOUHSC.bed file has been divided by about two in SAOUHSC_c2_uniq.bed since there are gene and cds annotations in the original bed file, and these have the same position in this case (bacterial annotations).
 
 As you may have noticed, this simple step required us to create several intermediate files that won't be particularly useful later on. In the next step, we'll see that we can get rid of these files by using the pipe `|` operator.
