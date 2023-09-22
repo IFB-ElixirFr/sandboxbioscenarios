@@ -9,6 +9,8 @@ The standard command input is named **stdin**.
 
 By default, **stdin** is set to the keyboard. But you can change this behavior and read **stdin** from a file. To do this, you need to use the `<` operator.
 
+⚠️ today, in this course, the `<` operator is not yet supported. We will change this as soon as possible but in the meantime the following commands do not work.
+
 The `tr` command translates (or deletes) characters from a text supplied as input. If we want to convert the `NC_009089.fasta` file that contains a DNA sequence into an RNA sequence (replacing T with U) and switch from upper to lower cases, we can use the following command:
 
 <Execute command="tr AGCT agcu < NC_009089.fasta " />
