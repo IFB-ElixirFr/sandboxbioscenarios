@@ -26,18 +26,9 @@ In the same way we can also send the result of the `sort` command to the `wc` to
 ```
 cut -f 2 SAOUHSC.bed | sort -u | wc -l
 ```
-
-<Quiz id="question1" choices={[
-	{ valid: false, value: "cut -f4  SAOUHSC.bed | sort -u | wc -l | grep 'gene'"},
-		{ valid: true, value: "cut -f4  SAOUHSC.bed | grep 'gene' | sort -u | wc -l"},
-	{ valid: false, value: "cut -f4  SAOUHSC.bed | grep 'gene' SAOUHSC.bed  | sort -u | wc -l"},
-]}>
-	<span slot="prompt">
-		What would be the command to compute the number of non-redundant genes (ie. lines with fourth column starting with 'gene') in the `SAOUHSC.bed` file.
-	</span>
 </Quiz>
 
-<Quiz id="question2" choices={[
+<Quiz id="question1" choices={[
 	{ valid: false, value: "head -n 6 SAOUHSC.bed | tail -n 1 SAOUHSC.bed "},
 	{ valid: false, value: "head -n 1 SAOUHSC.bed | tail -n 6 SAOUHSC.bed"},
 	{ valid: true, value: "head -n 6 SAOUHSC.bed | tail -n 1"},
@@ -46,5 +37,14 @@ cut -f 2 SAOUHSC.bed | sort -u | wc -l
 ]}>
 	<span slot="prompt">
 		Let say we want to extract the 6th line of the SAOUHSC.bed file. What would be the correct syntax to do this ?
+	</span>
+ 
+<Quiz id="question2" choices={[
+	{ valid: false, value: "cut -f4  SAOUHSC.bed | sort -u | wc -l | grep 'gene'"},
+		{ valid: true, value: "cut -f4  SAOUHSC.bed | grep 'gene' | sort -u | wc -l"},
+	{ valid: false, value: "cut -f4  SAOUHSC.bed | grep 'gene' SAOUHSC.bed  | sort -u | wc -l"},
+]}>
+	<span slot="prompt">
+		What would be the command to compute the number of non-redundant genes (ie. lines with fourth column starting with 'gene') in the `SAOUHSC.bed` file.
 	</span>
 </Quiz>
