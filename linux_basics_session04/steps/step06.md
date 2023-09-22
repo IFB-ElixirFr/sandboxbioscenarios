@@ -32,3 +32,12 @@ cut -f 4 SAOUHSC.bed | cut -d "-" -f 1 | head
 cut -f 4 SAOUHSC.bed | cut -d "-" -f 1 | sort | head
 ```
 
+<Quiz id="question2" choices={[
+	{ valid: false, value: "cut -f4  SAOUHSC.bed | sort -u | wc -l | grep 'gene'"},
+		{ valid: true, value: "cut -f4  SAOUHSC.bed | grep 'gene' | sort -u | wc -l"},
+	{ valid: false, value: "cut -f4  SAOUHSC.bed | grep 'gene' SAOUHSC.bed  | sort -u | wc -l"},
+]}>
+	<span slot="prompt">
+		What would be the command to compute the number of non-redundant genes (ie. lines with fourth column starting with 'gene') in the `SAOUHSC.bed` file.
+	</span>
+</Quiz>
