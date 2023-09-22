@@ -38,6 +38,10 @@ It contains one annotation by line.
 
 Look at the `SAOUHSC.bed`:
 
+```
+head SAOUHSC.bed
+``` 
+
 This `*.bed` contains 6 columns: 
  1. the identifier of the genomic region related to the annoation
  2. the start position (in nucleotides) of the annotation
