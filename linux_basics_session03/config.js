@@ -22,7 +22,7 @@ export const config = {
 	tools: ["ls", "date"],
 	difficulty: ["belt green", "belt blue"],
 	steps: [
-		{ name: "Introduction", component: Step0 },
+		{ name: "Manipulating files and directories", component: Step0 },
 		{ name: "Manipulating data", component: Step1 },
 		{ name: "Digging through a large file", component: Step2 },
 		{ name: "The begining of a file", component: Step3 },
