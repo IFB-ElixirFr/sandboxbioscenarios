@@ -35,16 +35,16 @@ export const config = {
 	],
 	// For now, don't use `cd` in init, need to debug why it breaks the initialization script
 	init: `
-		mkdir -p data/bos_taurus data/homo_sapiens data/nr;
-		PREFIX=data/bos_taurus/UMD3.1;
+		mkdir -p bos_taurus homo_sapiens nr;
+		PREFIX=bos_taurus/UMD3.1;
 			mkdir -p $PREFIX/star-2.7.2b $PREFIX/fasta $PREFIX/bowtie2;
 			touch $PREFIX/star-2.7.2b/SAindex $PREFIX/star-2.7.2b/chrLength.txt $PREFIX/star-2.7.2b/chrName.txt $PREFIX/star-2.7.2b/chrStart.txt $PREFIX/star-2.7.2b/genomeParameters.txt $PREFIX/fasta/Bos_taurus.UMD3.1.dna.toplevel_F.fa.fai $PREFIX/fasta/Bos_taurus.UMD3.1.dna.toplevel_F.fa $PREFIX/bowtie2/Bos_taurus.UMD3.1.dna.toplevel_F.rev.1.bt2 $PREFIX/bowtie2/Bos_taurus.UMD3.1.dna.toplevel_F.2.bt2 $PREFIX/bowtie2/Bos_taurus.UMD3.1.dna.toplevel_F.rev.2.bt2 $PREFIX/bowtie2/Bos_taurus.UMD3.1.dna.toplevel_F.1.bt2;
 
-		PREFIX=data/homo_sapiens;
+		PREFIX=homo_sapiens;
 			mkdir -p $PREFIX/hg19 $PREFIX/hg19/hisat2 $PREFIX/hg19/star-2.7.5a $PREFIX/hg19/fasta $PREFIX/hg19/bowtie2 $PREFIX/hg38 $PREFIX/hg38/hisat2 $PREFIX/hg38/star-2.7.5a $PREFIX/hg38/fasta $PREFIX/hg38/bowtie2;
 			touch $PREFIX/hg19/hisat2/hg19.2.ht2 $PREFIX/hg19/hisat2/hg19.1.ht2 $PREFIX/hg19/hisat2/hg19.3.ht2 $PREFIX/hg19/hisat2/hg19.4.ht2 $PREFIX/hg19/star-2.7.5a/SAindex $PREFIX/hg19/star-2.7.5a/chrLength.txt $PREFIX/hg19/star-2.7.5a/chrName.txt $PREFIX/hg19/star-2.7.5a/chrStart.txt $PREFIX/hg19/star-2.7.5a/genomeParameters.txt $PREFIX/hg19/fasta/hg19.fa.fai $PREFIX/hg19/fasta/hg19.fa $PREFIX/hg19/bowtie2/hg19.1.bt2 $PREFIX/hg19/bowtie2/hg19.2.bt2 $PREFIX/hg19/bowtie2/hg19.rev.1.bt2 $PREFIX/hg19/bowtie2/hg19.rev.2.bt2 $PREFIX/hg38/hisat2/genome.4.ht2 $PREFIX/hg38/hisat2/genome.2.ht2 $PREFIX/hg38/hisat2/genome.3.ht2 $PREFIX/hg38/hisat2/genome.1.ht2 $PREFIX/hg38/star-2.7.5a/SAindex $PREFIX/hg38/star-2.7.5a/chrLength.txt $PREFIX/hg38/star-2.7.5a/chrName.txt $PREFIX/hg38/star-2.7.5a/chrStart.txt $PREFIX/hg38/star-2.7.5a/genomeParameters.txt $PREFIX/hg38/fasta/hg38.fa $PREFIX/hg38/fasta/hg38.fa.fai $PREFIX/hg38/bowtie2/hg38.2.bt2 $PREFIX/hg38/bowtie2/hg38.rev.2.bt2 $PREFIX/hg38/bowtie2/hg38.rev.1.bt2 $PREFIX/hg38/bowtie2/hg38.1.bt2;
 
-		PREFIX=data/nr/nr_2018-09-28/;
+		PREFIX=nr/nr_2018-09-28/;
 			mkdir -p $PREFIX/blast $PREFIX/fasta $PREFIX/diamond;
 			touch $PREFIX/fasta/nr.fsa $PREFIX/blast/nr.01.psd $PREFIX/blast/nr.01.ppi $PREFIX/blast/nr.01.psd $PREFIX/blast/nr.01.phd $PREFIX/blast/nr.02.psd $PREFIX/blast/nr.02.ppi $PREFIX/blast/nr.02.psd $PREFIX/blast/nr.02.phd $PREFIX/diamond/nr.dmnd $PREFIX/diamond/viral.protein_refseq_98.dmnd;
 		
@@ -53,10 +53,10 @@ export const config = {
 			echo "second test" > $HOME/test/second_file.txt;
 	`,
 	files: [
-		"data/linux_basics_session03/data/MACS2.csv",
-		"data/linux_basics_session03/data/NC_009089.bed",
-		"data/linux_basics_session03/data/NC_009089.fasta",
-		"data/linux_basics_session03/data/SAOUHSC.fasta",
-		"data/linux_basics_session03/data/SAOUHSC.bed",
+		"data/linux_basics_session03/MACS2.csv",
+		"data/linux_basics_session03/NC_009089.bed",
+		"data/linux_basics_session03/NC_009089.fasta",
+		"data/linux_basics_session03/SAOUHSC.fasta",
+		"data/linux_basics_session03/SAOUHSC.bed",
 	],
 };
