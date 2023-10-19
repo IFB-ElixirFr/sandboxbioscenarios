@@ -21,7 +21,7 @@ Check that you are in the expected directory with `pwd`:
 pwd
 ```
 
-The result should be `/root/data`. This directory should contain 5 files when calling `ls`.
+The result should be `/shared/projects/linux_basics_session03/data`. This directory should contain 5 files when calling `ls`.
 
 ## Displaying file contents
 
