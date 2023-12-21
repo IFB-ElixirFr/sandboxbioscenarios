@@ -3,7 +3,7 @@ import Quiz from "components/Quiz.svelte";
 import Execute from "components/Execute.svelte";
 </script>
 
-## the standard output stream
+## The standard output stream
 
 By default, as you've seen so far, the result of a Unix command is printed on the screen.
 
@@ -41,7 +41,7 @@ The following diagram illustrates the output stream of a command:
 
 By default, **stdout** is set to the screen.
 
-## changing the standard output stream
+## Changing the standard output stream
 
 You can modify this behavior and print **stdout** to a file.
 To do so, you need to use the `1>` that can be abbreviated to `>`:
