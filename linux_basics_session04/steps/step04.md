@@ -6,7 +6,7 @@ As we've seen so far, a file can be redirected to the **stdin** of a command usi
 
 With this in mind, we're going to use the contents of some files to answer a few more specific questions, such as counting the number of genes contained in a file, extracting a list of genes...
 
-For example we want to count the non-redundant list of genes in the fourth column of the `SAOUHSC.bed` file. 
+For example we want to count the number of non-redundant genes in the fourth column of the `SAOUHSC.bed` file. 
 
 Prior to handling a file, it is advisable to develop the habit of inspecting the structure of its contents. Look at the content of the `SAOUHSC.bed` file :
 
@@ -27,7 +27,6 @@ Look at the newly created file. It contains all the features initialy present in
 ```
 cat SAOUHSC_c4.bed
 ```
-
 
 Now, our objective is to obtain the chromosomal start positions of these features. In the `bed` format, the start position is located in the second column.
 

@@ -4,7 +4,7 @@ import Execute from "components/Execute.svelte";
 </script>
 
 As we've seen so far, the **sort** command performs, **by default, alphanumeric sorting** on a text stream. 
-As we said before and as you can see below, alphanumeric sorting is not well suited for stricly numeric values.
+As we said before and as you can see below, alphanumeric sorting is not well suited for numeric values.
 
 <Execute command="echo -e '1\n100\n2\n3\n200\n20\n10' | sort" />
 
@@ -19,13 +19,13 @@ man sort
 ```
 By default, sorting is performed based on all characters in the line.
 
-
-One last pipe example: we want to count the number of gene, cds, etc present in the `SAOUHSC.bed`. First we cut the column that contains these informations (the 4th one), we then extract the first part before the `-`, next we sort the entries, and last we print the number of each redundant entry: 
+As a final example of using pipes, let's count the occurrences of genomic elements (gene, CDS...) in the `SAOUHSC.bed` file. First, we extract the 4th column, containing this information. Next, we isolate the prefix before the hyphen (-) using cut, proceed to sort then finally display the number of occurences of each entry.
 
 ```
 cut -f 4 SAOUHSC.bed | cut -d "-" -f 1 | sort | uniq -c
 ```
-You could proceed the pipeline step by step, viewing the intermediate results with the `head` command:
+To help understand the process you can use the following instructions that display the first lines produced by each intermediate step.
+
 ```
 cut -f 4 SAOUHSC.bed | head
 cut -f 4 SAOUHSC.bed | cut -d "-" -f 1 | head

@@ -1,2 +1,2 @@
-You've completed the **Unix, Manipulating files and directories** scenario!
+You've completed the **Combining bash commands** scenario!
 

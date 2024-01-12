@@ -6,14 +6,15 @@ In this session you have discovered the 3 data streams of an unix command: the i
 
 <img src="/data/linux_basics_session04/stream_in_out_err.png" style="max-width:100%" alt="3 streams of a command">
 
-You have also seen that these streams use the terminal display by default but that they can be redirected to intermediate files:
+You have also learned that, by default, these streams are directed to the screen but that they can be redirected to files:
 
 <img src="/data/linux_basics_session04/stream_in_outfile_errfile.png" style="max-width:100%" alt="files stream of a command">
 
-And more importantly, you know that with pipes, you can "skip" intermediate files and build a "complex" command that combines the succession of several unit commands:
+More importantly, you have also learned that, using pipes, you can bypass intermediate files and build a sophisticated instruction that integrates a sequence of multiple individual commands:
 
 <img src="/data/linux_basics_session04/stream_pipe.png" style="max-width:100%" alt="a complex command">
 
-You also compose and apply "complex" commands on an annotation file with a bed or gff format like:
+These instructions can be used for instance using a bed or gff as input to:
+
 *  compute the number of non-redundant genes of a bed file
 *  extract the ith line of a bed file
