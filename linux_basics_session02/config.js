@@ -13,7 +13,7 @@ export const config = {
 	id: "linux_basics_session02",
 	pwd: "linux_basics_session02",
 	listed: true,
-	name: "Manipulating files and directories",
+	name: "Unix file system",
 	subtitle: `by <a href="https://www.france-bioinformatique.fr/en/home/" target="_blank">French Institute of Bioinformatics</a>`,
 	description: "IFB Scenario 2",
 	tags: ["unix", "shell", "terminal"],
