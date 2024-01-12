@@ -26,7 +26,7 @@ tree /shared/data/tutorials/linux_basics_session02/projects/facts
 
 ## Copying files and directories
 
-The `cp` (**c**o**p**y) command copies files or directories. It takes 2 paths as argument:
+The `cp` (**c**o**p**y) command copies files or directories. It takes 2 paths as argument. These paths may be absolute or relative paths or filenames or the current directory named with '.'
 
 ```bash
 cp <source_path> <destination_path>
