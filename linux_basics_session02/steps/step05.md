@@ -3,7 +3,7 @@ import Quiz from "components/Quiz.svelte";
 </script>
 
 When used without argument, the `cd` command will set the current working directory to your HOME directory. 
-This HOME directory is the place where a user may store its files. 
+This HOME directory is the default directory for the user to store its own files. However, bear in mind that this HOME directory is not always the right place to store large files, particularly on a cluster with shared resources (ask your administrator!).
 
 ```bash
 cd 
@@ -20,9 +20,6 @@ pwd
 cd ~/test
 pwd
 ```
-
-However, note that the HOME directory is not always the right place to store large files (particularly on a cluster with shared resources). 
-Ask your administrator!
 
 
 To answer the next question, please type the 3 following commands:
