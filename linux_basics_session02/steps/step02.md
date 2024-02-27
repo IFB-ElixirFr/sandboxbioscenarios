@@ -4,13 +4,13 @@ import Quiz from "components/Quiz.svelte";
 
 The `tree` command displays the tree-like organization of files and sub-directories contained in a particular directory.
 
-In the example below, the `tree` command displays the content of the `/shared` directory limited only to directories (option `-d`) and with only two levels of sub-directories (option `-L 2`):
+In the example below, the `tree` command displays the subdirectories (option `-d`) contained in `/shared/data` directory with a maximum depth of two subdirectories (option `-L 2`):
 
 ```bash
-tree -d -L 2 /shared
+tree -d -L 2 /shared/data
 ```
 
-These directories were created to store genome files of different species.
+These directories were created to store genome files of different species. As an example the `bank` directory is a child of `data` but is also the parent of `bos_taurus`.  
 
 From the previous command we deduce the  path from the root `/` to the `homo_sapiens` directory. This path is:
 
