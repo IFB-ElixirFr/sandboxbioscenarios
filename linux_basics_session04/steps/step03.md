@@ -43,5 +43,5 @@ grep foo /shared/data/bank/homo_sapiens 1> sdt_out.txt 2> error.log
 And if you want to redirect both **stdout** and **stderr** in a common file you can use “2>&1”.
 
 ```
-grep foo /shared/data/bank/homo_sapiens 2>&1 sdt_out_and_log.txt
+grep foo /shared/data/bank/homo_sapiens 2>&1 std_out_and_log.txt
 ```
