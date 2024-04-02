@@ -47,3 +47,11 @@ Usually we also use the `-h` option to display sizes in more **h**uman readable 
 You can use several options in the same command.
 
 You can merge short form options using a single dash as prefix.
+
+Another option for the `ls` command to distinguish a file from a directory is `-p` (or long form `--indicator-style`) that append "/" indicator to directories.
+
+Try: 
+<Execute command="ls -p" />
+
+
+
