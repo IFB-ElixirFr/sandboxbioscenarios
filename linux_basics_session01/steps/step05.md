@@ -7,11 +7,15 @@ import Execute from "components/Execute.svelte";
 The Bash shell provides you with a working space including files and directories.
 
 A very useful command is `ls`, that **l**i**s**ts the content of a directory.
-In your Unix terminal on the right, type `ls` and then press <kbd>Enter</kbd>.
+In your Unix terminal on the right, type `ls` and then press <kbd>Enter</kbd>:
 
-The Bash shell should display `Data` that is a directory named `Data`.
+<Execute command="ls " />
 
-Now, type the following command in your terminal (and press <kbd>Enter</kbd>) :
+The Bash shell should display `Data` and `Data_file_list.txt`, where `Data` is a directory named `Data` and `Data_file_list.txt` is a file named `Data_file_list.txt`.
+By convention, files have a name followed by an extension, which indicates the type of file. Here, txt indicates a text file.
+You will come across different file formats and therefore different extensions that are relevant to humans.
+
+Now, type the following command in your terminal (and press <kbd>Enter</kbd>):
 
 <Execute command="ls Data" />
 
