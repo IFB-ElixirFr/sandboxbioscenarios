@@ -1,0 +1,8 @@
+O.tauri_annotation.gff
+O.tauri_genome.fna
+SRR3099586_chr18.fastq
+SRR3105698_chr18.fastq 
+SRR3099587_chr18.fastq
+SRR3105699_chr18.fastq
+SRR3099585_chr18.fastq
+SRR3105697_chr18.fastq
