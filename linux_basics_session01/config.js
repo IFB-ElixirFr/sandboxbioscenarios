@@ -37,6 +37,6 @@ export const config = {
 		"data/linux_basics_session01/Data/SRR3105697_chr18.fastq",
 		"data/linux_basics_session01/Data/SRR3105698_chr18.fastq",
 		"data/linux_basics_session01/Data/SRR3105699_chr18.fastq",
-		"data/linux_basics_session01/Data/Data_file_list.txt"
+		"data/linux_basics_session01/Data/Data_file_list.txt",
 	],
 };
