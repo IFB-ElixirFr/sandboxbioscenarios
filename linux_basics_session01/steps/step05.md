@@ -27,7 +27,7 @@ Remarks:
 * Pay attention to the space character between `ls` and `Data`
 * Don't forget to press <kbd>Enter</kbd> to run commands
 * `ls` is the command **name**
-* `Data` is a directory name and an **argument** of the `ls` command
+* `Data` is a directory name as well as an **argument** of the `ls` command
 
 ## Options
 
@@ -35,7 +35,7 @@ Options modify the way in which a command works.
 In Bash, shell options start with a simple or double dash (`-` or `--`).
 
 For example, we can display the size of the files using the `--size` option of the `ls` command. 
-Lets try and type: 
+Let's try and type: 
 
 <Execute command="ls --size Data" />
 
@@ -49,7 +49,7 @@ You can use several options in the same command.
 
 You can merge short form options using a single dash as prefix.
 
-Another option for the `ls` command to distinguish a file from a directory is `-p` (or long form `--indicator-style`) that append "/" indicator to directories.
+Another option for the `ls` command to distinguish a file from a directory is `-p` (or long form `--indicator-style`) that append the "/" indicator to directories.
 
 Try: 
 <Execute command="ls -p" />
