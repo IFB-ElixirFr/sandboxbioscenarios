@@ -51,4 +51,14 @@ ls Data/*8?_chr18.fastq
 ```
 prints the same three files
 
+<Quiz id="qwildcards" choices={[
+	{ valid: false, value: "3"},
+	{ valid: true, value: "2"},
+  { valid: false, value: "0"},
+  { valid: false, value: "8"},
+]}>
+	<span slot="prompt">
+		How many files the ls command `ls Data/*7_*` select ?
+	</span>
+</Quiz>
 
