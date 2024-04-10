@@ -7,6 +7,7 @@ import Step4 from "./steps/step04.md";
 import Step5 from "./steps/step05.md";
 import Step6 from "./steps/step06.md";
 import Step7 from "./steps/step07.md";
+import Step8 from "./steps/step08.md";
 
 export const config = {
 	id: "linux_basics_session01",
@@ -25,8 +26,9 @@ export const config = {
 		{ name: "The terminal", component: Step3 },
 		{ name: "Unix command", component: Step4 },
 		{ name: "A simple basic command: ls", component: Step5 },
-		{ name: "Getting help", component: Step6 },
-		{ name: "Congratulations", component: Step7 },
+		{ name: "The * blabla", component: Step6 },
+		{ name: "Getting help", component: Step7 },
+		{ name: "Congratulations", component: Step8 },
 	],
 	files: [
 		"data/linux_basics_session01/Data/O.tauri_annotation.gff",
