@@ -12,24 +12,43 @@ For example:
 ```bash
 ls *.txt
 ```
-will only print the name of the file with the `.txt` extension. Try it for yourself.
+only prints the name of the file with the `.txt` extension. Try it for yourself.
+
 Other examples are:
 ```bash
 ls Data/*.fastq
 ```
-will print only the fastq files in the Data directory
+only prints the fastq files in the Data directory
 
 ```bash
 ls Data/*.f*
 ```
-will print all the files with an extension starting with `f`, `.fastq` and `.fna`
+prints all the files with an extension starting with `f`, `.fastq` and `.fna`
 
 ```bash
 ls Data/*f*
 ```
-will print all the files containing `f` in their name, `.fastq`, `.fbna` and `.gff`. Since you didn't use the `.`, the selection will cover the whole file name.
-
-
-
+prints all the files containing `f` in their name, `.fastq`, `.fbna` and `.gff`. Since you didn't use the `.`, the selection will cover the whole file name.
 
 <!--ls */*.* ne marche pas dans sandbox v1-->
+
+`?` (**question mark**) is another wirldcard. It represents one character (and only one!).
+
+For example:
+```bash
+ls ?ata
+```
+prints the content of the Data directory
+
+```bash
+ls Data/SRR309958?_chr18.fastq
+```
+prints only three `fastq` files: `Data/SRR3099585_chr18.fastq`, `Data/SRR3099586_chr18.fastq` and `Data/SRR3099587_chr18.fastq`
+
+You can also combine `?` and `*`wildcards:
+```bash
+ls Data/*8?_chr18.fastq
+```
+prints the same three files
+
+
