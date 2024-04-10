@@ -4,8 +4,6 @@ import Quiz from "components/Quiz.svelte";
 import Execute from "components/Execute.svelte";
 </script>
 
-## Wildcards (titre de niveau 1 à trouver pour le config)
-
 Sometimes you want to select several files with a single command. One way to do it would be to write all the file names in the command line, but it is tedious and doesn't garantee that you won't miss some files (misspelling...). A better way is to use Unix's special characters called wildcards. One of these wildcards is the `*`(**star**) which represents either no characters, one character or any chain of characters (aka **string**).
 
 For example:
