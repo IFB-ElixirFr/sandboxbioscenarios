@@ -14,7 +14,9 @@ Unix commands are usually in lowercase.
 
 Now, type the following command in your terminal and then press <kbd>Enter</kbd> key:
 
-<Execute command="date" />
+```bash
+date
+```
 
 <Quiz id="q1" choices={[
 	{ valid: true, value: "yes"},

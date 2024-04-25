@@ -58,7 +58,10 @@ You can merge short form options using a single dash as prefix.
 Another option for the `ls` command to distinguish a file from a directory is `-p` (or long form `--indicator-style`) that append the "/" indicator to directories.
 
 Try: 
-<Execute command="ls -p" />
+
+```bash
+ls -p
+```
 
 <Quiz id="qls" choices={[
 	{ valid: true, value: "Data/  Data_file_list.txt"},

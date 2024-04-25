@@ -11,7 +11,9 @@ It takes a command name as an argument and opens the manual on the terminal.
 
 Lets try and type:
 
-<Execute command="man ls" />
+```bash
+man ls
+```
 
 This manual contains several sections (e.g. NAME, SYNOPSIS, DESCRIPTION). 
 As indicated in the NAME section this command is used to list a directory content. 
@@ -48,7 +50,9 @@ And the DESCRIPTION section explains all the possible options of the command.
 An other way of getting help is to use the `--help` option after a command name (or, sometimes, `-h` or `-help` or `help`) .
 Example, type the following command:
 
-<Execute command="ls --help" />
+```bash
+ls --help
+```
 
 ## Ask Internet
 
