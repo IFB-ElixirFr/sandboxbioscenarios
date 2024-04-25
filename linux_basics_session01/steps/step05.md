@@ -9,7 +9,9 @@ The Bash shell provides you with a working space including files and directories
 A very useful command is `ls`, that **l**i**s**ts the content of a directory.
 In your Unix terminal on the right, type `ls` and then press <kbd>Enter</kbd>:
 
-<Execute command="ls " />
+```bash
+ls
+```
 
 The Bash shell should display `Data` and `Data_file_list.txt`, where `Data` is a directory named `Data` and `Data_file_list.txt` is a file named `Data_file_list.txt`.
 
@@ -18,7 +20,9 @@ You will come across different file formats and therefore different extensions t
 
 Now, type the following command in your terminal (and press <kbd>Enter</kbd>):
 
-<Execute command="ls Data" />
+```bash
+ls Data
+```
 
 The Bash shell should display the 8 files included in the `Data` directory and 3 files formats (`fasta`, `gff`, `fastq`) which are widely used in bioinformatics.
 
@@ -37,7 +41,9 @@ In Bash, shell options start with a simple or double dash (`-` or `--`).
 For example, we can display the size of the files using the `--size` option of the `ls` command. 
 Let's try and type: 
 
-<Execute command="ls --size Data" />
+```bash
+ls --size Data
+```
 
 Now, the 8 files are displayed with their respective sizes (in blocks). 
 
