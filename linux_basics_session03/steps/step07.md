@@ -8,10 +8,9 @@ The `cut` command cuts out sections from each line of a file and writes the resu
 It can be used to cut parts of a line by byte position, character and field (or columns). 
 
 Basically the `cut` command slices the lines to extract some text.
-The main use of this command concerns the extraction of columns indicated by their number (first column is number 1).
+This command is generally used to extract columns/fields from a file using the `-f/--fields` argument followed by the number(s) of the column(s) of interest (the first column/field is numbered 1).
 
-Columns may be separated by various characters (*e.g.* ',', ';', ':', '|'...). One of the most common is the tabulation ('\t') 
-as in '.bed' files. This is also the default separator of the `cut` command. 
+By default `cut` expects the column/field separator to be a  tabulation ('\t') as in '.bed' files. 
 
 Here is an example on how to extract the 3rd column of the _SAOUHSC.bed_ file:
 
@@ -27,7 +26,7 @@ Try the extraction of the 3 first columns and the 5th one from the _SAOUHSC.bed_
 cut -f 1-3,5 SAOUHSC.bed
 ```
 
-You can change the delimiter between fields with the _-d_ option. 
+If the file contains columns separated by alternative characters (*e.g.* ',', ';', ':', '|'...), you can change the column/field delimiter thanks to the _-d_ option. 
 
 Look at the beginning of the _MACS2.csv_ file (try `head MACS2.csv`). 
 It contains 6 columns, separated by a comma.
