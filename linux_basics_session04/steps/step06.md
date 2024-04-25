@@ -19,7 +19,7 @@ man sort
 ```
 By default, sorting is performed based on all characters in the line.
 
-As a final example of using pipes, let's count the occurrences of genomic elements (gene, CDS...) in the `SAOUHSC.bed` file. First, we extract the 4th column, containing this information. Next, we isolate the prefix before the hyphen (-) using cut, proceed to sort then finally display the number of occurences of each entry.
+As a final example of using pipes, let's count the occurrences of genomic elements (gene, CDS...) in the `SAOUHSC.bed` file. First, we extract using `cut` the 4th column (`-f 4), containing this information. Then, we isolate the prefix before the hyphen (-) using cut and delimiter (`-d`) set to "-". Finally the result is sent to `sort` then to `uniq -c` that counts the occurences of each entry.
 
 ```
 cut -f 4 SAOUHSC.bed | cut -d "-" -f 1 | sort | uniq -c
