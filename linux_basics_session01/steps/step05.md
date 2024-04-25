@@ -13,14 +13,14 @@ In your Unix terminal on the right, type `ls` and then press <kbd>Enter</kbd>:
 
 The Bash shell should display `Data` and `Data_file_list.txt`, where `Data` is a directory named `Data` and `Data_file_list.txt` is a file named `Data_file_list.txt`.
 
-By convention, files have a name followed by an extension separated by dot and the **extension** indicates the type of file. Here, `.txt` indicates a text file.
+By convention, files have a name followed by an **extension** separated by a dot. The file extension indicates the file type, that is something similar to its category. Here, `txt` indicates a text file.
 You will come across different file formats and therefore different extensions that are relevant to humans.
 
 Now, type the following command in your terminal (and press <kbd>Enter</kbd>):
 
 <Execute command="ls Data" />
 
-The Bash shell should display the 8 files included in the `Data` directory and 3 files formats (`.fasta`, `.gff`, `.fastq`) which are widely used in bioinformatics.
+The Bash shell should display the 8 files included in the `Data` directory and 3 files formats (`fasta`, `gff`, `fastq`) which are widely used in bioinformatics.
 
 Remarks:
 
