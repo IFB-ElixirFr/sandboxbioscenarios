@@ -25,15 +25,15 @@ pwd
 To answer the next question, please type the 3 following commands:
 
 ```bash
-cd /shared/data/nr
+cd /shared/data/bank/nr
 cd ~/test
 cd
 ```
 
 <Quiz id="q1" choices={[ { valid: false, value: "/shared/data/nr"}, 
 						 { valid: false, value: "test"}, 
-						 { valid: false, value: "your HOME directory"}, 
-						 { valid: true, value: "/shared/data"}, 
+						 { valid: true, value: "your HOME directory"}, 
+						 { valid: false, value: "/shared/data"}, 
 						 { valid: false, value: "nr"},
 						 { valid: false, value: "/root/test"}, ]}> 
 	<span slot="prompt">
