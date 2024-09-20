@@ -34,10 +34,17 @@ By default, relative paths start from the current working directory, so `./` cou
 ```bash
 ls test
 ```
-
+There are two files in the directory `test`.
+<br>
 The `..` operator is handy to write a path relative to a directory. 
 It means _one level up in the directory tree_. 
-For instance from the `/shared/data` directory where you are, you may list the content of the `/shared` directory using:
+For instance from the `/shared/data` directory where you will go with: 
+
+```bash
+cd /shared/data
+pwd
+```
+You may list the content of the `/shared` directory using:
 
 ```bash
 ls ..
