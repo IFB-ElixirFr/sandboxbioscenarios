@@ -59,13 +59,14 @@ ls /shared
 In an other example, you could list the content of `/bank` with a relative path:
 
 ```bash
+cd bank
 ls ../bank
 ```
 
 The same result would be obtained with the absolute path:
 
 ```bash
-ls /bank
+ls /shared/data/bank
 ```
 
 <Quiz id="q1" choices={[ { valid: false, value: "/"}, 
