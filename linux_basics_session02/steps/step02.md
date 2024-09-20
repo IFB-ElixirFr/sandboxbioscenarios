@@ -35,7 +35,7 @@ This `ls` command lists the content of the specified directory (also named **arg
       { valid: true, value: "hg38"}, 
 ]}> 
 	<span slot="prompt">
-    What does the command `ls /shared/data/homo_sapiens` return? 
+    What does the command `ls /shared/data/bank/homo_sapiens` return? 
 	</span>
 </Quiz>  
   
