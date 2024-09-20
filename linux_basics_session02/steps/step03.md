@@ -9,11 +9,6 @@ The output is the absolute path `/shared/data` and means that you are currently 
 <!---
 Remark: In a Unix system, the administrator (the boss) is called root. And you are presently in its personal directory that is also called `root`! 
 -->
-Run 
-
-```bash
-cd /shared/home/guest
-```
 
 If you type the `ls` command, you should see a sud-directory called `test`:
 
@@ -41,7 +36,6 @@ It means _one level up in the directory tree_.
 For instance from the `/shared/data` directory where you will go with: 
 
 ```bash
-cd /shared/data
 pwd
 ```
 You may list the content of the `/shared` directory using:
