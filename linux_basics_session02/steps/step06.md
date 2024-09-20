@@ -39,7 +39,7 @@ cd ~/test
 cp first_file.txt third_file.txt
 ls 
 ```
-
+<!---
 With the option `-r` (**r**ecursive), the `cp` command copies all files of the source directory to the destination directory.
 
 ⚠️ Currently, the `-r` option is not supported in this course. We will change this as soon as possible but in the meantime the following commands do not work.
@@ -51,6 +51,7 @@ tree /shared/data/tutorials/linux_basics_session02/projects
 cp -r ~/test /shared/data/tutorials/linux_basics_session02/projects/my_test
 tree /shared/data/tutorials/linux_basics_session02/projects
 ```
+--->
 
 <Quiz id="qndir" choices={[
 	{ valid: false, value: "0"},
