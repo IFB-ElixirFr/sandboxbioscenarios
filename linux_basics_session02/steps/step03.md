@@ -56,7 +56,7 @@ The same result would be obtained here using an absolute path:
 ls /shared
 ```
 
-In an other example, you could list the content of `/bank` with a relative path:
+In an other example, you could list the content of `bank` with a relative path:
 
 ```bash
 cd bank
