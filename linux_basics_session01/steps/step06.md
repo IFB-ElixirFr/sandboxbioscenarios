@@ -56,7 +56,7 @@ prints the same three files
 	{ valid: false, value: "8"},
 ]}>
 	<span slot="prompt">
-		How many files the ls command `ls Data/*7_*` lists ?
+		How many files are displayed when typing `ls Data/*7_*` ?
 	</span>
 </Quiz>
 
