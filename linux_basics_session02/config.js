@@ -31,6 +31,7 @@ export const config = {
 		{ name: "Congratulations", component: Step8 },
 	],
 	// For now, don't use `cd` in init, need to debug why it breaks the initialization script
+	/*
 	init: `
 		mkdir -p bos_taurus homo_sapiens nr;
 		PREFIX=bos_taurus/UMD3.1;
@@ -48,6 +49,6 @@ export const config = {
 		mkdir -p $HOME/test;
 			echo "first test" > $HOME/test/first_file.txt;
 			echo "second test" > $HOME/test/second_file.txt;
-	`,
+	`,*/
 	files: [],
 };
