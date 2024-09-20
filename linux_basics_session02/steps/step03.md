@@ -4,9 +4,11 @@ import Quiz from "components/Quiz.svelte";
 
 Run the `pwd` command in the right panel.
 
-The output is the absolute path `/root` and means that you are currently located in `/root`. 
+The output is the absolute path `/shared/data` and means that you are currently located in `/shared/data`. 
 
-Remark: In a Unix system, the administrator (the boss) is called root. And you are presently in its personal directory that is also called `root`!
+<! --- Remark: In a Unix system, the administrator (the boss) is called root. And you are presently in its personal directory that is also called `root`! --->
+
+Run `cd /shared/home/`
 
 If you type the `ls` command, you should see a sud-directory called `test`:
 
