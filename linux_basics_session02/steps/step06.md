@@ -16,7 +16,7 @@ tree
 ```
 
 Still from your HOME directory, create another directory nammed `my_dir2` into the directory `/shared/data/tutorials/linux_basics_session02/projects`. 
-Use the command `tree` to display the file and directory organisation from the directory `/shared/data/tutorials/linux_basics_session02/project`. Reminder: be lazy and use the <kbd>Tab</kbd> key to speed up your writing of the path.
+Use the command `tree` to display the file and directory organisation from the directory `/shared/data/tutorials/linux_basics_session02/projects`. Reminder: be lazy and use the <kbd>Tab</kbd> key to speed up your writing of the path.
 
 ```bash
 cd
