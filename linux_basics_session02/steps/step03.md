@@ -9,8 +9,11 @@ The output is the absolute path `/shared/data` and means that you are currently 
 <!---
 Remark: In a Unix system, the administrator (the boss) is called root. And you are presently in its personal directory that is also called `root`! 
 -->
+Run 
 
-Run `cd /shared/home/`
+```bash
+cd /shared/home/
+```
 
 If you type the `ls` command, you should see a sud-directory called `test`:
 
@@ -34,7 +37,7 @@ ls test
 
 The `..` operator is handy to write a path relative to a directory. 
 It means _one level up in the directory tree_. 
-For instance from the `/root` directory where you are, you may list the content of the `/` directory using:
+For instance from the `/shared/data` directory where you are, you may list the content of the `/shared` directory using:
 
 ```bash
 ls ..
@@ -43,10 +46,10 @@ ls ..
 The same result would be obtained here using an absolute path:
 
 ```bash
-ls /
+ls /shared
 ```
 
-In an other example, if you are located in the `/root` directory, you could list the content of `/tmp` with a relative path:
+In an other example, if you are located in the `/shared/data` directory, you could list the content of `/tmp` with a relative path:
 
 ```bash
 ls ../tmp
