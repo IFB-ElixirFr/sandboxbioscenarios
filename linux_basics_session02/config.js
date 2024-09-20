@@ -36,6 +36,7 @@ export const config = {
 		mkdir -p $HOME/test;
 			echo "first test" > $HOME/test/first_file.txt;
 			echo "second test" > $HOME/test/second_file.txt;
+   		mkdir -p /shared/data/tutorials/linux_basics_session02/projects/;
 	`,
 	files: [],
 };
