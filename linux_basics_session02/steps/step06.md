@@ -41,6 +41,7 @@ ls
 ```
 
 With the option `-r` (**r**ecursive), the `cp` command copies all files of the source directory to the destination directory.
+⚠️ Currently, the `-r` option is not supported in this course. We will change this as soon as possible but in the meantime the following commands do not work.
 
 Try to copy the `~/test` repository and its content to a new directory named `my_test` in the directory `/shared/data/tutorials/linux_basics_session02/projects`:
 
