@@ -12,7 +12,7 @@ Remark: In a Unix system, the administrator (the boss) is called root. And you a
 Run 
 
 ```bash
-cd /shared/home/
+cd /shared/home/guest
 ```
 
 If you type the `ls` command, you should see a sud-directory called `test`:
