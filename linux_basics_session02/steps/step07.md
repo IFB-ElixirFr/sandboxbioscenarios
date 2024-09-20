@@ -6,9 +6,8 @@ import Quiz from "components/Quiz.svelte";
 
 The `mv` (**m**o**v**e) command takes 2 paths as arguments:
 
-```bash
-mv <source_path> <destination_path>
-```
+
+`mv source_path destination_path`
 
 It moves the **source** to the **destination**.  
 It works for files or directories.  
@@ -38,9 +37,8 @@ tree
 
 To delete a directory, you need to use the `rm` command with the option `-r`:
 
-```bash
-rm -r <path_to_a_directory_to_delete>
-```
+`rm -r path_to_a_directory_to_delete`
+
 
 Be very careful with this `rm` command. There is no way to recover your deleted files in Unix!
 
