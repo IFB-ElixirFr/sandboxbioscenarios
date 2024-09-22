@@ -7,11 +7,11 @@ import Execute from "components/Execute.svelte";
 
 By default, as you've seen so far, the result of a Unix command is printed on the screen. This is the case, for instance, of the `ls` command.
 
-```
+```bash
 ls
 ```
 
-```
+```bash
 ls Data
 ```
 
@@ -27,13 +27,13 @@ The following diagram illustrates the output stream of a command:
 
 By default, **stdout** is set to the screen.
 
-The `grep` command also output its results to stdout. As an example, we will extract genomic locations related to *gene-SAOUHSC_00079* entry from the `SAOUHSC.bed` file with the `grep` command:
+The `grep` command also output its results to stdout. As an example, we will extract genomic locations related to *gene-SAOUHSC_00079* entry from the *SAOUHSC.bed* file with the `grep` command:
 
-```
+```bash
 cd Data
 ```
 
-```
+```bash
 grep SAOUHSC_00079 SAOUHSC.bed
 ```
 
@@ -44,19 +44,19 @@ The result of the `grep` command is displayed on the terminal.
 You can modify this behavior and print ('redirect') **stdout** to a file.
 To do so, you need to use the `1>` that can be abbreviated to `>`:
 
-```
+```bash
 grep gene-SAOUHSC_00079 SAOUHSC.bed > gene.bed
 ```
 
 Look, you've created a new file named `gene.bed`
 
-```
+```bash
 ls
 ```
 
 You can view its contents using the `cat` command:
 
-```
+```bash
 cat gene.bed
 ```
 
@@ -72,25 +72,20 @@ The following figure illustrates the **stdout** redirection to a file:
 
 If you execute the same `grep` instruction as before but search for a different gene, the output file will be overwritten:
 
-```
+```bash
 grep gene-SAOUHSC_00078 SAOUHSC.bed > gene.bed
-```
-
-```
 cat gene.bed
 ```
 
 If you want to store results from both gene in a single file, you may use the `>>` operator, which appends the output of your command to the end of an existing file.
 
-```
+```bash
 grep gene-SAOUHSC_00079 SAOUHSC.bed > gene.bed
+cat gene.bed
 ```
 
-```
+```bash
 grep gene-SAOUHSC_00078 SAOUHSC.bed >> gene.bed
-```
-
-```
 cat gene.bed
 ```
 
