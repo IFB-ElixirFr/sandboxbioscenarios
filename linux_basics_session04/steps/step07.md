@@ -2,7 +2,7 @@
 import Quiz from "components/Quiz.svelte";
 </script>
 
-In this session you have discovered the 3 data streams of an unix command: the input stream (`stdin`), the output stream (`strout`) and the error stream (`stderr`):
+In this session you have discovered the 3 data streams of an unix command: the input stream (**stdin**), the output stream (**strout**) and the error stream (**stderr**):
 
 <img src="/data/linux_basics_session04/stream_in_out_err.png" style="max-width:100%" alt="3 streams of a command">
 
