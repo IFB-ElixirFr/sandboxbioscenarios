@@ -10,41 +10,36 @@ The output is the absolute path `/shared/data` and means that you are currently 
 Remark: In a Unix system, the administrator (the boss) is called root. And you are presently in its personal directory that is also called `root`! 
 -->
 
-If you type the `ls` command, you should see a sud-directory called `test`:
+If you type the `ls` command, you should see a sud-directory called `bank`:
 
 ```bash
 ls
 ```
 
-From the present current working directory, we would like to see what is inside a sub-directory called `test`. 
+From the present current working directory, we would like to see what is inside a sub-directory called `bank`. 
 To represent the current working directory, we need the symbol `.` (dot). 
-The relative path to the `test` sub-directory is `./test`.
+The relative path to the `test` sub-directory is `./bank`.
 
 ```bash
-ls ./test
+ls ./bank
 ```
 
 By default, relative paths start from the current working directory, so `./` could be omitted:
 
 ```bash
-ls test
+ls bank
 ```
-There are two files in the directory `test`.
-<br>
+There are 3 sub-directories in the directory `bank`.
+
 The `..` operator is handy to write a path relative to a directory. 
 It means _one level up in the directory tree_. 
-For instance from the `/shared/data` directory where you will go with: 
-
-```bash
-pwd
-```
-You may list the content of the `/shared` directory using:
+For instance from the `/shared/data` directory where you are (remember the `pwd` command) you may list the content of the `/shared` directory using:
 
 ```bash
 ls ..
 ```
 
-The same result would be obtained here using an absolute path:
+The same result would be obtained here using the absolute path:
 
 ```bash
 ls /shared
