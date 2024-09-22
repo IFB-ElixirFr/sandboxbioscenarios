@@ -41,6 +41,6 @@ It contains 6 columns, separated by a comma.
       { valid: false, value: "cut -f 2-3,6 -d '\t' MACS2.csv"}
 ]}> 
 	<span slot="prompt">
-    Choose the correct command(s) to extract the 2nd, 3rd, and 6th columns of the `MACS2.csv` file:
+    Choose the correct 2 commands to extract the 2nd, 3rd, and 6th columns of the `MACS2.csv` file:
 	</span>
 </Quiz>  
