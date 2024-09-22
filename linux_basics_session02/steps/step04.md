@@ -8,11 +8,11 @@ The target directory must be specified using an absolute or a relative path.
 To experiment with the `cd` command, run the following commands:
 
 ```bash
-ls
+pwd
 cd /shared/data/bank/nr
-ls
+pwd
 cd ../homo_sapiens
-ls 
+pwd 
 ```
 
 <Quiz id="step04_q1" choices={[
