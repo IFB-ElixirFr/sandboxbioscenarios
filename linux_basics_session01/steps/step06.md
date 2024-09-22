@@ -26,7 +26,7 @@ prints all the files with an extension starting with `f`, `.fastq` and `.fna`
 ```bash
 ls Data/*f*
 ```
-prints all the files containing `f` in their name, `.fastq`, `.fbna` and `.gff`. Since you didn't use the `.`, the selection will cover the whole file name.
+prints all the files containing `f` in their name, `.fastq`, `.fna` and `.gff`. Since you didn't use the `.`, the selection will cover the whole file name.
 
 <!--ls */*.* ne marche pas dans sandbox v1-->
 
