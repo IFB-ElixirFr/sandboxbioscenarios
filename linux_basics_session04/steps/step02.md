@@ -13,7 +13,7 @@ In Unix-like operating systems, the default standard input (**stdin**) for a com
 
 As an example, the `tr` command translates (or deletes) characters from a text supplied as input. If we want to convert the `NC_009089.fasta` file that contains a DNA sequence into an RNA sequence (replacing T with U) and switch from upper to lower cases, we can use the following command:
 
-```
+```bash
 tr AGCT agcu < NC_009089.fasta
 ```
 
