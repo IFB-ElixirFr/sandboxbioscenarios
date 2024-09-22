@@ -18,7 +18,7 @@ ls
 
 From the present current working directory, we would like to see what is inside a sub-directory called `bank`. 
 To represent the current working directory, we need the symbol `.` (dot). 
-The relative path to the `test` sub-directory is `./bank`.
+The relative path to the `bank` sub-directory is `./bank`.
 
 ```bash
 ls ./bank
