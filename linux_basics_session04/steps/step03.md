@@ -14,7 +14,7 @@ By default, **stderr** is also displayed on the terminal screen. The purpose of 
 
 As an example, the following command generates an error. While searching for a word in a file is valid, attempting to search within a directory is not.
 
-```
+```bash
 grep foo /shared/data/bank/homo_sapiens
 ```
 
@@ -26,7 +26,7 @@ As previously mentioned for **stdin** and **stdout**, it is also possible to red
 
 <img src="/data/linux_basics_session04/stream_in_outfile_errfile.png" style="max-width:100%" alt="error stream of a command redirected on a file">
 
-```
+```bash
 grep foo /shared/data/bank/homo_sapiens 2> error.log
 ```
 
@@ -36,12 +36,12 @@ Here, the error message is redirected to the `error.log` file instead of being d
 
 If you want to redirect **stdout** and **stderr** in separate files, you can use both the `1>` and `2>` operators.
 
-```
+```bash
 grep foo /shared/data/bank/homo_sapiens 1> sdt_out.txt 2> error.log
 ```
 
 And if you want to redirect both **stdout** and **stderr** in a common file you can use “2>&1”.
 
-```
+```bash
 grep foo /shared/data/bank/homo_sapiens 2>&1 std_out_and_log.txt
 ```
