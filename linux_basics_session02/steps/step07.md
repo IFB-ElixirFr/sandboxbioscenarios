@@ -26,7 +26,7 @@ tree
 
 The `rm` (**r**e**m**ove) command deletes files or directories.
 
-Use `rm` to delete the file named `second_file.txt` from the directory `~/test`. Also use `tree` to check the organisation of files and directory from the working directory:
+Use `rm` to delete the file named `first_file.txt` from the directory `~/test`. Also use `tree` to check the organisation of files and directory from the working directory:
 
 ```bash
 cd
