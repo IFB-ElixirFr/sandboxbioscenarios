@@ -16,7 +16,7 @@ If you type the `ls` command, you should see a sud-directory called `bank`:
 ls
 ```
 
-From the present current working directory, we would like to see what is inside a sub-directory called `bank`. 
+From the present current working directory, we would like to see what is inside the sub-directory called `bank`. 
 To represent the current working directory, we need the symbol `.` (dot). 
 The relative path to the `bank` sub-directory is `./bank`.
 
