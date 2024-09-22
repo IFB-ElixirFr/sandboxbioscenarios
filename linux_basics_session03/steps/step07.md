@@ -10,7 +10,7 @@ It can be used to cut parts of a line by byte position, character and field (or 
 Basically the `cut` command slices the lines to extract some text.
 This command is generally used to extract columns/fields from a file using the `-f/--fields` argument followed by the number(s) of the column(s) of interest (the first column/field is numbered 1).
 
-By default `cut` expects the column/field separator to be a  tabulation ('\t') as in '.bed' files. 
+By default `cut` expects the column/field separator to be a  tabulation (`\t`) as in `.bed` files. 
 
 Here is an example on how to extract the 3rd column of the _SAOUHSC.bed_ file:
 
