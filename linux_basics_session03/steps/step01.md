@@ -27,10 +27,10 @@ A first command to display the contents of a file is `cat`:
 cat NC_009089.fasta
 ```
 
-This command will print the whole contents of the _NC_009089.fasta_ file to the screen.
+This command will print the whole contents of the *NC_009089.fasta* file to the screen.
 
 
-Print the contents of the _SAOUHSC.fasta_ file. 
+Print the contents of the *SAOUHSC.fasta* file. 
 
 <Quiz id="qbelebele" choices={[
 	{ valid: true, value: "CAG"},
@@ -45,7 +45,7 @@ Print the contents of the _SAOUHSC.fasta_ file.
 
 ### Note about the tabulation and newline characters
 
-You may look at the contents of the SAOUHSC.bed file. 
+You may look at the contents of the *SAOUHSC.bed* file. 
 
 ```bash
 cat SAOUHSC.bed
