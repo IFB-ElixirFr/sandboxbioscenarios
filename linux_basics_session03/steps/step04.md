@@ -9,7 +9,7 @@ The `tail` command can be used to check the end of a file:
 
 <Execute command="tail SAOUHSC.bed" />
 
-_-n_ is used the same way as with `head` to modulate the number of lines shown.
+as with `head`, use _-n_ to set the number of line to display. 
 
 <Quiz id="qstep04session03" choices={[
 	{ valid: false, value: "cds-YP_498677.1 ."},
