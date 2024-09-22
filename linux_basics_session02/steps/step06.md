@@ -60,7 +60,7 @@ tree /shared/data/tutorials/linux_basics_session02/projects
 	{ valid: false, value: "3"},
 ]}>
 	<span slot="prompt">
-		Create a new repository named `new_dir` into the directory `/shared/data/tutorials/linux_basics_session02/projects`. In this directory `new_dir`, copy the file `~/test/first_file.txt` and rename it `1st_file.txt`. How many files are listed with the command `tree /shared/data/tutorials/linux_basics_session02/projects/facts/new_dir` ?
+		Create a new repository named `new_dir` into the directory `/shared/data/tutorials/linux_basics_session02/projects`. In this directory `new_dir`, copy the file `~/test/first_file.txt` and rename it `1st_file.txt`. How many files are listed with the command `tree /shared/data/tutorials/linux_basics_session02/projects/new_dir` ?
 	</span>
 </Quiz>
 
