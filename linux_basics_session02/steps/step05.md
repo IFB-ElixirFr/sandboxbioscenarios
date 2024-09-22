@@ -6,8 +6,10 @@ When used without argument, the `cd` command will set the current working direct
 The HOME directory is the default personal directory of a user. However, bear in mind that this HOME directory is not always the right place to store large files, particularly on a cluster with shared resources (ask your administrator!).
 
 ```bash
+pwd
 cd 
 pwd
+ls
 ```
 
 The symbol for the HOME directory is `~` (tilde). This character can be accessed under a PC keyboard using <kbd>AltGr</kbd> + <kbd>2</kbd>. With a Mac OSX keyboard, it may be accessed using <kbd>option</kbd> + <kbd>n</kbd>. 
