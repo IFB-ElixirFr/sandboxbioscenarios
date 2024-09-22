@@ -40,7 +40,7 @@ If you want to redirect **stdout** and **stderr** in separate files, you can use
 grep foo /shared/data/bank/homo_sapiens 1> sdt_out.txt 2> error.log
 ```
 
-And if you want to redirect both **stdout** and **stderr** in a common file you can use “2>&1”.
+And if you want to redirect both **stdout** and **stderr** in a common file you can use `2>&1`.
 
 ```bash
 grep foo /shared/data/bank/homo_sapiens 2>&1 std_out_and_log.txt
