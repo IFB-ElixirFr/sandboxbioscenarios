@@ -24,7 +24,7 @@ Now, type the following command in your terminal (and press <kbd>Enter</kbd>):
 ls Data
 ```
 
-The Bash shell should display the 8 files included in the `Data` directory and 3 files formats (`fasta`, `gff`, `fastq`) which are widely used in bioinformatics.
+The Bash shell should display the 8 files included in the `Data` directory and 3 files formats (`fna`, `gff`, `fastq`) which are widely used in bioinformatics.
 
 Remarks:
 
