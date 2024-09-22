@@ -56,8 +56,23 @@ The same result would be obtained with the absolute path:
 ```bash
 ls /shared/data
 ```
+<Quiz id="q1" choices={[ { valid: true, value: "absolute"}, 
+						 { valid: false, value: "relative"}, ]}> 
+	<span slot="prompt">
+		Which type of path is `/shared/data`?
+	</span>
+</Quiz>
 
-<Quiz id="q1" choices={[ { valid: false, value: "/"}, 
+<Quiz id="q2" choices={[ { valid: false, value: "0"}, 
+						 { valid: false, value: "1"},
+       						 { valid: true, value: "2"},
+	      					 { valid: false, value: "3"},]}> 
+	<span slot="prompt">
+		From the `/shared/data` directory, how many `../` do you need to list the contents of the root directory?
+	</span>
+</Quiz>
+
+<Quiz id="q3" choices={[ { valid: false, value: "/"}, 
 						 { valid: false, value: "/shared"}, 
 						 { valid: true, value: "/shared/data/bank"}, ]}>
 	<span slot="prompt">
@@ -65,14 +80,7 @@ ls /shared/data
 	</span>
 </Quiz>
 
-<Quiz id="q2" choices={[ { valid: true, value: "absolute"}, 
-						 { valid: false, value: "relative"}, ]}> 
-	<span slot="prompt">
-		Which type of path is `/shared/data`?
-	</span>
-</Quiz>
-
-<Quiz id="q3" choices={[ { valid: false, value: "homo_sapiens/hg19/fasta"}, 
+<Quiz id="q4" choices={[ { valid: false, value: "homo_sapiens/hg19/fasta"}, 
 						 { valid: false, value: "../../hg19/fasta"}, 
 						 { valid: true, value: "../homo_sapiens/hg19/fasta"}, ]}> 
 	<span slot="prompt">
