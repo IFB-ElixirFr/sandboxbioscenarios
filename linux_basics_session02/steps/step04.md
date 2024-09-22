@@ -35,7 +35,7 @@ The key <kbd>Tab</kbd> triggers auto-completion. It means you just need to type 
 
 The <kbd>Tab</kbd> key is perhaps the most used key in Unix!
 
-Use the <kbd>TAB</kbd> key and `cd` to go into the `/shared/data/bank/bos_taurus/UMD3.1/star-2.7.2b/` directory.
+Use the <kbd>TAB</kbd> key and `cd` to go into the `/shared/data/bank/homo_sapiens/hg38/star-2.7.5a/` directory.
 
 <Quiz id="step04_q2" choices={[
 	{ valid: false, value: "2"},
