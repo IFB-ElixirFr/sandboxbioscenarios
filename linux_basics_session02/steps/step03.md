@@ -29,11 +29,11 @@ By default, relative paths start from the current working directory, so `./` cou
 ```bash
 ls bank
 ```
-There are 3 sub-directories in the directory `bank`.
+There are 3 sub-directories in `bank`: `box_taurus`, `homo_sapiens` and `nr`.
 
 The `..` operator is handy to write a path relative to a directory. 
 It means _one level up in the directory tree_. 
-For instance from the `/shared/data` directory where you are (remember the `pwd` command) you may list the content of the `/shared` directory using:
+For instance from the `/shared/data` directory where you are, you may list the content of the `/shared` directory using:
 
 ```bash
 ls ..
