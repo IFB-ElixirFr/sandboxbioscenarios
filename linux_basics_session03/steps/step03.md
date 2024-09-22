@@ -15,7 +15,7 @@ By default, this command will show you the first 10 lines of a file.
 
 You can modify the number of lines to display using the _-n_ option:
 
-```
+```bash
 head -n 15 SAOUHSC.bed
 ``` 
 
@@ -38,7 +38,7 @@ It contains one annotation by line.
 
 Look at the `SAOUHSC.bed`:
 
-```
+```bash
 head SAOUHSC.bed
 ``` 
 
