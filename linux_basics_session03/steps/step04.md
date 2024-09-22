@@ -7,7 +7,9 @@ import Execute from "components/Execute.svelte";
 
 The `tail` command can be used to check the end of a file:
 
-<Execute command="tail SAOUHSC.bed" />
+```bash
+tail SAOUHSC.bed
+```
 
 as with `head`, use _-n_ to set the number of line to display. 
 
