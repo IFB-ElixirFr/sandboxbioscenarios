@@ -9,15 +9,15 @@ The HOME directory is the default personal directory of a user. However, bear in
 pwd
 cd 
 pwd
-ls
+tree
 ```
 
 The symbol for the HOME directory is `~` (tilde). This character can be accessed under a PC keyboard using <kbd>AltGr</kbd> + <kbd>2</kbd>. With a Mac OSX keyboard, it may be accessed using <kbd>option</kbd> + <kbd>n</kbd>. 
 
-In the example below we successively go to the `/data` then `/shared/home/guest/test` directories:
+In the example below we successively go to the `/shared/data/bank` then `/shared/home/guest/test` directories:
 
 ```bash
-cd /tmp
+cd /shared/data/bank
 pwd
 cd ~/test
 pwd
