@@ -42,7 +42,7 @@ Looking at the *SAOUHSC_c2.bed* file, it becomes apparent that it includes dupli
 head SAOUHSC_c2.bed
 ```
 
-Our objective is to eliminate these duplicate entries. To achieve this, we will use the `sort` command in conjunction with the `-u` (or --unique in its long form) to guarantee a non-redundant list. Additionally, we use the `-n` (or `--numeric`) option since `sort` performs an alphanumeric sort by default which may lead to sorting 11 before 2.
+Our objective is to eliminate these duplicate entries. To achieve this, we will use the `sort` command in conjunction with the `-u` (or `--unique` in its long form) to guarantee a non-redundant list. Additionally, we use the `-n` (or `--numeric`) option since `sort` performs an alphanumeric sort by default which may lead to sorting 11 before 2.
 
 ```bash
 sort -u -n  SAOUHSC_c2.bed > SAOUHSC_c2_uniq.bed
