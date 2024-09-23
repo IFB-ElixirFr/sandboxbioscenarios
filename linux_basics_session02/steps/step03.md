@@ -13,7 +13,7 @@ Remark: In a Unix system, the administrator (the boss) is called root. And you a
 If you type the `ls` command, you should see a sud-directory called `bank`:
 
 ```bash
-ls
+ls -p
 ```
 
 From the present current working directory, we would like to see what is inside the sub-directory called `bank`. 
@@ -36,13 +36,13 @@ It means _one level up in the directory tree_.
 For instance from the `/shared/data` directory where you are, you may list the content of the `/shared` directory using:
 
 ```bash
-ls ..
+ls -p ..
 ```
 
 The same result would be obtained here using the absolute path:
 
 ```bash
-ls /shared
+ls -p /shared
 ```
 
 In an other example, you could list the content of `data` with a relative path:
