@@ -8,7 +8,7 @@ You might sometimes want to check just the beginning of a file.
 That is what the `head` command does:
 
 ```bash
-head SAOUHSC.bed
+head SAOUHSC.fasta
 ```
 
 By default, this command will show you the first 10 lines of a file. 
@@ -16,22 +16,10 @@ By default, this command will show you the first 10 lines of a file.
 You can modify the number of lines to display using the _-n_ option:
 
 ```bash
-head -n 15 SAOUHSC.bed
+head -n 15 SAOUHSC.fasta
 ``` 
 
 will show you the first 15 lines.
-
-<Quiz id="q1" choices={[
-  { valid: false, value: "1878"},
-	{ valid: true, value: "2821361"},
-	{ valid: false, value: "3289"},
-  { valid: false, value: "6968"},
-	{ valid: false, value: "10456"},
-]}>
-	<span slot="prompt">
-		Print the first line of the SAOUHSC.bed file. What is the first value of the third column? Choose the right answer: 
-	</span>
-</Quiz>
 
 Much used in bioinformatics, the `bed` format is a text file format used to store genomic regions as coordinates and associated annotations.
 It contains one annotation by line.
@@ -49,3 +37,17 @@ This `*.bed` contains 6 columns:
  4. the name of the annotation
  5. if existing, a score (by default a point or a 0 value)
  6. the strand of the annotation
+
+<Quiz id="q1" choices={[
+  { valid: false, value: "1878"},
+	{ valid: true, value: "2821361"},
+	{ valid: false, value: "3289"},
+  { valid: false, value: "6968"},
+	{ valid: false, value: "10456"},
+]}>
+	<span slot="prompt">
+		Print the first line of the SAOUHSC.bed file. What is the first value of the third column? Choose the right answer: 
+	</span>
+</Quiz>
+
+
