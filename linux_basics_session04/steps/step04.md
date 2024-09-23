@@ -46,6 +46,7 @@ Our objective is to eliminate these duplicate entries. To achieve this, we will 
 
 ```bash
 sort -u -n  SAOUHSC_c2.bed > SAOUHSC_c2_uniq.bed
+head SAOUHSC_c2_uniq.bed
 ```
 
 To determine the number of non-redundant entries in the in the *SAOUHSC_c2_uniq.bed* file, we must now employ the `wc` command. By default, the `wc` command counts the number of lines, words and bytes in a file. We can use the `-l` (or `--lines`) argument to simply count the number of lines.
