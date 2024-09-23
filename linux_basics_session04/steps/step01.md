@@ -28,9 +28,6 @@ The `grep` command also output its results to stdout. As an example, we will ext
 
 ```bash
 cd Data
-```
-
-```bash
 grep SAOUHSC_00079 SAOUHSC.bed
 ```
 
