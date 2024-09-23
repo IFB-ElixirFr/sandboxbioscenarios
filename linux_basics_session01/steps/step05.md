@@ -58,7 +58,7 @@ Usually we also use the `-h` option to display sizes in more **h**uman readable 
 You can use several options in the same command.
 
 ```bash
-ls --size --human-readable Data
+ls -s -h Data
 ```
 
 You can merge short form options using a single dash as prefix.
