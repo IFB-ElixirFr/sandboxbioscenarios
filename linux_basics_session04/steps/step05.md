@@ -15,15 +15,17 @@ This is where another extremely important redirection operator comes into play: 
 
 <img src="/data/linux_basics_session04/stream_pipe.png" style="max-width:100%" alt="pipe organisation">
 
-We can rewrite the previous set of instructions to state that the `sort` command no longer takes its input from a file, but rather from the output result/stream of the cut command.
+We can rewrite the previous set of instructions to state that the `sort` command no longer takes its input from a file, but rather from the output result/stream of the cut command (first, we delete the intermediate files with the `rm` command).
 
 ```bash
+rm SAOUHSC_c2*
 cut -f 2 SAOUHSC.bed | sort -u > SAOUHSC_c2_uniq.bed
 ```
 
 In the same way we can also send the result of the `sort` command to the `wc` to get the expected result onto the screen whitout any need to create two intermediate files.
 
 ```bash
+rm SAOUHSC_c2*
 cut -f 2 SAOUHSC.bed | sort -u | wc -l
 ```
 
