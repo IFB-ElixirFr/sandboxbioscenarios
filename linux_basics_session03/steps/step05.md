@@ -43,3 +43,15 @@ wc -l NC_009089.bed
 	</span>
 </Quiz>
 
+<Quiz id="q2" choices={[
+  { valid: false, value: "1878"},
+	{ valid: true, value: "2821361"},
+	{ valid: false, value: "3289"},
+  { valid: false, value: "6968"},
+	{ valid: false, value: "10456"},
+]}>
+	<span slot="prompt">
+		Print the first line of the SAOUHSC.bed file. What is the first value of the third column? Choose the right answer: 
+	</span>
+</Quiz>
+
