@@ -48,7 +48,7 @@ Here are other useful `grep` options :
 - `-n`: adds the line **n**umber at the beginning of the output line
 - `-v`: prints the lines not containing the pattern (re**v**erse selection)
 
-There are many others: try 
+There are many others, try:
 ```bash
 man grep
 ```
