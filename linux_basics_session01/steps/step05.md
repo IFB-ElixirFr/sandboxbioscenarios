@@ -49,11 +49,25 @@ Now, the 8 files are displayed with their respective sizes (in blocks).
 
 You can use a short form for this option by replacing `--size` (long form) by `-s` (short form).
 
+```bash
+ls -s Data
+```
+
 Usually we also use the `-h` option to display sizes in more **h**uman readable formats (_e.g._ 1K, 234M, 2G). 
 
 You can use several options in the same command.
 
+```bash
+ls --size --human-readable Data
+```
+
 You can merge short form options using a single dash as prefix.
+
+Try:
+
+```bash
+ls -sh Data
+```
 
 Another option for the `ls` command to distinguish a file from a directory is `-p` (or long form `--indicator-style`) that append the "/" indicator to directories.
 
