@@ -26,7 +26,7 @@ Try the extraction of the 3 first columns and the 5th one from the _SAOUHSC.bed_
 cut -f 1-3,5 SAOUHSC.bed
 ```
 
-If the file contains columns separated by alternative characters (*e.g.* `,`, `;`, `:`, `|`, ...), you can change the column/field delimiter thanks to the _-d_ option. 
+If the file contains columns separated by alternative characters (*e.g.* `,`, `;`, `:`, `|`, ...), you can change the column/field delimiter thanks to the `-d` option. 
 
 Look at the beginning of the _MACS2.csv_ file (try `head MACS2.csv`). 
 It contains 6 columns, separated by a comma.
