@@ -9,9 +9,6 @@ By default, as you've seen so far, the result of a Unix command is printed on th
 
 ```bash
 ls
-```
-
-```bash
 ls Data
 ```
 
