@@ -14,8 +14,8 @@ For instance:
 grep gene-SAOUHSC_00079 SAOUHSC.bed
 ```
 <Quiz id="q1" choices={[
-  { valid: false, value: "74750"},
-  { valid: false, value: "94950"},
+  { valid: false, value: "2668"},
+  { valid: false, value: "3028"},
   { valid: true, value: "1561"},
   { valid: false, value: "750"},
 ]}>
@@ -48,5 +48,8 @@ Here are other useful `grep` options :
 - `-n`: adds the line **n**umber at the beginning of the output line
 - `-v`: prints the lines not containing the pattern (re**v**erse selection)
 
-There are many others: try `man grep`
+There are many others: try 
+```bash
+man grep
+```
 
