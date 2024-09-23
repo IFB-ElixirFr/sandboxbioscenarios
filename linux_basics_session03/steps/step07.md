@@ -18,7 +18,7 @@ Here is an example on how to extract the 3rd column of the _SAOUHSC.bed_ file:
 cut -f 3 SAOUHSC.bed
 ```
 
-Multiple columns can be extracted using a comma between two column numbers or a '-' for a range of successive columns.
+Multiple columns can be extracted using a comma between two column numbers or a `-` for a range of successive columns.
 
 Try the extraction of the 3 first columns and the 5th one from the _SAOUHSC.bed_ file:
 
@@ -26,7 +26,7 @@ Try the extraction of the 3 first columns and the 5th one from the _SAOUHSC.bed_
 cut -f 1-3,5 SAOUHSC.bed
 ```
 
-If the file contains columns separated by alternative characters (*e.g.* ',', ';', ':', '|'...), you can change the column/field delimiter thanks to the _-d_ option. 
+If the file contains columns separated by alternative characters (*e.g.* `,`, `;`, `:`, `|`, ...), you can change the column/field delimiter thanks to the _-d_ option. 
 
 Look at the beginning of the _MACS2.csv_ file (try `head MACS2.csv`). 
 It contains 6 columns, separated by a comma.
