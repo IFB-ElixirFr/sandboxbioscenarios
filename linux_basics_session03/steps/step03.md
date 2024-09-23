@@ -21,33 +21,29 @@ head -n 15 SAOUHSC.fasta
 
 will show you the first 15 lines.
 
-Much used in bioinformatics, the `bed` format is a text file format used to store genomic regions as coordinates and associated annotations.
-It contains one annotation by line.
+Much used in bioinformatics, the `fasta` format is a text file format used to store sequences regions.
+It contains one comment line which begins by the `>` letter for each region. The next lines contain the sequence until the end of file or the next comment line indicating a new region. 
 
-Look at the `SAOUHSC.bed`:
+Look at the beginning of the `SAOUHSC.fasta` file:
 
 ```bash
-head SAOUHSC.bed
+head SAOUHSC.fasta
 ``` 
 
-This `*.bed` contains 6 columns: 
- 1. the identifier of the genomic region related to the annoation
- 2. the start position (in nucleotides) of the annotation
- 3. the end position (in nucleotides) of the annotation
- 4. the name of the annotation
- 5. if existing, a score (by default a point or a 0 value)
- 6. the strand of the annotation
+Display only the first line of the 2 fasta files:
+
+```bash
+head -n1 *.fasta
+``` 
 
 <Quiz id="q1" choices={[
-  { valid: false, value: "1878"},
-	{ valid: true, value: "2821361"},
-	{ valid: false, value: "3289"},
-  { valid: false, value: "6968"},
-	{ valid: false, value: "10456"},
+  { valid: false, value: "the NC_007795.1 identifier is associated to a Clostridioides difficile genome"},
+	{ valid: true, value: "the NC_009089.1 identifier is associated to a Clostridioides difficile genome"},
+	{ valid: false, value: "the NC_009089.1 identifier is associated to a Staphylococcus aureus genome"},
+	{ valid: true, value: "the NC_007795.1 identifier is associated to a Staphylococcus aureus genome"},
 ]}>
 	<span slot="prompt">
-		Print the first line of the SAOUHSC.bed file. What is the first value of the third column? Choose the right answer: 
+		Which statements are corrects?
 	</span>
 </Quiz>
-
 
