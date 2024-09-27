@@ -18,7 +18,7 @@ export const config = {
 	description: "IFB Scenario 2",
 	tags: ["unix", "shell", "terminal"],
 	tools: ["ls", "date"],
-	difficulty: ["belt orange", "belt green"],
+	difficulty: ["orange belt", "green belt"],
 	steps: [
 		{ name: "Manipulating files and directories", component: Step0 },
 		{ name: "Tree, path & files", component: Step1 },
