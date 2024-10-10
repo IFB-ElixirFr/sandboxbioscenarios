@@ -7,7 +7,7 @@ import Quiz from "components/Quiz.svelte";
 ### *grep*
 
 The `grep` command extracts lines matching a given pattern. 
-A pattern can be a simple word or a more general expression, often termed **regular expression** (see [here](https://librarycarpentry.org/lc-data-intro/01-regular-expressions/) to learn more about these). 
+A pattern can be a simple word or a more general expression, often termed **regular expression** (see [here](https://librarycarpentry.org/lc-data-intro/01-regular-expressions.html) to learn more about these). 
 For instance:
 
 ```bash
