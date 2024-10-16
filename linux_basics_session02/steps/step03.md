@@ -4,7 +4,7 @@ import Quiz from "components/Quiz.svelte";
 
 Run the `pwd` command in the right panel.
 
-The output is the absolute path `/shared/data` and means that you are currently located in `/shared/data`. 
+The output is the absolute path `/shared/data`. This means that you are currently located in `/shared/data`. 
 
 <!---
 Remark: In a Unix system, the administrator (the boss) is called root. And you are presently in its personal directory that is also called `root`! 
@@ -16,20 +16,20 @@ If you type the `ls` command, you should see a sud-directory called `bank`:
 ls -p
 ```
 
-From the present current working directory, we would like to see what is inside the sub-directory called `bank`. 
-To represent the current working directory, we need the symbol `.` (dot). 
-The relative path to the `bank` sub-directory is `./bank`.
+We would like to display the content of the `bank` sub-directory. We can tell the system that we want to list the content of a directory (bank) that is located inside the current working directory. The current working directory can be symbolized by the `.` (dot). 
+Thus the relative path to the `bank` sub-directory is `./bank`.
 
 ```bash
 ls ./bank
 ```
 
-By default, relative paths start from the current working directory, so `./` could be omitted:
+By default if a path does not start with `/` it is considered as a path relative to the current working directory. This means that the `./`can be omitted. One can thus simply write:
 
 ```bash
 ls bank
 ```
-There are 3 sub-directories in `bank`: `box_taurus`, `homo_sapiens` and `nr`.
+
+Here, The `bank` directory contains 3 sub-directories: `bos_taurus`, `homo_sapiens` and `nr`.
 
 The `..` operator is handy to write a path relative to a directory. 
 It means _one level up in the directory tree_. 
