@@ -18,7 +18,7 @@ Given the result of the previous command we can guess the  path from the root `/
 /shared/data/bank/homo_sapiens
 ```
 
-As stated previously, this path that starts with an `/` is an absolute path. Starting from the root  `/`, we go through the `shared` then `bank` directories to reach the target `homo_sapiens` directory.
+As stated previously, this path, starting with a `/` is an absolute path. It indicates that, starting from the root  `/`, we go through the `shared` then `bank` directories to reach the target `homo_sapiens` directory.
 
 Paths are used in many Unix commands, such as the `ls` (that stands for **l**i**s**t) command:
 
