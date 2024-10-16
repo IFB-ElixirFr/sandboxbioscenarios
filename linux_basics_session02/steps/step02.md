@@ -12,7 +12,7 @@ tree -d -L 2 /shared/data
 
 The displayed directories were created to store the genome files of several species. Here, the `bank` directory is a child of `data` but also the parent of `bos_taurus`.  
 
-From the previous command we deduce the  path from the root `/` to the `homo_sapiens` directory. This path is:
+Given the result of the previous command we can guess the  path from the root `/` to the `homo_sapiens` directory. This path is:
 
 ```bash
 /shared/data/bank/homo_sapiens
