@@ -10,7 +10,7 @@ In the example below, the `tree` command displays the subdirectories (option `-d
 tree -d -L 2 /shared/data
 ```
 
-These directories were created to store genome files of different species. As an example the `bank` directory is a child of `data` but is also the parent of `bos_taurus`.  
+These directories were created to store the genome files of several species. As an example the `bank` directory is a child of `data` but is also the parent of `bos_taurus`.  
 
 From the previous command we deduce the  path from the root `/` to the `homo_sapiens` directory. This path is:
 
