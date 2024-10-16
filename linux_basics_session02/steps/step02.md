@@ -20,13 +20,13 @@ Given the result of the previous command we can guess the  path from the root `/
 
 As stated previously, this path, starting with a `/` is an absolute path. It indicates that, starting from the root  `/`, we go through the `shared` then `bank` directories to reach the target `homo_sapiens` directory.
 
-Paths are used in many Unix commands, such as the `ls` (that stands for **l**i**s**t) command:
+Paths can be provided to many Unix commands. One of the most useful is the `ls` (that stands for **l**i**s**t) command:
 
 ```bash
 ls /shared/data/bank/homo_sapiens
 ```
 
-This `ls` command lists the content of the specified directory (also named **argument** of the ls command).
+The objective of the `ls` command is to display the content of a specific directory (also named **argument** of the ls command).
 
 <Quiz id="q1" choices={[ 
       { valid: false, value: "hg18"}, 
