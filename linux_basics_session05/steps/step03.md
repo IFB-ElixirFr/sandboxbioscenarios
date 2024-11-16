@@ -1,3 +1,8 @@
+<script> 
+  import Quiz from "components/Quiz.svelte"; 
+  import Execute from "components/Execute.svelte"; 
+</script> 
+
 ## seqkit, une boîte à outils
 
 Dans l’aide, on s’intéresse à la section “Usage:” 
