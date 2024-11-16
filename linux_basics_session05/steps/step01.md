@@ -9,6 +9,12 @@ import Execute from "components/Execute.svelte";
 todo
 ```
 
+objectif : dissocier outils bash d’autres outils créés par des développeurs info ou bioinfo
+différence : les outils “tiers” ne respectent pas toujours les “usages” des commandes bash, 
+par exemple pour les options (courtes, longues), 
+pas de `man outil` et donc les options pour l’accès à l’aide varient (ex. -h -help, –help, nom de l’outil seul, …), 
+pas toujours possible de les piper, 
+notion de “boite à outils” (plusieurs outils ensemble)
 
 Some exmaple text
 
