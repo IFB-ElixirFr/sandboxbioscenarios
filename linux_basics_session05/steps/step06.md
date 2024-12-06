@@ -1,3 +1,3 @@
 # Pour aller plus loin
 
-Pour aller plus loin dans la découverte de l'outil seqkit, suivre le tutora de Robert
+To find out more about the seqkit tool, follow sandbox.bio's tutorial: sandbox.bio https://sandbox.bio/tutorials/seqkit-intro
