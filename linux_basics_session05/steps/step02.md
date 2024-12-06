@@ -26,6 +26,7 @@ For example, the help for seqkit is here: https://bioinf.shenwei.me/seqkit/
 
 At all times, there is also access to directly accessible help that can be displayed in the terminal (perhaps a little less detailed than that provided on the Internet). 
 Since we don't know in advance how to request help, we simply write the name of the tool and this often indicates how to obtain detailed help. 
+
 Alternatively, you can test the various options `-h`, `--help`, `-help`
 
 quizz what are the seqkit help instructions?
