@@ -24,11 +24,13 @@ The first thing to do is to read the help.
 It's often available on the Internet (and there are even tutorials). 
 For example, the help for seqkit is here: https://bioinf.shenwei.me/seqkit/
 
-A tout instant, il y a aussi un accès à une aide directement accessible et affichable dans le terminal (elle sera peut-être un peu moins détaillée que celle fournie sur internet). Comme on ne sait pas à l’avance comment demander l’aide, on écrit simplement le nom de l’outil et cela indique souvent comment obtenir une aide détaillée. Sinon on teste les différentes possibilités -h, -help, –help
+At all times, there is also access to directly accessible help that can be displayed in the terminal (perhaps a little less detailed than that provided on the Internet). 
+Since we don't know in advance how to request help, we simply write the name of the tool and this often indicates how to obtain detailed help. 
+Alternatively, you can test the various options `-h`, `--help`, `-help`
 
-quizz quelles sont les instructions pour obtenir l’aide de seqkit?
+quizz what are the seqkit help instructions?
 (*) seqkit -h
-(*) seqkit –help
+(*) seqkit --help
 (*) seqkit
-seqkit -help
+
 
