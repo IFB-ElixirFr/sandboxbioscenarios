@@ -5,33 +5,28 @@ import Execute from "components/Execute.svelte";
 
 # The seqkit tool
 
-To test the discovery of a bioinfo tool, we suggest you discover the `seqkit` tool.
+Among the many bioinformatics tools available, we invite you to explore the seqkit tool in this tutorial.  It provides a software suite designed for sequence analysis and can be used to manipulate sequence files, especially those in fasta format.
 
-This tool can be used to manipulate sequence files, particularly in fasta format.
+Unlike the current sandbox environment, the seqkit software may not be installed on your personal computer, which is perfectly normal since it is a third-party tool. If it's not available, you will need to install it. In bioinformatics, the CONDA tool is frequently used for installations, but this will not be covered in the present tutorial.
 
-To use a third-party tool, it must be present in the file tree. 
-If it is not present, it must be added, which is called “installing a tool”.
-Special privileges (called “root rights”) are sometimes required to install a tool.
-In this case, ask your administrator.
+You can check that the seqkit tool is available by using the `which` bash command. This command will return the installation path of the specified tool.
 
-You can see where the seqkit tool has been installed with the bash command `which` followed by the tool name: 
 ```bash
 which seqkit
 ```
-The `seqkit` tool is indeed available and can be used. 
+The output of the previous command confirms that seqkit is available for use.
 
-The first thing to do is to read the help. 
-It's often available on the Internet (and there are even tutorials). 
-For example, the help for seqkit is here: https://bioinf.shenwei.me/seqkit/
 
-At all times, there is also access to directly accessible help that can be displayed in the terminal (perhaps a little less detailed than that provided on the Internet). 
-Since we don't know in advance how to request help, we simply write the name of the tool and this often indicates how to obtain detailed help. 
+The first step is to check the documentation. The method for accessing documentation varies depending on the software. For some tools, a simple call to the command without any options will display the help section. For others, you may need to use the -h, --help or -help option. Finally, for most tools, an online help resource will be available to guide you in getting started with the software. For example, the help for seqkit is available at: https://bioinf.shenwei.me/seqkit.
 
-Alternatively, you can test the various options `-h`, `--help`, `-help`
-
-quizz what are the seqkit help instructions?
-(*) seqkit -h
-(*) seqkit --help
-(*) seqkit
+<Quiz id="q1" choices={[
+         { valid: true, value: "seqkit -h"},
+         { valid: true, value: "seqkit --help"},
+         { valid: true, value: "seqkit"},
+]}>
+        <span slot="prompt">
+	Try it in the terminal: How can one access the help section for seqkit?
+        </span>
+</Quiz>
 
 
