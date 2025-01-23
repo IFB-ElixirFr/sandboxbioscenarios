@@ -3,20 +3,29 @@
   import Execute from "components/Execute.svelte"; 
 </script> 
 
-## seqkit, une boîte à outils
+## seqkit: a command suite
 
-Dans l’aide, on s’intéresse à la section “Usage:” 
-qui explique comment lancer l’outil
+When viewing the help section, it's crucial to focus on the **Usage** section. This sectioon offers a concise overview of how to use the command, highlighting both required and optional arguments. As a convention, items enclosed in brackets `[...]` are optional. For instance, here, seqkit can be called without any arguments (as previously shown).
 
-Par convention, les éléments entre [] dans cette section sont facultatifs. Ici par exemple, seqkit peut être appelé sans argument (et dans ce cas, l’aide est affichée).
-Ici, l’argument [command] doit être remplacé par un des outils listés dans la suite de l’aide. 
-Pour seqkit, les outils sont présentés par grandes fonctionnalités :
-basic commandes (…)
-format conversion ()
-searching ()
-Les outils de la suite seqkit peuvent être lancés en tapant seqkit suivi du nom de l’outil. 
+Here, the `[command]` argument  should be replaced with one of the tools proposed subsequently in the "Available Commands" section. One can directly see that seqkit offers a large panel of functions including sequence manipulation, format conversion, sequence analysis, and file management. 	
 
-Par exemple, la commande ci-dessous permet d’avoir accès à l’outil stats qui calcule des statistiques sur une séquence : 
-seqkit stats
+The "Flags" section provides a range of additional arguments that are available for all commands. To access the specific arguments for each subcommand, you will need then to call them individually.
 
-Pour l’aide de cet outil, il faut ajouter l’argument -h : seqkit stats -h
+For example, the `stats` command calculates statistics for a sequence. To access the help for this tool, you need to include the `-h` argument:
+
+```bash
+seqkit stats -h
+```
+
+<Quiz id="step3_1" choices={[
+         { valid: false, value: "-t"},
+         { valid: true, value: "-T"},
+         { valid: false, value: "-O"},
+	 { valid: false, value: "-o"},
+]}>
+        <span slot="prompt">
+	Which argument in the `stats` command enables the generation of a tabulated output?
+        </span>
+</Quiz>
+
+
