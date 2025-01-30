@@ -3,31 +3,52 @@
   import Execute from "components/Execute.svelte"; 
 </script> 
 
-## calculer les statistiques d’une séquence
+## Computing Sequence Statistics using seqkit
 
-L’aide informe comment obtenir les statistiques pour un fichier. Les séquences peuvent être de formats, fasta ou fastq.
+The `seqkit stats` command generates statistics on sequence files. It supports various formats, including FASTA and FASTQ.
 
-Si on lance seqkit stats => provoque une erreur qui explique que le flux d’entrée stdin n’est pas indiqué : 
-`[ERRO] -: fastx: stdin not detected`
+If you run `seqkit stats` without specifying an input, an error occurs. To avoid this, you must either provide a FASTA file or pass the data through standard input (STDIN) using a pipe:
 
-Il faut donc soit ajouter le fichier de séquence xxx.fasta soit le faire parvenir sur stdin (pipe)
-seqkit stats xxx.fasta
-cat xxx.fasta | seqkit stats
+```bash
+seqkit stats /shared/bank/saccharomyces_cerevisiae/SacCer3/fasta/sacCer3.fa 
+cat /shared/bank/saccharomyces_cerevisiae/SacCer3/fasta/sacCer3.fa | seqkit stats 
+```
 
-Quizz : Est-ce que les 2 sorties sont identiques ?
-non car il n’y a pas le nom du fichier avec la redirection, mais les valeurs obtenues sont identiques
+<Quiz id="step4_1" choices={[
+         { valid: false, value: "Yes, they are exaclty the same."},
+         { valid: true, value: "No, because the file name is not included when using redirection, but the computed values remain the same."},
+]}>
+        <span slot="prompt">
+        Are both outputs identical?
+        </span>
+</Quiz>
 
-Pour plusieurs séquences : 
-seqkit stats *.fasta => le tableau contient autant de lignes que de fichiers
-cat *.fasta | seqkit stats => le tableau ne contient qu’une ligne qui donne les statistiques sur les séquences prises toutes ensemble.
+The seqkit stats command provides overall statistics for all sequences in a given file. In the `sacCer3.fa` file, sequences from different chromosomes are included.
 
-Pour extraire les lignes d’entête :
+The seqkit seq command allows extracting the headers of the different sequences in a FASTA file.
+
+```bash
 seqkit seq -n /shared/bank/saccharomyces_cerevisiae/SacCer3/fasta/sacCer3.fa
-Quizz : quel est l’équivalent en bash ? grep “>” *.fasta
+```
 
-A partir d’un fichier fasta multiple, on peut vouloir faire des stats sur chacun des chromosomes. Seqkit split permet de séparer le fichier multiple en fichiers individuels à partir desquels on peut calculer les statistiques : 
-seqkit split -i --out-dir .  Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa.gz
-seqkit stats -T  *fa.gz
+<Quiz id="step4_2" choices={[
+         { valid: false, value: "3"},
+         { valid: true, value: "17"},
+         { valid: false, value: "12"},
+         { valid: false, value: "34"},
+         { valid: false, value: "23"},
+]}>
+        <span slot="prompt">
+        How many chromosomes does the Saccharomyces cerevisiae genome contain?
+        </span>
+</Quiz>
 
-Afficher les statistiques selon la longueur croissante des séquences 
-seqkit stats -T  *fa.gz | sort -k5,5 -g
+Note that the `grep` command can also be used to find headers in a FASTA file by searching for lines that contain a '>' symbol.
+
+```bash
+grep ">" /shared/bank/saccharomyces_cerevisiae/SacCer3/fasta/sacCer3.fa 
+```
+
+
+
+
