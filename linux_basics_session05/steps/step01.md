@@ -4,7 +4,7 @@ import Execute from "components/Execute.svelte";
 </script>
 
 
-##  Bash vs. Bioinformatics Tools
+##  Bash commands vs. Bioinformatics Tools
 
 Specialized bioinformatics tools developed for specific scientific needs often differ from built-in Bash commands. They have distinct purposes, functionalities, and usage patterns. The goal of this session is to explore a bioinformatics tool and learn how to become familiar with its use.
 
