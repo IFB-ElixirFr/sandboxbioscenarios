@@ -9,8 +9,8 @@ Below, we highlight some errors that may be encountered when running `seqkit` an
 
 When calling some command `seqkit` may complain that the command does not exist. An example is provided below:
 
-```
-$ seqkit Stats -h
+```bash
+seqkit Stats -h
 ```
 
 The following message is returned:
@@ -36,8 +36,8 @@ Did you mean this?
 
 A common mistake is to provide an incorrect argument to a command. As an example, attempting to run `seqkit -help` triggers an error before displaying the help message (and repeats the error at the end).
 
-```
-$ seqkit -help
+```bash
+seqkit -help
 ```
 
 This results in the following error message:
@@ -52,8 +52,8 @@ Error: unknown shorthand flag: 'e' in -elp
 
 When using a `seqkit` subcommands, the instruction should always begin with `seqkit`, followed by the desired command. Any deviation from this structure will result in an error, which may (or not) clearly point out the issue.
 
-```
-$ seqkit -a stats /shared/bank/saccharomyces_cerevisiae/SacCer3/fasta/sacCer3.fa.gz
+```bash
+seqkit -a stats /shared/bank/saccharomyces_cerevisiae/SacCer3/fasta/sacCer3.fa.gz
 ```
 
 Here’s the resulting error message:
