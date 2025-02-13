@@ -38,7 +38,3 @@ seqkit stats -T *.gz
 		How to retrieve only the number of sequences in the genome?
 	</span>
  </Quiz>
-And 
-```bash
-
-```
