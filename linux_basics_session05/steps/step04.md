@@ -6,6 +6,7 @@
 ## Computing sequence length statistics using seqkit
 
 The `seqkit` commands accept FASTA or FASTQ files as input, including their compressed versions (.gz). 
+
 In bioinformatics, compressed formats are commonly used due to the amount of data. For instance, in this tutorial, we will analyze the complete genome of Saccharomyces cerevisiae.
 
 In the `sacCer3.fa` file, sequences from the different chromosomes are included.
@@ -35,7 +36,7 @@ However, if you run `seqkit stats` without specifying an input, an error occurs.
 seqkit stats
 ```
 
-To avoid this, you must either provide a FASTA file or pass the data through standard input (STDIN) using a pipe:
+To avoid this, you must either provide a FASTA file or provide text stream through standard input (STDIN) using a pipe:
 
 ```bash
 seqkit stats /shared/bank/saccharomyces_cerevisiae/SacCer3/fasta/sacCer3.fa.gz 

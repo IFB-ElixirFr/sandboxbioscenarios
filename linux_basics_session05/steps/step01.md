@@ -1,4 +1,4 @@
-<script>
+ <script>
 import Quiz from "components/Quiz.svelte";
 import Execute from "components/Execute.svelte";
 </script>
@@ -11,9 +11,11 @@ Specialized bioinformatics tools developed for specific scientific needs often d
 Third-party tools often deviate from the conventions of native Bash commands. For instance:
  
  - Their argument/option format may differ from those of standard bash commands.
- - They often lack a manual page accessible through the man command.
- - These tools do not support piping, which can limit their integration into workflows.
+ - They often lack a manual page accessible through the `man` command.
+ - These tools do not all support piping, which may limit their integration into workflows.
  - Many are designed as toolkits, offering a collection of utilities bundled together for specific tasks.
  
-There are no universal rules, and each tool needs to be explored individually. Consulting the help documentation is an essential part of learning how to use it.
+There are no universal rules, and each tool needs to be explored individually. Consulting the help documentation is an essential part of learning how to use them.
+
+
 
