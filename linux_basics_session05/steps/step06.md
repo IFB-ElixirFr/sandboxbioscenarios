@@ -59,7 +59,7 @@ seqkit -a stats /shared/bank/saccharomyces_cerevisiae/SacCer3/fasta/sacCer3.fa.g
 Here’s the resulting error message:
 
 ```
-Error: unknown command "sacCer3.fa.gz" for "seqkit"
+Error: unknown command "/shared/bank/saccharomyces_cerevisiae/SacCer3/fasta/sacCer3.fa.gz" for "seqkit"
 ```
 
 **Explanation:**  In this case, the user mistakenly placed the `-a` argument before the `stats` command. As a result, `NA12878.fasta` is incorrectly interpreted as a command, triggering the error.
