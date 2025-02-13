@@ -7,7 +7,7 @@ Below, we highlight some errors that may be encountered when running `seqkit` an
 
 ## Example 1: invalid command
 
-When calling some command seqkit complains that the command does not exist. An example is provided below:
+When calling some command `seqkit` may complain that the command does not exist. An example is provided below:
 
 ```
 $ seqkit Stats -h
@@ -34,7 +34,7 @@ Did you mean this?
 
 ## Example 2: invalid option
 
- common mistake is providing an incorrect argument to a command. As an example, attempting to run `seqkit -help` triggers an error before displaying the help message (and repeats the error at the end).
+A common mistake is to provide an incorrect argument to a command. As an example, attempting to run `seqkit -help` triggers an error before displaying the help message (and repeats the error at the end).
 
 ```
 $ seqkit -help
@@ -53,24 +53,36 @@ Error: unknown shorthand flag: 'e' in -elp
 When using a `seqkit` subcommands, the instruction should always begin with `seqkit`, followed by the desired command. Any deviation from this structure will result in an error, which may (or not) clearly point out the issue.
 
 ```
-$ seqkit -a stats NA12878.fasta
+$ seqkit -a stats /shared/bank/saccharomyces_cerevisiae/SacCer3/fasta/sacCer3.fa.gz
 ```
 
 Here’s the resulting error message:
 
 ```
-Error: unknown command "NA12878.fasta" for "seqkit"
+Error: unknown command "sacCer3.fa.gz" for "seqkit"
 ```
 
-**Explanation:**  In this case, the user mistakenly placed the `-a` argument before the stats command. As a result, `NA12878.fasta` is incorrectly interpreted as a command, triggering the error.
+**Explanation:**  In this case, the user mistakenly placed the `-a` argument before the `stats` command. As a result, `NA12878.fasta` is incorrectly interpreted as a command, triggering the error.
 
+<Quiz id="step06_01" choices={[
+         { valid: true, value: "Seqkit stats -a sacCer3.fa.gz"},
+         { valid: true, value: "seqkit stats -a sacCer3.fasta.gz"},
+         { valid: false, value: "seqkit stats -a sacCer3.fa.gz"},
+         { valid: true, value: "seqkit stats -A sacCer3.fa.gz"},
+         { valid: true, value: "seqkit fx2tab -C -n A sacCer3.fa.gz"},
+         { valid: false, value: "seqkit fx2tab -C A -n sacCer3.fa.gz"},
+         { valid: false, value: "seqkit fx2tab -n -C A sacCer3.fa.gz"},
+]}>
+        <span slot="prompt">
+	If one is located in '/shared/bank/saccharomyces_cerevisiae/SacCer3/fasta/'. Which instruction(s) would result in an error?
+        </span>
+</Quiz>
 
 ## Tips
 
 - Errors are typically displayed on the last line (just before the program terminates…).
-- Take the time to read the errors carefully and try to understand them.
-- Use the internet or your preferred chatbot to help interpret them.
-- Do not place arguments before the subcommand name.
+- Take the time to read the errors carefully and try to understand them (use internet or your preferred chatbot to help interpret them).
+- Follow the instructions provided the "Usage" section (*e.g* do not place arguments before the subcommand name).
 - The file name is a **positional argument** in seqkit commands, meaning it should be provided as the **last argument** in the command.
 
 
