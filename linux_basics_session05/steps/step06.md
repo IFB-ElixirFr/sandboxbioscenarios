@@ -62,7 +62,7 @@ Here’s the resulting error message:
 Error: unknown command "NA12878.fasta" for "seqkit"
 ```
 
-**Explanation:**  In this case, the user mistakenly placed the `-a` argument before the stats command. As a result, `NA12878.fasta` is incorrectly interpreted as a command, triggering the error.
+**Explanation:**  In this case, the user mistakenly placed the `-a` argument before the `stats` command. As a result, `NA12878.fasta` is incorrectly interpreted as a command, triggering the error.
 
 
 ## Tips
