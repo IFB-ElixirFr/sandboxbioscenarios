@@ -27,12 +27,12 @@ seqkit stats -T *.gz
 ```
 
 <Quiz id="question1" choices={[
-	{ valid: false, value: "seqkit stats *.gz | cut -f 3 | head -n1"},
+	{ valid: false, value: "seqkit stats *.gz | cut -f 3 | head -n 1"},
 	{ valid: false, value: "seqkit stats -T *.gz | cut -f 3 | tail -n +2"},
 	{ valid: false, value: "seqkit stats -T *.gz | cut -f 4"},
-  { valid: false, value: "seqkit stats *.gz | cut -f 4 | tail -n1"},
+  { valid: false, value: "seqkit stats *.gz | cut -f 4 | tail -n 1"},
  	{ valid: true, value: "seqkit stats -T *.gz | cut -f 4 | tail -n +2"},
-	{ valid: false, value: "seqkit stats -T *.gz | cut -f 4 | head -n1"},
+	{ valid: false, value: "seqkit stats -T *.gz | cut -f 4 | head -n 1"},
 ]}>
 	<span slot="prompt">
 		How to retrieve only the number of sequences in the genome?
