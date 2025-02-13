@@ -3,7 +3,7 @@
   import Execute from "components/Execute.svelte"; 
 </script> 
 
-## Calculating Nucleotide Composition Statistics with seqkit
+## Calculating nucleotide composition statistics with seqkit
 
 The `seqkit fx2tab` command converts a FASTA or FASTQ file (either compress of uncompressed) into a tabulated format (*i.e* multi-column format). By default, the first column contains the sequence identifier (i.e., the FASTA header), while the second holds the sequence itself.
 A key advantage of using a tabulated format is the ability to include additional columns with extra information. The `seqkit fx2tab` command offers various options to append statistics such as GC content, nucleotide composition, or average base quality (for FASTQ files).
