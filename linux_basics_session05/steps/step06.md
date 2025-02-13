@@ -1,23 +1,76 @@
 <script> import Quiz from "components/Quiz.svelte"; import Execute from "components/Execute.svelte"; </script> 
 
-# Debuging error 
+# Debugging Errors
 
-“errare humanum est": when we write command lines, we often make mistakes. Hereafter, we suggest some of them, and indicate how to spot, interpret, and correct them.
+"Errare humanum est": When writing command lines, mistakes are common. That's why it's essential to carefully read error messages.
+Below, we highlight some errors that may be encountered when running `seqkit` and explain how to identify, interpret, and fix them.
 
-## When you try seqkit -help, you get the help, but with an error before (and repeated at the end)
+## Example 1: Invalid command
+
+When calling some command seqkit complains that the command does not exist. An example is provided below:
+
+```
+$ seqkit Stats -h
+```
+
+The following message is returned:
+
+```
+Error: unknown command "Stats" for "seqkit"
+
+Did you mean this?
+	scat
+	stats
+
+Run 'seqkit --help' for usage.
+unknown command "Stats" for "seqkit"
+
+Did you mean this?
+	scat
+	stats
+```
+
+**Explanation:**  The user attempted to call the `Stats` command, but `seqkit` responds with an error because command names are case-sensitive. The correct command is `stats` (lowercase), not `Stats` (with uppercase S).
+
+## Example 2: Invalid Option
+
+ common mistake is providing an incorrect argument to a command. As an example, attempting to run `seqkit -help` triggers an error before displaying the help message (and repeats the error at the end).
+
 ```
 $ seqkit -help
 ```
-this produces several lines including :
+
+This results in the following error message:
+
 ```
 Error: unknown shorthand flag: 'e' in -elp
 ```
-explication : pour demander l'aide, -help n'existe pas pour seqkit, c'est soit --help soit -h. Par contre, seqkit comprend "seqkit -h" et donc affichera l'aide. Pour les lettres restantes, "elp" il essaie de les traduire comme une composition de formes courtes (comme on peut aussi le faire pour une commande bash) mais bloque car "seqkit -e" n'existe pas.
-Tips: 
-- Error is often repaet in the the last line of the answer.
-- The tool isn't always self-explanatory
 
-## Quand on se trompe dans l'ordre et que l'on inverse un flag et la sous-commande, on obtient une erreur qui ... ne dit pas cela ...
+**Explanation :** The `-help` option is not valid in `seqkit`. The correct options are `--help` or `-h`. However, since `seqkit -h` is recognized, the help message is displayed. The remaining letters, `elp`, are treated as separate short flags (*i.e.*, `-e, -l, and -p`). Since `-e` is not a valid flag, the command fails.
+
+## Example 3: Invalid option ordering
+
+When using a `seqkit` subcommands, the instruction should always begin with `seqkit`, followed by the desired command. Any deviation from this structure will result in an error, which may (or not) clearly point out the issue.
+
+```
 $ seqkit -a stats NA12878.fasta
+```
+
+Here’s the resulting error message:
+
+```
 Error: unknown command "NA12878.fasta" for "seqkit"
-explication : l'usage de seqkit indique que le mot suivant seqkit est une sous-commande, suivie éventuellement de flags. La syntaxe erronée ici est donc comprise comme seqkit + à cause du tiret, "-a" est bien considéré comme  puis
+```
+
+**Explanation:**  In this case, the user mistakenly placed the `-a` argument before the stats command. As a result, `NA12878.fasta` is incorrectly interpreted as a command, triggering the error.
+
+
+## Tips
+
+- Errors are typically displayed on the last line (just before the program terminates…).
+- Take the time to read the errors carefully and try to understand them.
+- Use the internet or your preferred chatbot to help interpret them.
+- Do not place arguments before the subcommand name.
+- The file name is a **positional argument** in seqkit commands, meaning it should be provided as the **last argument** in the command.
+
+
