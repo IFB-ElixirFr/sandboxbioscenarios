@@ -5,9 +5,11 @@ import Execute from "components/Execute.svelte";
 
 # The SeqKit tool
 
-Among the many bioinformatics tools available, we invite you to explore the seqkit tool as ana example in this tutorial.  It provides a software suite designed for sequence analysis and can be used to manipulate sequence files, especially those in fasta or fastq format.
+Among the many bioinformatics tools available, we invite you to explore the seqkit tool as an example in this tutorial.  It is already installed in the current sandbox environment.
 
-The seqkit software is already installed in the current sandbox environment.
+The seqkit tool provides a software suite designed for sequence analysis and can be used to manipulate sequence files, especially those in fasta or fastq format.
+
+
 
 You can check that the seqkit tool is available by using the `which` bash command. This command will return the installation path of the specified tool.
 
