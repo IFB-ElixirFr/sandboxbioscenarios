@@ -4,7 +4,7 @@ import Quiz from "components/Quiz.svelte";
 import Execute from "components/Execute.svelte";
 </script>
 
-The Bash shell provides you with a working space including files and directories.
+The terminal give you access to a working space including files and directories.
 
 A very useful command is `ls`, that **l**i**s**ts the content of a directory.
 In your Unix terminal on the right, type `ls` and then press <kbd>Enter</kbd>:
@@ -15,8 +15,8 @@ ls
 
 The Bash shell should display `Data` and `Data_file_list.txt`, where `Data` is a directory named `Data` and `Data_file_list.txt` is a file named `Data_file_list.txt`.
 
-By convention, files have a name followed by an **extension** separated by a dot. The file extension indicates the file type, that is something similar to its category. Here, `txt` indicates a text file.
-You will come across different file formats and therefore different extensions that are relevant to humans.
+By convention, files have a name followed by an **extension** separated by a dot. The file extension indicates the file type, that is something similar to its category. Here, `.txt` indicates a text file.
+You will come across different file formats each with a particular extension.
 
 Now, type the following command in your terminal (and press <kbd>Enter</kbd>):
 
@@ -35,17 +35,17 @@ Remarks:
 
 ## Options
 
-Options modify the way in which a command works.
+Options modify the waya command works.
 In Bash, shell options start with a simple or double dash (`-` or `--`).
 
 For example, we can display the size of the files using the `--size` option of the `ls` command. 
-Let's try and type: 
+Let's try it by typing: 
 
 ```bash
 ls --size Data
 ```
 
-Now, the 8 files are displayed with their respective sizes (in blocks). 
+Now, the 8 file names are displayed with their respective sizes (in blocks). 
 
 You can use a short form for this option by replacing `--size` (long form) by `-s` (short form).
 
@@ -53,7 +53,7 @@ You can use a short form for this option by replacing `--size` (long form) by `-
 ls -s Data
 ```
 
-Usually we also use the `-h` option to display sizes in more **h**uman readable formats (_e.g._ 1K, 234M, 2G). 
+Usually we also use the `-h` option to display sizes in more **h**uman readable formats (*e.g.* 1Kb, 234Mb, 2Gb). 
 
 You can use several options in the same command.
 
@@ -61,7 +61,7 @@ You can use several options in the same command.
 ls -s -h Data
 ```
 
-You can merge short form options using a single dash as prefix.
+You can combine short form options using a single dash as prefix.
 
 Try:
 
@@ -69,7 +69,7 @@ Try:
 ls -sh Data
 ```
 
-Another option for the `ls` command to distinguish a file from a directory is `-p` (or long form `--indicator-style`) that append the "/" indicator to directories.
+Another option for the `ls` command can be used to distinguish a file from a directory. The `-p` (or long form `--indicator-style`) appends the "/" indicator to directories.
 
 Try: 
 
@@ -84,7 +84,7 @@ ls -p
   { valid: false, value: "Data  /Data_file_list.txt"},
 ]}>
 	<span slot="prompt">
-		what is the result of the ls command with the -p option ?
+		what is the result of the `ls` command with the `-p` option ?
 	</span>
 </Quiz>
 
