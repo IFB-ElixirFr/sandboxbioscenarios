@@ -1,8 +1,5 @@
- 1
-2
-3
-4
-# Pour aller plus loin
+# To go further
 
-To find out more about the seqkit tool, follow sandbox.bio's tutorial: sandbox.bio https://sandbox.bio/tutorials/seqkit-intro
+You've completed the "Discovering a new bioinformatics tool". Congratulations!
+For a more in-depth introduction to the `seqkit` toolkit, you may follow the sandbox.bio tutorial: sandbox.bio https://sandbox.bio/tutorials/seqkit-intro
 
