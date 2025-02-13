@@ -1,6 +1,6 @@
 # Debuging error 
 
-“errare humaum est": when we write command lines, we often make mistakes. Hereafter, we suggest some of them, and indicate how to spot, interpret, and correct them.
+“errare humanum est": when we write command lines, we often make mistakes. Hereafter, we suggest some of them, and indicate how to spot, interpret, and correct them.
 
 ## When you try seqkit -help, you get the help, but with an error before (and repeated at the end)
 ```
