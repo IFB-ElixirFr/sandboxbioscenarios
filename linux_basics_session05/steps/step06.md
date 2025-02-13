@@ -1,3 +1,5 @@
+<script> import Quiz from "components/Quiz.svelte"; import Execute from "components/Execute.svelte"; </script> 
+
 # Debuging error 
 
 “errare humanum est": when we write command lines, we often make mistakes. Hereafter, we suggest some of them, and indicate how to spot, interpret, and correct them.
