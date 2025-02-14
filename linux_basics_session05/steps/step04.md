@@ -5,9 +5,9 @@
 
 ## Computing sequence length statistic using seqkit
 
-The `seqkit` commands accept FASTA or FASTQ files as input, including their compressed versions (.gz). 
+The `seqkit` commands accept FASTA or FASTQ files as input, including their compressed versions (`.gz`). 
 
-In bioinformatics, compressed formats are commonly used due to the amount of data. For instance, in this tutorial, we will analyze the complete genome of Saccharomyces cerevisiae.
+In bioinformatics, compressed formats are commonly used due to the amount of data. For instance, in this tutorial, we will analyze the complete genome of *Saccharomyces cerevisiae*.
 
 In the `sacCer3.fa` file, sequences from the different chromosomes are included.
 
@@ -19,17 +19,17 @@ seqkit seq -n /shared/bank/saccharomyces_cerevisiae/SacCer3/fasta/sacCer3.fa.gz
 
 <Quiz id="step4_2" choices={[
          { valid: false, value: "3"},
-         { valid: true, value: "17"},
          { valid: false, value: "12"},
-         { valid: false, value: "34"},
+         { valid: true, value: "17"},
          { valid: false, value: "23"},
+         { valid: false, value: "34"},
 ]}>
         <span slot="prompt">
-        How many chromosomes does the Saccharomyces cerevisiae genome contain?
+        How many chromosomes does the *Saccharomyces cerevisiae* genome contain?
         </span>
 </Quiz>
 
-We may now compute the sequence length statistics using `seqkit stats` (*e.g* average length, minimal/maximal length).
+We may now compute the chromosome length statistics using `seqkit stats` (*e.g* average length, minimal/maximal length).
 However, if you run `seqkit stats` without specifying an input, an error occurs. 
 
 ```bash
@@ -44,7 +44,7 @@ cat /shared/bank/saccharomyces_cerevisiae/SacCer3/fasta/sacCer3.fa.gz | seqkit s
 ```
 
 <Quiz id="step4_1" choices={[
-         { valid: false, value: "Yes, they are exaclty the same."},
+         { valid: false, value: "Yes, they are exaclty the same since the same file is given as input."},
          { valid: true, value: "No, because the file name is not included when using redirection, but the computed values remain the same."},
 ]}>
         <span slot="prompt">
