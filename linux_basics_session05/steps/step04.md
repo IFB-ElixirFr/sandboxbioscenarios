@@ -3,7 +3,7 @@
   import Execute from "components/Execute.svelte"; 
 </script> 
 
-## Computing sequence length statistics using seqkit
+## Computing sequence length statistic using seqkit
 
 The `seqkit` commands accept FASTA or FASTQ files as input, including their compressed versions (.gz). 
 
