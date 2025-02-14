@@ -2,7 +2,7 @@
 
 # Debugging errors
 
-*Errare humanum est*: When writing command lines, mistakes are common. That's why it's essential to carefully read error messages.
+*Errare humanum est* ... When writing command lines, mistakes are common. That's why it's essential to carefully read error messages.
 Below, we highlight some errors that may be encountered when running `seqkit` and explain how to identify, interpret, and fix them.
 
 ## Example 1: invalid command
