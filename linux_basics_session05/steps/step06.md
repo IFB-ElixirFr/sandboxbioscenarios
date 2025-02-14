@@ -2,7 +2,7 @@
 
 # Debugging errors
 
-"Errare humanum est": When writing command lines, mistakes are common. That's why it's essential to carefully read error messages.
+*Errare humanum est*: When writing command lines, mistakes are common. That's why it's essential to carefully read error messages.
 Below, we highlight some errors that may be encountered when running `seqkit` and explain how to identify, interpret, and fix them.
 
 ## Example 1: invalid command
@@ -40,13 +40,13 @@ A common mistake is to provide an incorrect argument to a command. As an example
 seqkit -help
 ```
 
-This results in the following error message:
+This results in the following error message in the first and last lines:
 
 ```
 Error: unknown shorthand flag: 'e' in -elp
 ```
 
-**Explanation :** The `-help` option is not valid in `seqkit`. The correct options are `--help` or `-h`. However, since `seqkit -h` is recognized, the help message is displayed. The remaining letters, `elp`, are treated as separate short flags (*i.e.*, `-e, -l, and -p`). Since `-e` is not a valid flag, the command fails.
+**Explanation :** The `-help` option is not valid in `seqkit`. The correct options are `--help` (double hyphens) or `-h` (short flag of `--help`). However, since `seqkit -h` is recognized, the help message is displayed. The remaining letters, `elp`, are treated as separate short flags (*i.e.*, `-e`, `-l`, and `-p`). Since `-e` is not a valid flag, the command fails.
 
 ## Example 3: invalid option ordering
 
