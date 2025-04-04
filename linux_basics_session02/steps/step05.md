@@ -1,5 +1,5 @@
 <script>
-import Quiz from "components/Quiz.svelte";
+import Quiz from "$components/Quiz.svelte";
 </script>
 
 When used without argument, the `cd` command will set the current working directory to your HOME directory. 

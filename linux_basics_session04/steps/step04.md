@@ -1,5 +1,5 @@
 <script>
-import Execute from "components/Execute.svelte";
+import Execute from "$components/Execute.svelte";
 </script>
 
 As we've seen so far, a file can be redirected to the **stdin** of a command using the `<` operator, while the **stdout** of a command can be redirected to a file using the `>` operator (or `>>` to add lines).

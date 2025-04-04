@@ -1,5 +1,5 @@
 <script>
-import Quiz from "components/Quiz.svelte";
+import Quiz from "$components/Quiz.svelte";
 </script>
 
 In this session you have discovered the 3 data streams of an unix command: the input stream (**stdin**), the output stream (**strout**) and the error stream (**stderr**):

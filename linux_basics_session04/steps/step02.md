@@ -1,6 +1,6 @@
 <script>
-import Quiz from "components/Quiz.svelte";
-import Execute from "components/Execute.svelte";
+import Quiz from "$components/Quiz.svelte";
+import Execute from "$components/Execute.svelte";
 </script>
 
 As in the case of **stdout** the standard input  of a command is also abbreviated, here as **stdin**.

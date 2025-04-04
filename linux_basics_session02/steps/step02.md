@@ -1,5 +1,5 @@
 <script> 
-import Quiz from "components/Quiz.svelte"; 
+import Quiz from "$components/Quiz.svelte"; 
 </script> 
 
 The `tree` command displays the tree-like organization of files and sub-directories contained in a particular directory.

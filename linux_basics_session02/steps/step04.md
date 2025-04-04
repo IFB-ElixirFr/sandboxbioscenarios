@@ -1,5 +1,5 @@
 <script>
-import Quiz from "components/Quiz.svelte";
+import Quiz from "$components/Quiz.svelte";
 </script>
 
 The `cd` command (**c**hange **d**irectory) can be used to visit another directory in the file tree. 

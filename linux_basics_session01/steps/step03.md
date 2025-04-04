@@ -1,5 +1,5 @@
 <script>
-import Quiz from "components/Quiz.svelte";
+import Quiz from "$components/Quiz.svelte";
 </script>
 
 We have already mentioned that the Shell can be accessed through a dedicated interface: **the terminal**.

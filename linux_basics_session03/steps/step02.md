@@ -1,5 +1,5 @@
 <script>
-import Quiz from "components/Quiz.svelte";
+import Quiz from "$components/Quiz.svelte";
 </script>
 
 ## Browse a file interactively

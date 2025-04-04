@@ -1,6 +1,6 @@
 <script>
-import Quiz from "components/Quiz.svelte";
-import Execute from "components/Execute.svelte";
+import Quiz from "$components/Quiz.svelte";
+import Execute from "$components/Execute.svelte";
 </script>
 
 We have previously used the `cut` command to extract the second column from the *SOUHSC.bed* the `sort`to order the subsequent stream. We could have written both intructions on the same line using the `;` operator:

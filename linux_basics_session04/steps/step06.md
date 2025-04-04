@@ -1,6 +1,6 @@
 <script>
-import Quiz from "components/Quiz.svelte";
-import Execute from "components/Execute.svelte";
+import Quiz from "$components/Quiz.svelte";
+import Execute from "$components/Execute.svelte";
 </script>
 
 As we've seen so far, the **sort** command performs, **by default, alphanumeric sorting** on a text stream. 

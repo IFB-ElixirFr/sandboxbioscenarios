@@ -1,5 +1,5 @@
 <script>
-import Quiz from "components/Quiz.svelte";
+import Quiz from "$components/Quiz.svelte";
 </script>
 
 <!-- The "id" is used to maintain state on page refresh. It just has to be unique within a step in a tutorial -->

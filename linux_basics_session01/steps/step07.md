@@ -1,7 +1,7 @@
 <script>
-import Quiz from "components/Quiz.svelte";
-import Link from "components/Link.svelte";
-import Execute from "components/Execute.svelte";
+import Quiz from "$components/Quiz.svelte";
+import Link from "$components/Link.svelte";
+import Execute from "$components/Execute.svelte";
 </script>
 
 ## The man command

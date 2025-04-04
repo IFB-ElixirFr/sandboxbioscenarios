@@ -1,5 +1,5 @@
 <script>
-import Execute from "components/Execute.svelte";
+import Execute from "$components/Execute.svelte";
 </script>
 
 We previously introduced the standard input and standard output and pointed out that the input and output of a Unix command are also called streams. 
