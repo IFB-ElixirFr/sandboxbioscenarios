@@ -15,7 +15,8 @@ Check that you are in the expected directory with `pwd`:
 pwd
 ```
 
-The result should be `/shared/projects/linux_basics_session03/`. This directory should contain 5 files when calling `ls`.
+<!--- (sandbox.bio)/root/tutorial vs (IFB)/shared/data -->
+The result should be `/root/tutorial/linux_basics_session03/`. This directory should contain 5 files when calling `ls`.
 
 ## Displaying file contents
 
