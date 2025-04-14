@@ -15,13 +15,16 @@ mkdir my_dir
 tree
 ```
 
-Still from your HOME directory, create another directory nammed `my_dir2` into the directory `/shared/data/tutorials/linux_basics_session02/projects`. 
-Use the command `tree` to display the file and directory organisation from the directory `/shared/data/tutorials/linux_basics_session02/projects`. Reminder: be lazy and use the <kbd>Tab</kbd> key to speed up your writing of the path.
+<!--- (sandbox.bio)/root/tutorial vs (IFB)/shared/data -->
+Still from your HOME directory, create another directory nammed `my_dir2` into the directory `/root/tutorial/linux_basics_session02/projects`. 
+<!--- (sandbox.bio)/root/tutorial vs (IFB)/shared/data -->
+Use the command `tree` to display the file and directory organisation from the directory `/root/tutorial/linux_basics_session02/projects`. Reminder: be lazy and use the <kbd>Tab</kbd> key to speed up your writing of the path.
 
+<!--- (sandbox.bio)/root/tutorial vs (IFB)/shared/data -->
 ```bash
 cd
-mkdir /shared/data/tutorials/linux_basics_session02/projects/my_dir2
-tree /shared/data/tutorials/linux_basics_session02/projects/
+mkdir /root/tutorial/linux_basics_session02/projects/my_dir2
+tree /root/tutorial/linux_basics_session02/projects/
 ```
 
 ## Copying files and directories
@@ -43,13 +46,15 @@ ls
 With the option `-r` (**r**ecursive), the `cp` command copies all files of the source directory to the destination directory.
 
 ⚠️ Currently, the `-r` option is not supported in this course. We will change this as soon as possible but in the meantime the following commands do not work.
-
-Try to copy the `~/test` repository and its content to a new directory named `my_test` in the directory `/shared/data/tutorials/linux_basics_session02/projects`:
+-->
+<!--- (sandbox.bio)/root/tutorial vs (IFB)/shared/data -->
+<!---
+Try to copy the `~/test` repository and its content to a new directory named `my_test` in the directory `/root/tutorial/linux_basics_session02/projects`:
 
 ```bash
-tree /shared/data/tutorials/linux_basics_session02/projects
-cp -r ~/test /shared/data/tutorials/linux_basics_session02/projects/my_test
-tree /shared/data/tutorials/linux_basics_session02/projects
+tree /root/tutorial/linux_basics_session02/projects
+cp -r ~/test /root/tutorial/linux_basics_session02/projects/my_test
+tree /root/tutorial/linux_basics_session02/projects
 ```
 --->
 
@@ -60,7 +65,8 @@ tree /shared/data/tutorials/linux_basics_session02/projects
 	{ valid: false, value: "3"},
 ]}>
 	<span slot="prompt">
-		Create a new repository named `new_dir` into the directory `/shared/data/tutorials/linux_basics_session02/projects`. Copy the `~/test/first_file.txt` file  in this `new_dir` directory while renaming it `1st_file.txt`. How many files are listed with the command `tree /shared/data/tutorials/linux_basics_session02/projects/new_dir` ?
+	        <!--- (sandbox.bio)/root/tutorial vs (IFB)/shared/data -->
+		Create a new repository named `new_dir` into the directory `/root/tutorial/linux_basics_session02/projects`. Copy the `~/test/first_file.txt` file  in this `new_dir` directory while renaming it `1st_file.txt`. How many files are listed with the command `tree /root/tutorial/linux_basics_session02/projects/new_dir` ?
 	</span>
 </Quiz>
 

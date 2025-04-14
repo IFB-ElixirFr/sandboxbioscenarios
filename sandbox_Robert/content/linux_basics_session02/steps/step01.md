@@ -37,4 +37,6 @@ Now, type the `pwd` command in the right panel and press <kbd>Enter</kbd>.
 
 Look! It begins with a `/`.
 
-Here, `/shared/data` indicates that we are currently located in the `data` directory which itself is contained in the `shared` directory. The `shared` directory can be refered as the **parent directory** of `data`.    
+<!--- (sandbox.bio)/root/tutorial vs /shared/data(IFB) -->
+Here, `/root/tutorial` indicates that we are currently located in the `tutorial` directory which itself is contained in the `root` directory. The `root` directory can be refered as the **parent directory** of `tutorial`.  
+

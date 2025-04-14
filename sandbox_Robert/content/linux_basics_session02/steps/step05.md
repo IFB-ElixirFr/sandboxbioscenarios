@@ -14,10 +14,10 @@ tree
 
 The symbol for the HOME directory is `~` (tilde). This character can be accessed under a PC keyboard using <kbd>AltGr</kbd> + <kbd>2</kbd>. With a Mac OSX keyboard, it may be accessed using <kbd>option</kbd> + <kbd>n</kbd>. 
 
-In the example below we successively go to the `/shared/data/bank` then `/shared/home/guest/test` directories:
-
+<!--- (sandbox.bio)/root/tutorial vs (IFB)/shared/data -->
+In the example below we successively go to the `/root/tutorial/bank` then `/root` directories:
 ```bash
-cd /shared/data/bank
+cd /root/tutorial/bank
 pwd
 cd ~/test
 pwd
@@ -25,17 +25,18 @@ pwd
 
 
 To answer the next question, please type the 3 following commands:
-
+<!--- (sandbox.bio)/root/tutorial vs (IFB)/shared/data -->
 ```bash
-cd /shared/data/bank/nr
+cd /root/tutorial/bank/nr
 cd ~/test
 cd
 ```
 
-<Quiz id="q1" choices={[ { valid: false, value: "/shared/data/nr"}, 
+<!--- (sandbox.bio)/root/tutorial vs (IFB)/shared/data -->
+<Quiz id="q1" choices={[ { valid: false, value: "/root/tutorial/bank/nr"}, 
 						 { valid: false, value: "test"}, 
 						 { valid: true, value: "your HOME directory"}, 
-						 { valid: false, value: "/shared/data"}, 
+						 { valid: false, value: "/root/tutorial"}, 
 						 { valid: false, value: "nr"},
 						 { valid: false, value: "/root/test"}, ]}> 
 	<span slot="prompt">

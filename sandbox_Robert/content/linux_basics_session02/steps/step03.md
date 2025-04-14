@@ -4,7 +4,8 @@ import Quiz from "$components/Quiz.svelte";
 
 Run the `pwd` command in the right panel.
 
-The output is the absolute path `/shared/data`. This means that you are currently located in `/shared/data`. 
+<!--- (sandbox.bio)/root/tutorial vs (IFB)/shared/data -->
+The output is the absolute path `/root/tutorial`. This means that you are currently located in `/root/tutorial`. 
 
 <!---
 Remark: In a Unix system, the administrator (the boss) is called root. And you are presently in its personal directory that is also called `root`! 
@@ -33,33 +34,37 @@ Here, The `bank` directory contains 3 sub-directories: `bos_taurus`, `homo_sapie
 
 The `..` operator is handy to write a path relative to a directory. 
 It means _one level up in the directory tree_. 
-For instance from the `/shared/data` directory where you are, you may list the content of the `/shared` directory using:
+<!--- (sandbox.bio)/root/tutorial vs (IFB)/shared/data -->
+For instance from the `/root/tutorial` directory where you are, you may list the content of the `/root` directory using:
 
 ```bash
 ls -p ..
 ```
 
 The same result would be obtained here using the absolute path:
-
+<!--- (sandbox.bio)/root/tutorial vs (IFB)/shared/data -->
 ```bash
-ls -p /shared
+ls -p /root
 ```
+<!--- (sandbox.bio)/root/tutorial vs (IFB)/shared/data -->
+In an other example, you could list the content of `tutorial` with a relative path:
 
-In an other example, you could list the content of `data` with a relative path:
-
+<!--- (sandbox.bio)/root/tutorial vs (IFB)/shared/data -->
 ```bash
-ls ../data
+ls ../tutorial
 ```
 
 The same result would be obtained with the absolute path:
 
+<!--- (sandbox.bio)/root/tutorial vs (IFB)/shared/data -->
 ```bash
-ls /shared/data
+ls /root/tutorial
 ```
 <Quiz id="q1" choices={[ { valid: true, value: "absolute"}, 
 						 { valid: false, value: "relative"}, ]}> 
 	<span slot="prompt">
-		Which type of path is `/shared/data`?
+               <!--- (sandbox.bio)/root/tutorial vs (IFB)/shared/data -->
+		Which type of path is `/root/tutorial`?
 	</span>
 </Quiz>
 
@@ -68,15 +73,18 @@ ls /shared/data
        						 { valid: true, value: "2"},
 	      					 { valid: false, value: "3"},]}> 
 	<span slot="prompt">
-		From the `/shared/data` directory, how many `../` do you need to list the contents of the root directory?
+	        <!--- (sandbox.bio)/root/tutorial vs (IFB)/shared/data -->
+		From the `/root/tutorial` directory, how many `../` do you need to list the contents of the root directory?
 	</span>
 </Quiz>
 
+<!--- (sandbox.bio)/root/tutorial vs (IFB)/shared/data -->
 <Quiz id="q3" choices={[ { valid: false, value: "/"}, 
-						 { valid: false, value: "/shared"}, 
-						 { valid: true, value: "/shared/data/bank"}, ]}>
+						 { valid: false, value: "/root"}, 
+						 { valid: true, value: "/root/tutorial/bank"}, ]}>
 	<span slot="prompt">
-		If your current working directory is `/shared/data/bank/homo_sapiens`, to which absolute path refers the path `..` ?
+	        <!--- (sandbox.bio)/root/tutorial vs (IFB)/shared/data -->
+		If your current working directory is `/root/tutorial/bank/homo_sapiens`, to which absolute path refers the path `..` ?
 	</span>
 </Quiz>
 
@@ -84,6 +92,7 @@ ls /shared/data
 						 { valid: false, value: "../../hg19/fasta"}, 
 						 { valid: true, value: "../homo_sapiens/hg19/fasta"}, ]}> 
 	<span slot="prompt">
-		If your current working directory is `/shared/data/bank/bos_taurus` what is the relative path to `/shared/data/bank/homo_sapiens/hg19/fasta`?
+	        <!--- (sandbox.bio)/root/tutorial vs (IFB)/shared/data -->
+		If your current working directory is `/root/tutorial/bank/bos_taurus` what is the relative path to `/root/tutorial/bank/homo_sapiens/hg19/fasta`?
 	</span>
 </Quiz>
