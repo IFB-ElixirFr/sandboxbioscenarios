@@ -52,17 +52,20 @@ Error: unknown shorthand flag: 'e' in -elp
 
 When using a `seqkit` subcommand, the instruction should always begin with `seqkit`, followed by the desired subcommand. Any deviation from this structure will result in an error, which may (or not) clearly point out the issue.
 
+<!--- (sandbox.bio)/root/tutorial vs (IFB)/shared/data -->
 ```bash
-seqkit -a stats /shared/bank/saccharomyces_cerevisiae/SacCer3/fasta/sacCer3.fa.gz
+seqkit -a stats /root/tutorial/bank/saccharomyces_cerevisiae/SacCer3/fasta/sacCer3.fa.gz
 ```
 
 Here’s the resulting error message:
 
+<!--- (sandbox.bio)/root/tutorial vs (IFB)/shared/data -->
 ```
-Error: unknown command "/shared/bank/saccharomyces_cerevisiae/SacCer3/fasta/sacCer3.fa.gz" for "seqkit"
+Error: unknown command "/root/tutorial/bank/saccharomyces_cerevisiae/SacCer3/fasta/sacCer3.fa.gz" for "seqkit"
 ```
 
-**Explanation:**  In this case, the user mistakenly placed the `-a` argument before the `stats` command. As a result, the input file name, `/shared/bank/saccharomyces_cerevisiae/SacCer3/fasta/sacCer3.fa.gz`, is incorrectly interpreted as a command, triggering the error.
+<!--- (sandbox.bio)/root/tutorial vs (IFB)/shared/data -->
+**Explanation:**  In this case, the user mistakenly placed the `-a` argument before the `stats` command. As a result, the input file name, `/root/tutorial/bank/saccharomyces_cerevisiae/SacCer3/fasta/sacCer3.fa.gz`, is incorrectly interpreted as a command, triggering the error.
 
 <Quiz id="step06_01" choices={[
          { valid: true, value: "Seqkit stats -a sacCer3.fa.gz"},
@@ -74,7 +77,8 @@ Error: unknown command "/shared/bank/saccharomyces_cerevisiae/SacCer3/fasta/sacC
          { valid: false, value: "seqkit fx2tab -n -C A sacCer3.fa.gz"},
 ]}>
         <span slot="prompt">
-	If one is located in the '/shared/bank/saccharomyces_cerevisiae/SacCer3/fasta/' folder, which instruction(s) would result in an error?
+        <!--- (sandbox.bio)/root/tutorial vs (IFB)/shared/data -->
+	If one is located in the '/root/tutorial/bank/saccharomyces_cerevisiae/SacCer3/fasta/' folder, which instruction(s) would result in an error?
         </span>
 </Quiz>
 

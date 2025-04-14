@@ -13,8 +13,9 @@ In the `sacCer3.fa` file, sequences from the different chromosomes are included.
 
 The `seqkit seq` command allows extracting the headers of the different sequences in a FASTA file.
 
+<!--- (sandbox.bio)/root/tutorial vs (IFB)/shared/data -->
 ```bash
-seqkit seq -n /shared/bank/saccharomyces_cerevisiae/SacCer3/fasta/sacCer3.fa.gz
+seqkit seq -n /root/tutorial/bank/saccharomyces_cerevisiae/SacCer3/fasta/sacCer3.fa.gz
 ```
 
 <Quiz id="step4_2" choices={[
@@ -38,9 +39,10 @@ seqkit stats
 
 To avoid this, you must either provide a FASTA file or provide text stream through standard input (STDIN) using a pipe:
 
+<!--- (sandbox.bio)/root/tutorial vs (IFB)/shared/data -->
 ```bash
-seqkit stats /shared/bank/saccharomyces_cerevisiae/SacCer3/fasta/sacCer3.fa.gz 
-cat /shared/bank/saccharomyces_cerevisiae/SacCer3/fasta/sacCer3.fa.gz | seqkit stats 
+seqkit stats /root/tutorial/bank/saccharomyces_cerevisiae/SacCer3/fasta/sacCer3.fa.gz 
+cat /root/tutorial/bank/saccharomyces_cerevisiae/SacCer3/fasta/sacCer3.fa.gz | seqkit stats 
 ```
 
 <Quiz id="step4_1" choices={[
