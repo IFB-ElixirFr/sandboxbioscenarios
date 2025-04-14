@@ -14,8 +14,9 @@ By default, **stderr** is also displayed on the terminal screen. The purpose of 
 
 As an example, the following command generates an error. While searching for a word in a file is valid, attempting to search within a directory is not.
 
+<!--- (sandbox.bio)/root/tutorial vs (IFB)/shared/data -->
 ```bash
-grep foo /shared/data/bank/homo_sapiens
+grep foo /root/tutorial/bank/homo_sapiens
 ```
 
 The error message will be directed to the **stderr** stream, which is printed on the terminal by default.
@@ -26,8 +27,9 @@ As previously mentioned for **stdin** and **stdout**, it is also possible to red
 
 <img src="/data/linux_basics_session04/stream_in_outfile_errfile.png" style="max-width:100%" alt="error stream of a command redirected on a file">
 
+<!--- (sandbox.bio)/root/tutorial vs (IFB)/shared/data -->
 ```bash
-grep foo /shared/data/bank/homo_sapiens 2> error.log
+grep foo /root/tutorial/bank/homo_sapiens 2> error.log
 ```
 
 ⚠️ today, in this course, the `2>`, the `1>`, and the `2>&1` operators are not yet supported. We will change this as soon as possible but in the meantime the following commands do not work.
@@ -36,12 +38,14 @@ Here, the error message is redirected to the `error.log` file instead of being d
 
 If you want to redirect **stdout** and **stderr** in separate files, you can use both the `1>` and `2>` operators.
 
+<!--- (sandbox.bio)/root/tutorial vs (IFB)/shared/data -->
 ```bash
-grep foo /shared/data/bank/homo_sapiens 1> sdt_out.txt 2> error.log
+grep foo /root/tutorial/bank/homo_sapiens 1> sdt_out.txt 2> error.log
 ```
 
 And if you want to redirect both **stdout** and **stderr** in a common file you can use `2>&1`.
 
+<!--- (sandbox.bio)/root/tutorial vs (IFB)/shared/data -->
 ```bash
-grep foo /shared/data/bank/homo_sapiens 2>&1 std_out_and_log.txt
+grep foo /root/tutorial/bank/homo_sapiens 2>&1 std_out_and_log.txt
 ```
