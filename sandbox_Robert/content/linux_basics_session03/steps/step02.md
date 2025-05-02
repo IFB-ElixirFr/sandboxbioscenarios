@@ -4,7 +4,9 @@ import Quiz from "$components/Quiz.svelte";
 
 ## Browse a file interactively
 
+<!---
 ⚠️ Today, in this course, the less command is not yet supported. We will change this as soon as possible, but in the meantime, read this page and go on to the next one by clicking on the next button at the bottom of the page.
+--->
 
 Very often the files you want to read are too large for your screen.
 For instance, you have previously displayed the content of the file _SAOUHSC.fasta_ with the `cat` command.
