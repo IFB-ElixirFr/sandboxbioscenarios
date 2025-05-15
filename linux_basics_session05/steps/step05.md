@@ -26,7 +26,7 @@ You'll find several useful arguments that can be combined to obtain a comprehens
 We can then call `seqkit fx2tab` using these options and providing the `sacCer3.fa.gz` as last argument:
 
 ```bash
-seqkit fx2tab -H -n -l -B A,C,T,G,GC /shared/bank/saccharomyces_cerevisiae/SacCer3/fasta/sacCer3.fa.gz
+seqkit fx2tab -H -n -l -B A,C,T,G,GC /shared/data/bank/saccharomyces_cerevisiae/SacCer3/fasta/sacCer3.fa.gz
 ```
 
 <Quiz id="step5_1" choices={[
