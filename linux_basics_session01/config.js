@@ -41,5 +41,7 @@ export const config = {
         "Data/SRR3105699_chr18.fastq",
         "Data_file_list.txt",
     ],
-
+    init:`
+	cd /shared/projects/tutorial/;
+    `
 };

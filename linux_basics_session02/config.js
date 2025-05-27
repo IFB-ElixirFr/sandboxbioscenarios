@@ -10,33 +10,28 @@ import Step7 from "./steps/step07.md";
 import Step8 from "./steps/step08.md";
 
 export const config = {
-	id: "linux_basics_session02",
-	pwd: "linux_basics_session02",
-	listed: true,
-	name: "Unix file system",
-	subtitle: `by <a href="https://www.france-bioinformatique.fr/en/home/" target="_blank">French Institute of Bioinformatics</a>`,
-	description: "IFB Scenario 2",
-	tags: ["unix", "shell", "terminal"],
-	tools: ["ls", "date"],
-	difficulty: ["orange belt", "green belt"],
-	steps: [
-		{ name: "Manipulating files and directories", component: Step0 },
-		{ name: "Tree, path & files", component: Step1 },
-		{ name: "Absolute paths", component: Step2 },
-		{ name: "Relative paths", component: Step3 },
-		{ name: "Change directory", component: Step4 },
-		{ name: "The HOME directory", component: Step5 },
-		{ name: "Create or copy", component: Step6 },
-		{ name: "Move or remove", component: Step7 },
-		{ name: "Congratulations", component: Step8 },
-	],
-	// For now, don't use `cd` in init, need to debug why it breaks the initialization script
-	
-	init: `
-		mkdir -p $HOME/test;
-			echo "first test" > $HOME/test/first_file.txt;
-			echo "second test" > $HOME/test/second_file.txt;
-   		mkdir -p /shared/data/tutorials/linux_basics_session02/projects/;
-	`,
-	files: [],
+    id: "linux_basics_session02",
+    pwd: "linux_basics_session02",
+    listed: true,
+    name: "Unix file system",
+    subtitle: `by <a href="https://www.france-bioinformatique.fr/en/home/" target="_blank">French Institute of Bioinformatics</a>`,
+    description: "IFB Scenario 2",
+    tags: ["unix", "shell", "terminal"],
+    tools: ["ls", "date"],
+    difficulty: ["orange belt", "green belt"],
+    steps: [
+        { name: "Manipulating files and directories", component: Step0 },
+        { name: "Tree, path & files", component: Step1 },
+        { name: "Absolute paths", component: Step2 },
+        { name: "Relative paths", component: Step3 },
+        { name: "Change directory", component: Step4 },
+        { name: "The HOME directory", component: Step5 },
+        { name: "Create or copy", component: Step6 },
+        { name: "Move or remove", component: Step7 },
+        { name: "Congratulations", component: Step8 },
+    ],
+    // For now, don't use `cd` in init, need to debug why it breaks the initialization script
+
+    init: "",
+    files: [],
 };
