@@ -2,7 +2,10 @@
 
 # Debugging errors
 
-*Errare humanum est* ... When writing command lines, mistakes are common. That's why it's essential to carefully read error messages.
+*Errare humanum est* ... 
+
+When writing command lines, mistakes are common. That's why it's essential to carefully read error messages.
+
 Below, we highlight some errors that may be encountered when running `seqkit` and explain how to identify, interpret, and fix them.
 
 ## Example 1: invalid command
@@ -82,7 +85,7 @@ Error: unknown command "/shared/data/bank/saccharomyces_cerevisiae/SacCer3/fasta
 
 - Errors are typically displayed on the last line (just before the program terminates…).
 - Take the time to read the errors carefully and try to understand them (use internet or your preferred chatbot to help interpret them).
-- Follow the instructions provided the "Usage" section (*e.g* do not place arguments before the subcommand name).
-- The file name is a **positional argument** in seqkit commands, meaning it should be provided as the **last argument** in the command.
+- Follow the instructions provided in the "Usage" section (*e.g* do not place arguments before the subcommand name).
+- The file name is a **positional argument** in seqkit commands, meaning it should be provided as the **last argument** in the command (or _via_ a pipe).
 
 
