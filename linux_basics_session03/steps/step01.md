@@ -54,8 +54,9 @@ cat SAOUHSC.bed
 You'll notice that it contains several rows and columns. 
 This `.bed` file is a classic **tabulated file**. This means that each
 column is separated by a `\t` character. This character looks like 
-a large space, although it's different. We can display 
-any string using the `echo` command. 
+a large space, although it's different. 
+
+We can display any string using the `echo` command. 
 
 Print the two following intructions (one with spaces and one with tabulations). You will
 see that they are different.
