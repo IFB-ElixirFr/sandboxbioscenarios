@@ -9,13 +9,15 @@ In the previous chapters, you learnt how to move around in the Unix filesystem a
 This chapter will show you how to explore the data contained in these files. 
 The commands we’ll be using are fairly simple, but are solid building blocks of more sophisticated treatment pipelines.
 
-Check that you are in the expected directory with `pwd`:
+Typically, calculations are performed in a directory other than the HOME directory. 
+For this session, go to the `/shared/projects/tutorial/Data` directory and check that you are in the expected directory with `pwd`:
 
 ```bash
+cd /shared/projects/tutorial/Data
 pwd
 ```
 
-The result should be `/shared/projects/linux_basics_session03/`. This directory should contain 5 files when calling `ls`.
+The result should be `/shared/projects/tutorial/Data`. This directory should contain 5 files when calling `ls`.
 
 ## Displaying file contents
 
