@@ -32,6 +32,6 @@ export const config = {
     ],
     // For now, don't use `cd` in init, need to debug why it breaks the initialization script
 
-    init: "",
+    init: "cd /shared/data/",
     files: [],
 };
