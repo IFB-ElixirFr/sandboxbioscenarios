@@ -51,6 +51,6 @@ export const config = {
     `,*/
     files: [
         // /shared/bank/saccharomyces_cerevisiae/SacCer3/fasta/sacCer3.fa.gz
-        "data/linux_basics_session05/Data/sacCer3.fa.gz",
+        "Data/sacCer3.fa.gz",
     ],
 };
