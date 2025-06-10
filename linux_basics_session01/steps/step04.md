@@ -23,6 +23,6 @@ date
 	{ valid: false, value: "no"},
 ]}>
 	<span slot="prompt">
-		Does the terminal display the current date?
+		Does the terminal display the current date (note: the time is not necessarily exact as it is expressed in UTC, Current UTC, Coordinated Universal Time)?
 	</span>
 </Quiz>
