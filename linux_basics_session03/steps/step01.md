@@ -9,6 +9,7 @@ In the previous chapters, you learnt how to move around in the Unix filesystem a
 This chapter will show you how to explore the data contained in these files. 
 The commands we’ll be using are fairly simple, but are solid building blocks of more sophisticated treatment pipelines.
 
+Now, at the beginning of the chapters you are placed in your personal directory, your HOME.
 Typically, calculations are performed in a directory other than the HOME directory. 
 For this session, go to the `/shared/projects/tutorial/Data` directory and check that you are in the expected directory with `pwd`:
 
