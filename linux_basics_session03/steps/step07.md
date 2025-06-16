@@ -23,7 +23,7 @@ Multiple columns can be extracted using a comma between two column numbers or a 
 Try the extraction of the 3 first columns and the 5th one from the _SAOUHSC.bed_ file:
 
 ```bash
-cut -f 1-3,5 SAOUHSC.bed
+cut -f 1-3,6 SAOUHSC.bed
 ```
 
 If the file contains columns separated by alternative characters (*e.g.* `,`, `;`, `:`, `|`, ...), you can change the column/field delimiter thanks to the `-d` option. 
