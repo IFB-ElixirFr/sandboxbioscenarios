@@ -14,11 +14,6 @@ The result should be `/shared/projects/tutorial/Data`. This directory should con
 
 By default, as you've seen so far, the result of a Unix command is printed on the screen. This is the case, for instance, of the `ls` command.
 
-```bash
-ls
-ls Data
-```
-
 Here are some vocabulary definitions:
 
 📕 the result of a command is also called **output** 
