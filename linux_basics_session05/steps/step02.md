@@ -14,10 +14,10 @@ You can check that the `seqkit` tool is available by using the `which` bash comm
 which seqkit
 ```
 
-The output of the previous command confirms that seqkit is available for use.
+The output of the previous command (`/usr/bin/seqkit`) confirms that seqkit is available for use.
 
 
-The first step is to check the documentation. The method for accessing documentation varies depending on the software. For some tools, a simple call to the command without any options will display the help section. For others, you may need to use the `-h, --help` or `-help` option. Finally, for most tools, an online help resource will be available to guide you in getting started with the software. For example, the help for seqkit is available at: https://bioinf.shenwei.me/seqkit.
+The first step before using the tool is to check the documentation. The method for accessing documentation varies depending on the software. For some tools, a simple call to the command without any options will display the help section. For others, you may need to use the `-h, --help` or `-help` option. Finally, for most tools, an online help resource will be available to guide you in getting started with the software. For example, the help for seqkit is available at: https://bioinf.shenwei.me/seqkit.
 
 <Quiz id="step02_01" choices={[
          { valid: true, value: "seqkit -h"},
