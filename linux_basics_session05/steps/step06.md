@@ -56,16 +56,16 @@ Error: unknown shorthand flag: 'e' in -elp
 When using a `seqkit` subcommand, the instruction should always begin with `seqkit`, followed by the desired subcommand. Any deviation from this structure will result in an error, which may (or not) clearly point out the issue.
 
 ```bash
-seqkit -a stats /shared/data/bank/saccharomyces_cerevisiae/SacCer3/fasta/sacCer3.fa.gz
+seqkit -a stats sacCer3.fa.gz
 ```
 
 Here’s the resulting error message:
 
 ```
-Error: unknown command "/shared/data/bank/saccharomyces_cerevisiae/SacCer3/fasta/sacCer3.fa.gz" for "seqkit"
+Error: unknown command "sacCer3.fa.gz" for "seqkit"
 ```
 
-**Explanation:**  In this case, the user mistakenly placed the `-a` argument before the `stats` command. As a result, the input file name, `/shared/data/bank/saccharomyces_cerevisiae/SacCer3/fasta/sacCer3.fa.gz`, is incorrectly interpreted as a command, triggering the error.
+**Explanation:**  In this case, the user mistakenly placed the `-a` argument before the `stats` command. As a result, the input file name, `sacCer3.fa.gz`, is incorrectly interpreted as a command, triggering the error.
 
 <Quiz id="step06_01" choices={[
          { valid: true, value: "Seqkit stats -a sacCer3.fa.gz"},
@@ -77,7 +77,7 @@ Error: unknown command "/shared/data/bank/saccharomyces_cerevisiae/SacCer3/fasta
          { valid: false, value: "seqkit fx2tab -n -C A sacCer3.fa.gz"},
 ]}>
         <span slot="prompt">
-	If one is located in the '/shared/data/bank/saccharomyces_cerevisiae/SacCer3/fasta/' folder, which instruction(s) would result in an error?
+	If one is located in the '/shared/projects/tutorial/Data/' folder, which instruction(s) would result in an error?
         </span>
 </Quiz>
 
