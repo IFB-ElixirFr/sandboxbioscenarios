@@ -19,7 +19,7 @@ man sort
 ```
 By default, sorting is performed based on all characters in the line.
 
-As a final example of using pipes, let's count the occurrences of genomic elements (gene, CDS...) in the *SAOUHSC.bed* file. First, we extract using `cut` the 4th column (`-f 4`), containing this information. Then, we isolate the prefix before the hyphen (-) using cut and delimiter (`-d`) set to "-". Finally the result is sent to `sort` then to `uniq -c` that counts the occurences of each entry.
+As a final example of using pipes, let's count the occurrences of genomic elements (gene, CDS...) in the `SAOUHSC.bed` file. First, we extract using `cut` the 4th column (`-f 4`), containing this information. Then, we isolate the prefix before the hyphen (-) using `cut` and delimiter (`-d`) set to "-". Finally the result is sent to `sort` then to `uniq -c` that counts the occurences of each entry.
 
 ```bash
 cut -f 4 SAOUHSC.bed | cut -d "-" -f 1 | sort | uniq -c
@@ -31,6 +31,7 @@ cut -f 4 SAOUHSC.bed | head
 cut -f 4 SAOUHSC.bed | cut -d "-" -f 1 | head
 cut -f 4 SAOUHSC.bed | cut -d "-" -f 1 | sort | head
 ```
+Look at the end of the “DESCRIPTION” section of the `uniq` command help (`man uniq`) to understand why we need to `sort` before using the `uniq` command.
 
 <Quiz id="question2" choices={[
 	{ valid: false, value: "cut -f4  SAOUHSC.bed | sort -u | wc -l | grep 'gene'"},
