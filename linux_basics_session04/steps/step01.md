@@ -10,7 +10,7 @@ Now, at the beginning of the chapters you are placed in your personal directory,
 cd /shared/projects/tutorial/Data
 pwd
 ```
-The result should be `/shared/projects/tutorial/Data`. This directory should contain 5 files when calling ls.
+The result should be `/shared/projects/tutorial/Data`. This directory should contain 5 files when calling `ls`.
 
 By default, as you've seen so far, the result of a Unix command is printed on the screen. This is the case, for instance, of the `ls` command.
 
