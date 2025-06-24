@@ -5,6 +5,13 @@ import Execute from "$components/Execute.svelte";
 
 ## The standard output stream
 
+Now, at the beginning of the chapters you are placed in your personal directory, your HOME. Typically, calculations are performed in a directory other than your HOME directory. For this session, go to the `/shared/projects/tutorial/Data/` directory and check that you are in the expected directory with `pwd`:
+```bash
+cd /shared/projects/tutorial/Data
+pwd
+```
+The result should be `/shared/projects/tutorial/Data`. This directory should contain 5 files when calling ls.
+
 By default, as you've seen so far, the result of a Unix command is printed on the screen. This is the case, for instance, of the `ls` command.
 
 ```bash
