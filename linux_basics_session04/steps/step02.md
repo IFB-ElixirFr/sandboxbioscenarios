@@ -15,5 +15,7 @@ As an example, the `tr` command translates (or deletes) characters from a text s
 tr AGCT agcu < NC_009089.fasta
 ```
 
+<img src="/data/linux_basics_session04/stream_infile_out.png" style="max-width:100%" alt="input stream redirection">
+
 Remark: `cat NC_009089.fasta` is equivalent to `cat < NC_009089.fasta` but the later is seldom used.
 
