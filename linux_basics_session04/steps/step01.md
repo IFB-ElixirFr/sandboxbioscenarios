@@ -34,7 +34,6 @@ By default, **stdout** is set to the screen.
 The `grep` command also output its results to stdout. As an example, we will extract genomic locations related to *gene-SAOUHSC_00079* entry from the *SAOUHSC.bed* file with the `grep` command:
 
 ```bash
-cd Data
 grep SAOUHSC_00079 SAOUHSC.bed
 ```
 
