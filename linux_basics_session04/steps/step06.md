@@ -35,8 +35,10 @@ Look at the end of the “DESCRIPTION” section of the `uniq` command help (`ma
 
 <Quiz id="question2" choices={[
 	{ valid: false, value: "cut -f4  SAOUHSC.bed | sort -u | wc -l | grep 'gene'"},
-		{ valid: true, value: "cut -f4  SAOUHSC.bed | grep 'gene' | sort -u | wc -l"},
-	{ valid: false, value: "cut -f4  SAOUHSC.bed | grep 'gene' SAOUHSC.bed  | sort -u | wc -l"},
+	{ valid: true, value: "cut -f4  SAOUHSC.bed | grep 'gene' | sort -u | wc -l"},
+  	{ valid: true, value: "cut -f4  SAOUHSC.bed | grep -c 'gene'"},
+	{ valid: false, value: "cut -f4  SAOUHSC.bed | grep 'gene' SAOUHSC.bed | sort -u SAOUHSC.bed | wc -l SAOUHSC.bed"},
+ 	{ valid: true, value: "grep -c 'gene' SAOUHSC.bed"},
 ]}>
 	<span slot="prompt">
 		What would be the command to compute the number of non-redundant genes (ie. lines with fourth column starting with 'gene') in the *SAOUHSC.bed* file.
