@@ -38,7 +38,7 @@ However, if you run `seqkit stats` without specifying an input, an error occurs.
 seqkit stats
 ```
 
-To avoid this, you must either provide a FASTA file or provide text stream through standard input (**stdin**) using a pipe:
+To avoid this, you must either provide a file or provide text stream through standard input (**stdin**) using a pipe:
 
 ```bash
 seqkit stats sacCer3.fa.gz 
