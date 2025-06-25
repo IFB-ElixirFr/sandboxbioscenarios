@@ -9,9 +9,9 @@ The `seqkit` commands accept FASTA or FASTQ files as input, including their comp
 
 In bioinformatics, compressed formats are commonly used due to the amount of data. For instance, in this tutorial, we will analyze the complete genome of *Saccharomyces cerevisiae*.
 
-To start the calculations, leave your HOME directory in which you are placed at the start of each session and go to the `/shared/projects/tutorial/Data/` directory (use the `cd` command followed by the path to the directory and check that you are in the expected directory with the `pwd` command). Check that it contains a `sacCer3.fa.gz` file (`ls` command).
+To start the calculations, leave your HOME directory in which you are placed at the start of this session and go to the `/shared/projects/tutorial/Data/` directory (use the `cd` command followed by the path to the directory and check that you are in the expected directory with the `pwd` command). Check that it contains a `sacCer3.fa.gz` file (`ls` command).
 
-In the `sacCer3.fa.gz` file, sequences from the different chromosomes of *Saccharomyces cerevisiae* are included.
+In the `sacCer3.fa.gz` file, sequences from the chromosomes of *Saccharomyces cerevisiae* are included.
 
 The `seqkit seq` command allows extracting the headers of the different sequences in a FASTA file (compressed or not).
 
