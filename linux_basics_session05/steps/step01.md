@@ -19,4 +19,4 @@ There are no universal rules, and each tool needs to be explored individually. C
 
 ## Installing bioinformatic tools
 
-Unlike the built-in Bash command, these third-party tools might not be already installed on your personal computer (or on other IT resources to which you have access). When the tool you're interested in isn't already installed, you will need to install it (or ask your IT support). In bioinformatics, the [Conda](https://anaconda.org/conda-forge/hub) tool or [Pixi](https://prefix.dev) Tool are frequently used for installations, but will not be covered in this tutorial
+Unlike the built-in Bash command, these third-party tools might not be already installed on your personal computer (or on other IT resources to which you have access). When the tool you're interested in isn't already installed, you will need to install it (or ask your IT support). In bioinformatics, the [Conda](https://anaconda.org/conda-forge/hub) tool or [Pixi](https://prefix.dev) tool are frequently used for installations, but will not be covered in this tutorial
