@@ -5,6 +5,8 @@
 
 ## Calculating nucleotide composition statistics with seqkit
 
+Using the `seqkit stats` command in the previous step shows the overall statistics for the entire genome. 
+Is it possible to obtain statistics for each chromosome, given that the sacCer file contains all their sequences one after the other?
 
 The `seqkit fx2tab` command converts a FASTA or FASTQ file (either compress of uncompressed) into a tabulated format (*i.e* multi-column format). By default, the first column contains the sequence identifier (*i.e.* the FASTA header), while the second holds the sequence itself.
 
