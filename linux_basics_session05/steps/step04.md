@@ -35,7 +35,7 @@ seqkit seq -n sacCer3.fa.gz
         </span>
 </Quiz>
 
-### Computing sequence length statistic using seqkit
+### Computing sequence length statistic
 
 We may now compute the chromosome length statistics using `seqkit stats` (*e.g* average length, minimal/maximal length, ...).
 However, if you run `seqkit stats` without specifying an input, an error occurs. 
@@ -53,7 +53,8 @@ cat sacCer3.fa.gz | seqkit stats
 
 <Quiz id="step4_2" choices={[
          { valid: false, value: "Yes, they are exaclty the same since the same file is given as input."},
-         { valid: true, value: "No, because the file name is not included when using redirection, but the computed values remain the same."},
+         { valid: false, value: "No, they are completely different."},
+         { valid: true, value: "The computed values remain the same but the file name is not included when using redirection."},
 ]}>
         <span slot="prompt">
         Are both outputs identical?
