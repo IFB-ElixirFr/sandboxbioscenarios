@@ -35,7 +35,7 @@ Remarks:
 
 ## Options
 
-Options modify the waya command works.
+Options modify the way a command works.
 In Bash, shell options start with a simple or double dash (`-` or `--`).
 
 For example, we can display the size of the files using the `--size` option of the `ls` command. 
