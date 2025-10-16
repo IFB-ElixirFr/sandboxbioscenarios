@@ -87,5 +87,7 @@ Error: unknown command "sacCer3.fa.gz" for "seqkit"
 - Take the time to read the errors carefully and try to understand them (use internet or your preferred chatbot to help interpret them).
 - Follow the instructions provided in the "Usage" section (*e.g* do not place arguments before the subcommand name).
 - The file name is a **positional argument** in seqkit commands, meaning it should be provided as the **last argument** in the command (or _via_ a pipe).
+- Seqkit commands are encoded according to bash command conventions, with “--option_name” options and sometimes their abbreviated form, but these bash conventions are not necessarily used by bioinformatics tools.
+- Each bioinformatics tool has its own set of commands, options, or arguments, and therefore a potential set of errors for users. It is therefore essential to read the documentation for each new tool to discover them.
 
 
