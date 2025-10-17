@@ -3,7 +3,6 @@
   import Execute from "$components/Execute.svelte"; 
 </script> 
 
-## Explore the contents of a fasta file with seqkit
 
 The `seqkit` commands accept FASTA or FASTQ files as input, including their compressed versions (`.gz`). 
 In bioinformatics, compressed formats are commonly used due to the amount of data.
