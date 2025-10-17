@@ -1,7 +1,5 @@
 <script> import Quiz from "$components/Quiz.svelte"; import Execute from "$components/Execute.svelte"; </script> 
 
-# Debugging errors
-
 *Errare humanum est* ... 
 
 When writing command lines, mistakes are common. That's why it's essential to carefully read error messages.
