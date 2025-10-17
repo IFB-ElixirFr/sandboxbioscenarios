@@ -3,8 +3,6 @@
   import Execute from "$components/Execute.svelte"; 
 </script> 
 
-## Calculating nucleotide composition statistics with seqkit
-
 Using the `seqkit stats` command in the previous step shows the overall statistics for the entire genome. 
 Is it possible to obtain statistics for each chromosome, given that the sacCer file contains all their sequences one after the other?
 
