@@ -3,8 +3,6 @@ import Quiz from "$components/Quiz.svelte";
 import Execute from "$components/Execute.svelte";
 </script>
 
-# The seqkit tool
-
 Among the many bioinformatics tools available, we invite you to explore the `seqkit` tool as an example in this tutorial. It is already installed in the current sandbox environment.
 The `seqkit` tool provides a software suite designed for sequence analysis and can be used to manipulate sequence files, especially those in fasta or fastq format.
 
