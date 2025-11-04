@@ -18,7 +18,7 @@ export const config = {
     description: "IFB Scenario 5",
     tags: ["unix", "shell", "terminal"],
     tools: ["seqkit", "which"],
-    difficulty: ["purple belt"],
+    difficulty: ["Unix 5"],
     steps: [
         { name: "Learning a new bioinformatics tool", component: Step0 },
         { name: "What is a bioinformatics tool?", component: Step1 },
