@@ -16,7 +16,7 @@ export const config = {
     listed: true,
     name: "Combining bash commands",
     subtitle: `by <a href="https://www.france-bioinformatique.fr/en/home/" target="_blank">French Institute of Bioinformatics</a>`,
-    description: "IFB Scenario 4",
+    description: "Unix Module 4",
     tags: ["unix", "shell", "terminal"],
     tools: ["ls", "date"],
     difficulty: ["Unix 4"],
