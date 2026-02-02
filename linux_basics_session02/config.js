@@ -15,7 +15,7 @@ export const config = {
     listed: true,
     name: "Unix file system",
     subtitle: `by <a href="https://www.france-bioinformatique.fr/en/home/" target="_blank">French Institute of Bioinformatics</a>`,
-    description: "IFB Scenario 2",
+    description: "Unix Module 2",
     tags: ["unix", "shell", "terminal"],
     tools: ["ls", "date"],
     difficulty: ["Unix 2", "Unix 3"],
