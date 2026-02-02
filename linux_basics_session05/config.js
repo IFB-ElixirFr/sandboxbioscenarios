@@ -15,7 +15,7 @@ export const config = {
     listed: true,
     name: "Learning a new bioinformatics tool",
     subtitle: `by <a href="https://www.france-bioinformatique.fr/en/home/" target="_blank">French Institute of Bioinformatics</a>`,
-    description: "IFB Scenario 5",
+    description: "Unix Module 5",
     tags: ["unix", "shell", "terminal"],
     tools: ["seqkit", "which"],
     difficulty: ["Unix 5"],
