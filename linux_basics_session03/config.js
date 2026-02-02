@@ -17,7 +17,7 @@ export const config = {
     listed: true,
     name: "Manipulating files and directories",
     subtitle: `by <a href="https://www.france-bioinformatique.fr/en/home/" target="_blank">French Institute of Bioinformatics</a>`,
-    description: "IFB Scenario 3",
+    description: "Unix Module 3",
     tags: ["unix", "shell", "terminal"],
     tools: ["ls", "date"],
     difficulty: ["Unix 3", "Unix 4"],
